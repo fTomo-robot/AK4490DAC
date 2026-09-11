@@ -1599,934 +1599,170 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "AK4490DAC:AK4490"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -15.24 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AK4490"
-				(at -15.24 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
-				(at 0 -62.23 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Asahi Kasei AK4490 32bit 2ch Premium DAC (from verified NEWDAC Eagle library pinout)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AK4490_0_1"
-				(rectangle
-					(start -12.7 1.27)
-					(end 12.7 -59.69)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "AK4490_1_1"
-				(pin power_in line
-					(at -15.24 0 0)
-					(length 2.54)
-					(name "DVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -2.54 0)
-					(length 2.54)
-					(name "PDN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -5.08 0)
-					(length 2.54)
-					(name "BICK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -7.62 0)
-					(length 2.54)
-					(name "SDATA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -10.16 0)
-					(length 2.54)
-					(name "LRCK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -12.7 0)
-					(length 2.54)
-					(name "SSLOW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -15.24 0)
-					(length 2.54)
-					(name "SMUTE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -17.78 0)
-					(length 2.54)
-					(name "SD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -20.32 0)
-					(length 2.54)
-					(name "SLOW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -22.86 0)
-					(length 2.54)
-					(name "DIF0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -25.4 0)
-					(length 2.54)
-					(name "DIF1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -27.94 0)
-					(length 2.54)
-					(name "DIF2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -30.48 0)
-					(length 2.54)
-					(name "PSN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -33.02 0)
-					(length 2.54)
-					(name "INV"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -35.56 0)
-					(length 2.54)
-					(name "DEM0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -38.1 0)
-					(length 2.54)
-					(name "LDOE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -40.64 0)
-					(length 2.54)
-					(name "ACKS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -43.18 0)
-					(length 2.54)
-					(name "TESTE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -15.24 -45.72 0)
-					(length 2.54)
-					(name "VREFHR"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -15.24 -48.26 0)
-					(length 2.54)
-					(name "VREFHR*"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -15.24 -50.8 0)
-					(length 2.54)
-					(name "VREFLR"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -15.24 -53.34 0)
-					(length 2.54)
-					(name "VREFLR*"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -15.24 -55.88 0)
-					(length 2.54)
-					(name "VCMR"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -15.24 -58.42 0)
-					(length 2.54)
-					(name "NC24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 0 180)
-					(length 2.54)
-					(name "TVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "48"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -2.54 180)
-					(length 2.54)
-					(name "DVSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "47"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 15.24 -5.08 180)
-					(length 2.54)
-					(name "MCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "46"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -7.62 180)
-					(length 2.54)
-					(name "AVSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "45"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -10.16 180)
-					(length 2.54)
-					(name "AVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "44"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 15.24 -12.7 180)
-					(length 2.54)
-					(name "NC43"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "43"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 -15.24 180)
-					(length 2.54)
-					(name "VREFHL*"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "42"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 -17.78 180)
-					(length 2.54)
-					(name "VREFHL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "41"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 -20.32 180)
-					(length 2.54)
-					(name "VREFLL*"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "40"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 -22.86 180)
-					(length 2.54)
-					(name "VREFLL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "39"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 -25.4 180)
-					(length 2.54)
-					(name "VCML"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "38"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 15.24 -27.94 180)
-					(length 2.54)
-					(name "NC37"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "37"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 15.24 -30.48 180)
-					(length 2.54)
-					(name "AOUTLP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "36"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 15.24 -33.02 180)
-					(length 2.54)
-					(name "AOUTLN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "35"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -35.56 180)
-					(length 2.54)
-					(name "VDDL*"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "34"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -38.1 180)
-					(length 2.54)
-					(name "VDDL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -40.64 180)
-					(length 2.54)
-					(name "VSSL*"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "32"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -43.18 180)
-					(length 2.54)
-					(name "VSSL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "31"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -45.72 180)
-					(length 2.54)
-					(name "VSSR*"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -48.26 180)
-					(length 2.54)
-					(name "VSSR"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -50.8 180)
-					(length 2.54)
-					(name "VDDR*"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -53.34 180)
-					(length 2.54)
-					(name "VDDR"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 15.24 -55.88 180)
-					(length 2.54)
-					(name "AOUTRN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 15.24 -58.42 180)
-					(length 2.54)
-					(name "AOUTRP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
+			(symbol "AK4490DAC:AK4490"
+ (in_bom yes) (on_board yes)
+    (property "Reference" "U" (at -15.24 3.81 0)
+      (effects (font (size 1.27 1.27))))
+    (property "Value" "AK4490" (at -15.24 6.35 0)
+      (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm" (at 0 -62.23 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Description" "Asahi Kasei AK4490 32bit 2ch Premium DAC (from verified NEWDAC Eagle library pinout)" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    
+    
+  
+(symbol "AK4490_0_1"
+      (rectangle (start -12.70 1.27) (end 12.70 -59.69)
+        (stroke (width 0.254) (type default)) (fill (type background)))
+    )
+(symbol "AK4490_1_1"
+      (pin power_in line (at -15.24 0.00 0) (length 2.54)
+        (name "DVDD" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -2.54 0) (length 2.54)
+        (name "PDN" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -5.08 0) (length 2.54)
+        (name "BICK" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -7.62 0) (length 2.54)
+        (name "SDATA" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -10.16 0) (length 2.54)
+        (name "LRCK" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -12.70 0) (length 2.54)
+        (name "SSLOW" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -15.24 0) (length 2.54)
+        (name "SMUTE" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -17.78 0) (length 2.54)
+        (name "SD" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -20.32 0) (length 2.54)
+        (name "SLOW" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -22.86 0) (length 2.54)
+        (name "DIF0" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -25.40 0) (length 2.54)
+        (name "DIF1" (effects (font (size 1.27 1.27))))
+        (number "11" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -27.94 0) (length 2.54)
+        (name "DIF2" (effects (font (size 1.27 1.27))))
+        (number "12" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -30.48 0) (length 2.54)
+        (name "PSN" (effects (font (size 1.27 1.27))))
+        (number "13" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -33.02 0) (length 2.54)
+        (name "INV" (effects (font (size 1.27 1.27))))
+        (number "14" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -35.56 0) (length 2.54)
+        (name "DEM0" (effects (font (size 1.27 1.27))))
+        (number "15" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -38.10 0) (length 2.54)
+        (name "LDOE" (effects (font (size 1.27 1.27))))
+        (number "16" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -40.64 0) (length 2.54)
+        (name "ACKS" (effects (font (size 1.27 1.27))))
+        (number "17" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -43.18 0) (length 2.54)
+        (name "TESTE" (effects (font (size 1.27 1.27))))
+        (number "18" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at -15.24 -45.72 0) (length 2.54)
+        (name "VREFHR" (effects (font (size 1.27 1.27))))
+        (number "19" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at -15.24 -48.26 0) (length 2.54)
+        (name "VREFHR*" (effects (font (size 1.27 1.27))))
+        (number "20" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at -15.24 -50.80 0) (length 2.54)
+        (name "VREFLR" (effects (font (size 1.27 1.27))))
+        (number "21" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at -15.24 -53.34 0) (length 2.54)
+        (name "VREFLR*" (effects (font (size 1.27 1.27))))
+        (number "22" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at -15.24 -55.88 0) (length 2.54)
+        (name "VCMR" (effects (font (size 1.27 1.27))))
+        (number "23" (effects (font (size 1.27 1.27)))))
+      (pin no_connect line (at -15.24 -58.42 0) (length 2.54)
+        (name "NC24" (effects (font (size 1.27 1.27))))
+        (number "24" (effects (font (size 1.27 1.27)))))
+      (pin output line (at 15.24 -58.42 180) (length 2.54)
+        (name "AOUTRP" (effects (font (size 1.27 1.27))))
+        (number "25" (effects (font (size 1.27 1.27)))))
+      (pin output line (at 15.24 -55.88 180) (length 2.54)
+        (name "AOUTRN" (effects (font (size 1.27 1.27))))
+        (number "26" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -53.34 180) (length 2.54)
+        (name "VDDR" (effects (font (size 1.27 1.27))))
+        (number "27" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -50.80 180) (length 2.54)
+        (name "VDDR*" (effects (font (size 1.27 1.27))))
+        (number "28" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -48.26 180) (length 2.54)
+        (name "VSSR" (effects (font (size 1.27 1.27))))
+        (number "29" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -45.72 180) (length 2.54)
+        (name "VSSR*" (effects (font (size 1.27 1.27))))
+        (number "30" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -43.18 180) (length 2.54)
+        (name "VSSL" (effects (font (size 1.27 1.27))))
+        (number "31" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -40.64 180) (length 2.54)
+        (name "VSSL*" (effects (font (size 1.27 1.27))))
+        (number "32" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -38.10 180) (length 2.54)
+        (name "VDDL" (effects (font (size 1.27 1.27))))
+        (number "33" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -35.56 180) (length 2.54)
+        (name "VDDL*" (effects (font (size 1.27 1.27))))
+        (number "34" (effects (font (size 1.27 1.27)))))
+      (pin output line (at 15.24 -33.02 180) (length 2.54)
+        (name "AOUTLN" (effects (font (size 1.27 1.27))))
+        (number "35" (effects (font (size 1.27 1.27)))))
+      (pin output line (at 15.24 -30.48 180) (length 2.54)
+        (name "AOUTLP" (effects (font (size 1.27 1.27))))
+        (number "36" (effects (font (size 1.27 1.27)))))
+      (pin no_connect line (at 15.24 -27.94 180) (length 2.54)
+        (name "NC37" (effects (font (size 1.27 1.27))))
+        (number "37" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 15.24 -25.40 180) (length 2.54)
+        (name "VCML" (effects (font (size 1.27 1.27))))
+        (number "38" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 15.24 -22.86 180) (length 2.54)
+        (name "VREFLL" (effects (font (size 1.27 1.27))))
+        (number "39" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 15.24 -20.32 180) (length 2.54)
+        (name "VREFLL*" (effects (font (size 1.27 1.27))))
+        (number "40" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 15.24 -17.78 180) (length 2.54)
+        (name "VREFHL" (effects (font (size 1.27 1.27))))
+        (number "41" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 15.24 -15.24 180) (length 2.54)
+        (name "VREFHL*" (effects (font (size 1.27 1.27))))
+        (number "42" (effects (font (size 1.27 1.27)))))
+      (pin no_connect line (at 15.24 -12.70 180) (length 2.54)
+        (name "NC43" (effects (font (size 1.27 1.27))))
+        (number "43" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -10.16 180) (length 2.54)
+        (name "AVDD" (effects (font (size 1.27 1.27))))
+        (number "44" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -7.62 180) (length 2.54)
+        (name "AVSS" (effects (font (size 1.27 1.27))))
+        (number "45" (effects (font (size 1.27 1.27)))))
+      (pin input line (at 15.24 -5.08 180) (length 2.54)
+        (name "MCLK" (effects (font (size 1.27 1.27))))
+        (number "46" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -2.54 180) (length 2.54)
+        (name "DVSS" (effects (font (size 1.27 1.27))))
+        (number "47" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 0.00 180) (length 2.54)
+        (name "TVDD" (effects (font (size 1.27 1.27))))
+        (number "48" (effects (font (size 1.27 1.27)))))
+    )
+	)
 		(symbol "AK4490DAC:PCM2704CDBR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4122,10 +3358,1382 @@
 	        (number "6" (effects (font (size 1.27 1.27)))))
 	    )
 	)
+	
+	(symbol "AK4490DAC:SA9227"
+ (in_bom yes) (on_board yes)
+    (property "Reference" "U" (at -15.24 3.81 0)
+      (effects (font (size 1.27 1.27))))
+    (property "Value" "SA9227" (at -15.24 6.35 0)
+      (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_QFP:LQFP-64_7x7mm_P0.4mm" (at 0 -82.55 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Description" "Savitech SA9227 (Bravo-DSD) async USB-to-I2S/SPDIF audio streaming controller, LQFP-64 - pinout VERIFIED against official datasheet. Needs external I2C EEPROM with firmware." (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    
+    
+  
+(symbol "SA9227_0_1"
+      (rectangle (start -12.70 1.27) (end 12.70 -80.01)
+        (stroke (width 0.254) (type default)) (fill (type background)))
+    )
+(symbol "SA9227_1_1"
+      (pin power_in line (at -15.24 0.00 0) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -2.54 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27)))))
+      (pin power_out line (at -15.24 -5.08 0) (length 2.54)
+        (name "VDD8OUT" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -7.62 0) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -10.16 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27)))))
+      (pin input line (at -15.24 -12.70 0) (length 2.54)
+        (name "SPDRX" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -15.24 0) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -17.78 0) (length 2.54)
+        (name "VDD18" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27)))))
+      (pin output line (at -15.24 -20.32 0) (length 2.54)
+        (name "SOF_FLAG" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27)))))
+      (pin output line (at -15.24 -22.86 0) (length 2.54)
+        (name "DSD_FLAG" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27)))))
+      (pin output line (at -15.24 -25.40 0) (length 2.54)
+        (name "DSD_128_FLAG" (effects (font (size 1.27 1.27))))
+        (number "11" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at -15.24 -27.94 0) (length 2.54)
+        (name "REXT" (effects (font (size 1.27 1.27))))
+        (number "12" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -30.48 0) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
+        (number "13" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -33.02 0) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
+        (number "14" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at -15.24 -35.56 0) (length 2.54)
+        (name "DP" (effects (font (size 1.27 1.27))))
+        (number "15" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at -15.24 -38.10 0) (length 2.54)
+        (name "DM" (effects (font (size 1.27 1.27))))
+        (number "16" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -40.64 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "17" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at -15.24 -43.18 0) (length 2.54)
+        (name "XI" (effects (font (size 1.27 1.27))))
+        (number "18" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at -15.24 -45.72 0) (length 2.54)
+        (name "XO" (effects (font (size 1.27 1.27))))
+        (number "19" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -48.26 0) (length 2.54)
+        (name "VDD18" (effects (font (size 1.27 1.27))))
+        (number "20" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -50.80 0) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
+        (number "21" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -53.34 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "22" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -55.88 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "23" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -58.42 0) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
+        (number "24" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -60.96 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "25" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -63.50 0) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
+        (number "26" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at -15.24 -66.04 0) (length 2.54)
+        (name "GPIO0" (effects (font (size 1.27 1.27))))
+        (number "27" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -68.58 0) (length 2.54)
+        (name "VDD18" (effects (font (size 1.27 1.27))))
+        (number "28" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at -15.24 -71.12 0) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
+        (number "29" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at -15.24 -73.66 0) (length 2.54)
+        (name "GPIO1" (effects (font (size 1.27 1.27))))
+        (number "30" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at -15.24 -76.20 0) (length 2.54)
+        (name "GPIO2_USB_SEL" (effects (font (size 1.27 1.27))))
+        (number "31" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at -15.24 -78.74 0) (length 2.54)
+        (name "GPIO3" (effects (font (size 1.27 1.27))))
+        (number "32" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -78.74 180) (length 2.54)
+        (name "GPIO4" (effects (font (size 1.27 1.27))))
+        (number "33" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -76.20 180) (length 2.54)
+        (name "GPIO5" (effects (font (size 1.27 1.27))))
+        (number "34" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -73.66 180) (length 2.54)
+        (name "GPIO6" (effects (font (size 1.27 1.27))))
+        (number "35" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -71.12 180) (length 2.54)
+        (name "GPIO7" (effects (font (size 1.27 1.27))))
+        (number "36" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -68.58 180) (length 2.54)
+        (name "GPIO8" (effects (font (size 1.27 1.27))))
+        (number "37" (effects (font (size 1.27 1.27)))))
+      (pin input line (at 15.24 -66.04 180) (length 2.54)
+        (name "RESETN" (effects (font (size 1.27 1.27))))
+        (number "38" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -63.50 180) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
+        (number "39" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -60.96 180) (length 2.54)
+        (name "SCL" (effects (font (size 1.27 1.27))))
+        (number "40" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -58.42 180) (length 2.54)
+        (name "SDA" (effects (font (size 1.27 1.27))))
+        (number "41" (effects (font (size 1.27 1.27)))))
+      (pin output line (at 15.24 -55.88 180) (length 2.54)
+        (name "DASCLK_DSDCLK" (effects (font (size 1.27 1.27))))
+        (number "42" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -53.34 180) (length 2.54)
+        (name "VDD18" (effects (font (size 1.27 1.27))))
+        (number "43" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -50.80 180) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
+        (number "44" (effects (font (size 1.27 1.27)))))
+      (pin output line (at 15.24 -48.26 180) (length 2.54)
+        (name "DADAT_DSDDL" (effects (font (size 1.27 1.27))))
+        (number "45" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -45.72 180) (length 2.54)
+        (name "DAMCLK" (effects (font (size 1.27 1.27))))
+        (number "46" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -43.18 180) (length 2.54)
+        (name "DASYNC_DSDDR" (effects (font (size 1.27 1.27))))
+        (number "47" (effects (font (size 1.27 1.27)))))
+      (pin output line (at 15.24 -40.64 180) (length 2.54)
+        (name "SPDTX" (effects (font (size 1.27 1.27))))
+        (number "48" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -38.10 180) (length 2.54)
+        (name "ADSCLK" (effects (font (size 1.27 1.27))))
+        (number "49" (effects (font (size 1.27 1.27)))))
+      (pin input line (at 15.24 -35.56 180) (length 2.54)
+        (name "ADDAT" (effects (font (size 1.27 1.27))))
+        (number "50" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -33.02 180) (length 2.54)
+        (name "ADMCLK" (effects (font (size 1.27 1.27))))
+        (number "51" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -30.48 180) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
+        (number "52" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -27.94 180) (length 2.54)
+        (name "ADSYNC" (effects (font (size 1.27 1.27))))
+        (number "53" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -25.40 180) (length 2.54)
+        (name "SCL1" (effects (font (size 1.27 1.27))))
+        (number "54" (effects (font (size 1.27 1.27)))))
+      (pin bidirectional line (at 15.24 -22.86 180) (length 2.54)
+        (name "SDA1" (effects (font (size 1.27 1.27))))
+        (number "55" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -20.32 180) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
+        (number "56" (effects (font (size 1.27 1.27)))))
+      (pin input line (at 15.24 -17.78 180) (length 2.54)
+        (name "REFCLKIN" (effects (font (size 1.27 1.27))))
+        (number "57" (effects (font (size 1.27 1.27)))))
+      (pin power_in line (at 15.24 -15.24 180) (length 2.54)
+        (name "VDD18" (effects (font (size 1.27 1.27))))
+        (number "58" (effects (font (size 1.27 1.27)))))
+      (pin input line (at 15.24 -12.70 180) (length 2.54)
+        (name "TEST1" (effects (font (size 1.27 1.27))))
+        (number "59" (effects (font (size 1.27 1.27)))))
+      (pin input line (at 15.24 -10.16 180) (length 2.54)
+        (name "TEST2" (effects (font (size 1.27 1.27))))
+        (number "60" (effects (font (size 1.27 1.27)))))
+      (pin input line (at 15.24 -7.62 180) (length 2.54)
+        (name "TEST3" (effects (font (size 1.27 1.27))))
+        (number "61" (effects (font (size 1.27 1.27)))))
+      (pin input line (at 15.24 -5.08 180) (length 2.54)
+        (name "TEST4" (effects (font (size 1.27 1.27))))
+        (number "62" (effects (font (size 1.27 1.27)))))
+      (pin input line (at 15.24 -2.54 180) (length 2.54)
+        (name "TEST5" (effects (font (size 1.27 1.27))))
+        (number "63" (effects (font (size 1.27 1.27)))))
+      (pin input line (at 15.24 0.00 180) (length 2.54)
+        (name "TEST6" (effects (font (size 1.27 1.27))))
+        (number "64" (effects (font (size 1.27 1.27)))))
+    )
+	)
+	(symbol "Memory_EEPROM:24LC02"
+		(property "Reference" "U"
+			(at -6.35 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "24LC02"
+			(at 1.27 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21709c.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "I2C Serial EEPROM, 2Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "I2C Serial EEPROM"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "DIP*W7.62mm* SOIC*3.9x4.9mm* TSSOP*4.4x3mm*P0.65mm* DFN*3x2mm*P0.5mm*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(embedded_fonts no)
+	
+(symbol "24LC02_1_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "A0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "WP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "74xx:74LS157"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LS157"
+			(at -7.62 -21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS157"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Quad 2 to 1 line Multiplexer"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "TTL MUX MUX2"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "DIP?16*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		
+		
+		(embedded_fonts no)
+	
+(symbol "74LS157_1_0"
+			(pin input line
+				(at -12.7 -15.24 0)
+				(length 5.08)
+				(name "S"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 15.24 0)
+				(length 5.08)
+				(name "I0a"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 12.7 0)
+				(length 5.08)
+				(name "I1a"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 12.7 15.24 180)
+				(length 5.08)
+				(name "Za"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 7.62 0)
+				(length 5.08)
+				(name "I0b"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 5.08 0)
+				(length 5.08)
+				(name "I1b"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 12.7 7.62 180)
+				(length 5.08)
+				(name "Zb"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -25.4 90)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 12.7 0 180)
+				(length 5.08)
+				(name "Zc"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -2.54 0)
+				(length 5.08)
+				(name "I1c"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 0 0)
+				(length 5.08)
+				(name "I0c"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 12.7 -7.62 180)
+				(length 5.08)
+				(name "Zd"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -10.16 0)
+				(length 5.08)
+				(name "I1d"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -7.62 0)
+				(length 5.08)
+				(name "I0d"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input inverted
+				(at -12.7 -17.78 0)
+				(length 5.08)
+				(name "E"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 22.86 270)
+				(length 5.08)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+(symbol "74LS157_1_1"
+			(rectangle
+				(start -7.62 17.78)
+				(end 7.62 -20.32)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+	)
+	(symbol "Regulator_Linear:ADP7142ARDZ-3.3"
+		(property "Reference" "U"
+			(at 0 8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Value" "ADP7142ARDZ-3.3"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 0 -10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf"
+			(at 0 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200mA, Low Noise, CMOS Low Dropout Regulator, Positive, 3.3V Fixed Output, SOIC-8"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "linear regulator ldo fixed positive"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "SOIC*1EP*3.9x4.9mm*P1.27mm*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(embedded_fonts no)
+	
+(symbol "ADP7142ARDZ-3.3_0_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+(symbol "ADP7142ARDZ-3.3_1_1"
+			(pin power_out line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(hide yes)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "SENSE/ADJ"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "SS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(hide yes)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "Regulator_Linear:ADP7142ARDZ-5.0"
+		(property "Reference" "U"
+			(at 0 8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Value" "ADP7142ARDZ-5.0"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 0 -10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf"
+			(at 0 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200mA, Low Noise, CMOS Low Dropout Regulator, Positive, 5.0V Fixed Output, SOIC-8"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "linear regulator ldo fixed positive"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "SOIC*1EP*3.9x4.9mm*P1.27mm*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(embedded_fonts no)
+	
+(symbol "ADP7142ARDZ-5.0_0_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+(symbol "ADP7142ARDZ-5.0_1_1"
+			(pin power_out line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(hide yes)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "SENSE/ADJ"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "SS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(hide yes)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	)
 	(symbol
 		(lib_id "AK4490DAC:AK4118")
-		(at 152.4 76.2 0)
+		(at 231.14 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4133,7 +4741,7 @@
 		(dnp no)
 		(uuid "0c3caa0a-03ee-455c-8ac9-a79f2afd86a3")
 		(property "Reference" "U5"
-			(at 152.4 69.85 0)
+			(at 231.14 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4141,7 +4749,7 @@
 			)
 		)
 		(property "Value" "AK4118"
-			(at 152.4 72.39 0)
+			(at 231.14 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4149,7 +4757,7 @@
 			)
 		)
 		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
-			(at 152.4 76.2 0)
+			(at 231.14 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4158,7 +4766,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 76.2 0)
+			(at 231.14 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4167,7 +4775,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 76.2 0)
+			(at 231.14 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4329,7 +4937,7 @@
 	)
 	(symbol
 		(lib_id "Power_Supervisor:TCM809")
-		(at 330.2 63.5 0)
+		(at 231.14 203.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4337,7 +4945,7 @@
 		(dnp no)
 		(uuid "15d572d5-b463-4850-985e-5b179809cb98")
 		(property "Reference" "U3"
-			(at 330.2 57.15 0)
+			(at 231.14 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4345,7 +4953,7 @@
 			)
 		)
 		(property "Value" "TCM809RENB713"
-			(at 330.2 59.69 0)
+			(at 231.14 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4353,7 +4961,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 330.2 63.5 0)
+			(at 231.14 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4362,7 +4970,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 330.2 63.5 0)
+			(at 231.14 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4371,7 +4979,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 330.2 63.5 0)
+			(at 231.14 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4397,152 +5005,8 @@
 		)
 	)
 	(symbol
-		(lib_id "AK4490DAC:PCM2704CDBR")
-		(at 50.8 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2e2f1f0e-bbea-4a88-9d1b-3d815adc86db")
-		(property "Reference" "U2"
-			(at 50.8 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PCM2704CDBR"
-			(at 50.8 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm"
-			(at 50.8 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/pcm2704c.pdf"
-			(at 50.8 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 50.8 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d6107955-1538-471c-a8e5-a94123068b68")
-		)
-		(pin "2"
-			(uuid "f1507162-c86d-4cba-bcd5-fdf5c641a1d8")
-		)
-		(pin "3"
-			(uuid "6a6c637f-02e1-4334-b0ab-318ba355365f")
-		)
-		(pin "4"
-			(uuid "87fe5d11-836e-47c5-ac66-24c974630b77")
-		)
-		(pin "5"
-			(uuid "a34cfd45-4d63-46ce-a4e7-4a989249eefb")
-		)
-		(pin "6"
-			(uuid "e11b0976-9112-471b-ba27-5927c935ea7e")
-		)
-		(pin "7"
-			(uuid "5abdfa05-d714-440d-a5c2-6aff12a8133a")
-		)
-		(pin "8"
-			(uuid "9d503cd1-07f7-41d5-84d4-2fff665408c8")
-		)
-		(pin "9"
-			(uuid "226efd0d-9290-415a-88a1-298d4c89b7b5")
-		)
-		(pin "10"
-			(uuid "b5ea991b-5db6-4930-ac49-43aca8eb61fe")
-		)
-		(pin "11"
-			(uuid "d9ea8aa6-ceaa-4809-a7ac-a136ad7d955b")
-		)
-		(pin "12"
-			(uuid "24e1a791-8f53-4801-bcfe-d60bbe73a79b")
-		)
-		(pin "13"
-			(uuid "7f79014f-7060-4c93-b9b3-8beeeb6b2304")
-		)
-		(pin "14"
-			(uuid "3d7f0048-5529-4ec0-9ab4-5014ea073e83")
-		)
-		(pin "15"
-			(uuid "34e17dbe-c941-4c03-a7ce-d77777c3e2a4")
-		)
-		(pin "16"
-			(uuid "0e41ae2d-6b4a-4eba-acd4-1607184952b9")
-		)
-		(pin "17"
-			(uuid "dc8ccff6-dc18-4c06-868e-1613621bf56a")
-		)
-		(pin "18"
-			(uuid "59c6805c-f3d8-4070-a40a-f00ce00c3f37")
-		)
-		(pin "19"
-			(uuid "c75af09e-6930-4832-90b9-3ca8d70d2aea")
-		)
-		(pin "20"
-			(uuid "540271cd-a3a4-46c3-b3e8-fd85e334f8a0")
-		)
-		(pin "21"
-			(uuid "a11e8259-63c3-4aa3-ac30-f2f58bd86975")
-		)
-		(pin "22"
-			(uuid "05b9d6b8-7333-4098-b63e-67305fb8390d")
-		)
-		(pin "23"
-			(uuid "71c77047-71e3-474a-a035-45e5d8d1a086")
-		)
-		(pin "24"
-			(uuid "78269f3b-06d9-4018-8d19-64eae9635c7b")
-		)
-		(pin "25"
-			(uuid "43cffee4-3873-4e03-bb88-38ed3c79d9d7")
-		)
-		(pin "26"
-			(uuid "875f5437-0daa-4872-afdb-8bdf74b059ec")
-		)
-		(pin "27"
-			(uuid "24c32004-3c92-4810-b1e5-babe71303d03")
-		)
-		(pin "28"
-			(uuid "dba11f2f-80ef-4e7d-8928-55cb76deeb14")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:LM1117MP-5.0")
-		(at 139.7 139.7 0)
+		(lib_id "Regulator_Linear:ADP7142ARDZ-5.0")
+		(at 165.1 254 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4550,23 +5014,23 @@
 		(dnp no)
 		(uuid "3d3e17ce-5c9a-4404-80d4-8d7c706b9a32")
 		(property "Reference" "IC4"
-			(at 139.7 133.35 0)
+			(at 165.1 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "LM1117MP-5.0"
-			(at 139.7 135.89 0)
+		(property "Value" "ADP7142ARDZ-5.0"
+			(at 165.1 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 139.7 139.7 0)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 165.1 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4575,7 +5039,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 139.7 0)
+			(at 165.1 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4584,7 +5048,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 139.7 139.7 0)
+			(at 165.1 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4592,13 +5056,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "e57f6cff-c39d-4f71-a4c1-67cef9f6e991")
+			(uuid "cdf6bd8e-ad7c-40db-8543-dceeb787f004")
 		)
 		(pin "2"
-			(uuid "9fdc4bcc-1cff-4390-9cac-8495293fc729")
+			(uuid "49c4564d-1acc-4134-a1eb-40c7fa69b5ff")
 		)
 		(pin "3"
-			(uuid "f667cbc0-ab28-4b1c-855b-140f585b8dc7")
+			(uuid "f26d5e5a-7248-4e28-8b31-92112e8d033c")
+		)
+		(pin "4"
+			(uuid "9c1f719d-5131-4245-9c09-1b791e1da317")
+		)
+		(pin "5"
+			(uuid "2c727ce6-5a1c-4d86-9522-801cf8797e4e")
+		)
+		(pin "6"
+			(uuid "b954582f-a934-4f67-9431-611f463cfe89")
+		)
+		(pin "7"
+			(uuid "be04d1ab-03da-48eb-aac2-73b934b7609d")
+		)
+		(pin "8"
+			(uuid "fb0281e6-07dd-4c81-adb5-7b5b34fd983f")
+		)
+		(pin "9"
+			(uuid "cc8add38-b9c2-49f2-bdcf-795e79bc320d")
 		)
 		(instances
 			(project "AK4490DAC"
@@ -4611,7 +5093,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TL072")
-		(at 177.8 152.4 0)
+		(at 254 233.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4619,15 +5101,15 @@
 		(dnp no)
 		(uuid "529041c5-0db4-4e62-ac25-ba753697b1ec")
 		(property "Reference" "IC5"
-			(at 177.8 146.05 0)
+			(at 254 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TL072P"
-			(at 177.8 148.59 0)
+		(property "Value" "MUSES8920"
+			(at 254 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4635,7 +5117,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 177.8 152.4 0)
+			(at 254 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4644,7 +5126,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 152.4 0)
+			(at 254 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4653,7 +5135,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 177.8 152.4 0)
+			(at 254 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4695,7 +5177,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TL072")
-		(at 215.9 152.4 0)
+		(at 292.1 233.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4703,15 +5185,15 @@
 		(dnp no)
 		(uuid "7cd548cd-2152-4cf3-86e0-30281ed6b9ec")
 		(property "Reference" "IC6"
-			(at 215.9 146.05 0)
+			(at 292.1 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TL072P"
-			(at 215.9 148.59 0)
+		(property "Value" "MUSES8920"
+			(at 292.1 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4719,7 +5201,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 215.9 152.4 0)
+			(at 292.1 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4728,7 +5210,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 152.4 0)
+			(at 292.1 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4737,7 +5219,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 215.9 152.4 0)
+			(at 292.1 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4779,7 +5261,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:BSS138")
-		(at 50.8 114.3 0)
+		(at 307.34 203.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4787,7 +5269,7 @@
 		(dnp no)
 		(uuid "872fd05b-310f-4cb8-8888-2a9c49840c9f")
 		(property "Reference" "Q1"
-			(at 50.8 107.95 0)
+			(at 307.34 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4795,7 +5277,7 @@
 			)
 		)
 		(property "Value" "BSS138"
-			(at 50.8 110.49 0)
+			(at 307.34 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4803,7 +5285,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 50.8 114.3 0)
+			(at 307.34 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4812,7 +5294,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 114.3 0)
+			(at 307.34 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4821,7 +5303,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 50.8 114.3 0)
+			(at 307.34 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4848,7 +5330,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TL072")
-		(at 254 152.4 0)
+		(at 330.2 233.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4856,15 +5338,15 @@
 		(dnp no)
 		(uuid "8e9b3f27-cab9-4525-ab54-28b473bdb3c8")
 		(property "Reference" "IC7"
-			(at 254 146.05 0)
+			(at 330.2 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TL072P"
-			(at 254 148.59 0)
+		(property "Value" "MUSES8920"
+			(at 330.2 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4872,7 +5354,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 254 152.4 0)
+			(at 330.2 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4881,7 +5363,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 152.4 0)
+			(at 330.2 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4890,7 +5372,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 254 152.4 0)
+			(at 330.2 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4932,7 +5414,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS06N")
-		(at 152.4 25.4 0)
+		(at 381 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4940,7 +5422,7 @@
 		(dnp no)
 		(uuid "96e4929f-bb08-4e1f-8dd6-dfd34e7d09ca")
 		(property "Reference" "U1"
-			(at 152.4 19.05 0)
+			(at 381 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4948,7 +5430,7 @@
 			)
 		)
 		(property "Value" "SN74LS06NSR"
-			(at 152.4 21.59 0)
+			(at 381 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4956,7 +5438,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 152.4 25.4 0)
+			(at 381 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4965,7 +5447,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 25.4 0)
+			(at 381 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4974,7 +5456,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 25.4 0)
+			(at 381 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5034,7 +5516,7 @@
 	)
 	(symbol
 		(lib_id "AK4490DAC:AK4490")
-		(at 220.98 76.2 0)
+		(at 330.2 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5042,7 +5524,7 @@
 		(dnp no)
 		(uuid "9b1cbc40-4690-44a9-9988-9c5952bf30ef")
 		(property "Reference" "U6"
-			(at 220.98 69.85 0)
+			(at 330.2 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5050,7 +5532,7 @@
 			)
 		)
 		(property "Value" "AK4490"
-			(at 220.98 72.39 0)
+			(at 330.2 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5058,7 +5540,7 @@
 			)
 		)
 		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
-			(at 220.98 76.2 0)
+			(at 330.2 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5067,7 +5549,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 76.2 0)
+			(at 330.2 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5076,7 +5558,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 220.98 76.2 0)
+			(at 330.2 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5238,7 +5720,7 @@
 	)
 	(symbol
 		(lib_id "Power_Supervisor:TCM809")
-		(at 381 63.5 0)
+		(at 269.24 203.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5246,7 +5728,7 @@
 		(dnp no)
 		(uuid "a1371746-6c49-47eb-bc88-0db8f4e7167d")
 		(property "Reference" "U4"
-			(at 381 57.15 0)
+			(at 269.24 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5254,7 +5736,7 @@
 			)
 		)
 		(property "Value" "TCM809RENB713"
-			(at 381 59.69 0)
+			(at 269.24 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5262,7 +5744,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 381 63.5 0)
+			(at 269.24 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5271,7 +5753,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 381 63.5 0)
+			(at 269.24 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5280,7 +5762,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 381 63.5 0)
+			(at 269.24 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5307,7 +5789,7 @@
 	)
 	(symbol
 		(lib_id "AK4490DAC:DA103C")
-		(at 101.6 50.8 0)
+		(at 152.4 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5315,7 +5797,7 @@
 		(dnp no)
 		(uuid "b366555a-12bb-4277-b51d-d47ca1ebfead")
 		(property "Reference" "T1"
-			(at 101.6 44.45 0)
+			(at 152.4 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5323,7 +5805,7 @@
 			)
 		)
 		(property "Value" "DA103C"
-			(at 101.6 46.99 0)
+			(at 152.4 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5331,7 +5813,7 @@
 			)
 		)
 		(property "Footprint" "AK4490DAC:DA103C_MUR"
-			(at 101.6 50.8 0)
+			(at 152.4 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5340,7 +5822,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 50.8 0)
+			(at 152.4 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5349,7 +5831,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 101.6 50.8 0)
+			(at 152.4 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5378,8 +5860,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:LM1117MP-3.3")
-		(at 101.6 139.7 0)
+		(lib_id "Regulator_Linear:ADP7142ARDZ-3.3")
+		(at 127 254 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5387,23 +5869,23 @@
 		(dnp no)
 		(uuid "b4ada09f-5af7-4fc5-af84-7bf271b9181e")
 		(property "Reference" "IC3"
-			(at 101.6 133.35 0)
+			(at 127 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "LM1117MP-3.3"
-			(at 101.6 135.89 0)
+		(property "Value" "ADP7142ARDZ-3.3"
+			(at 127 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 101.6 139.7 0)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 127 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5412,7 +5894,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 139.7 0)
+			(at 127 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5421,7 +5903,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 101.6 139.7 0)
+			(at 127 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5429,13 +5911,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "cf2146ed-ad4b-4871-a120-bb5c7dce8dec")
+			(uuid "4a6c3251-fb97-4436-b9a1-6c31ebae41a9")
 		)
 		(pin "2"
-			(uuid "920152ad-4ab0-445c-8b41-0b57fea8876f")
+			(uuid "5bc391e1-bc97-4b45-a43a-e7fc8f37b55c")
 		)
 		(pin "3"
-			(uuid "38957e00-21ca-471a-be6c-fcd1fcb66141")
+			(uuid "7de6a7ea-927d-4cef-8bbe-5134aa236a18")
+		)
+		(pin "4"
+			(uuid "b59a7cfd-4eae-4009-9afe-92e3d622363b")
+		)
+		(pin "5"
+			(uuid "1fb7c4e3-6fc7-4fda-973f-33f7e97945e6")
+		)
+		(pin "6"
+			(uuid "0013cefc-a85c-4807-a680-88e2e95bc1c4")
+		)
+		(pin "7"
+			(uuid "3049c48a-5761-4ebc-a029-5897a922d9e7")
+		)
+		(pin "8"
+			(uuid "cf11ba8f-cac0-40c9-8fea-454496d9142a")
+		)
+		(pin "9"
+			(uuid "998aab03-3a04-48ec-9729-4a226ffdc6fb")
 		)
 		(instances
 			(project "AK4490DAC"
@@ -5447,8 +5947,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:LM1117MP-3.3")
-		(at 25.4 139.7 0)
+		(lib_id "Regulator_Linear:ADP7142ARDZ-3.3")
+		(at 50.8 254 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5456,23 +5956,23 @@
 		(dnp no)
 		(uuid "e27266a5-7dd7-4b95-9b49-2a9f78c1e5b9")
 		(property "Reference" "IC1"
-			(at 25.4 133.35 0)
+			(at 50.8 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "LM1117MP-3.3"
-			(at 25.4 135.89 0)
+		(property "Value" "ADP7142ARDZ-3.3"
+			(at 50.8 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 25.4 139.7 0)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 50.8 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5481,7 +5981,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 139.7 0)
+			(at 50.8 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5490,7 +5990,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 25.4 139.7 0)
+			(at 50.8 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5498,13 +5998,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "a744ba28-b7b8-410f-b78c-cb9b27195655")
+			(uuid "984988e2-17be-4e0a-bc4a-d507d644d58b")
 		)
 		(pin "2"
-			(uuid "7ac5525f-3960-4344-be58-5cb8427fa907")
+			(uuid "0d2c3edd-f5f1-4dd1-b926-14a0dd128e53")
 		)
 		(pin "3"
-			(uuid "ee7ba3f5-04ed-4395-95f4-88ff82c56f91")
+			(uuid "f2bb3f0d-bc0c-4349-b468-f3f97032507a")
+		)
+		(pin "4"
+			(uuid "a3730da4-4c3c-4f43-8c65-5a77a586d165")
+		)
+		(pin "5"
+			(uuid "050b15f2-6958-4e73-8c35-c887601af9fe")
+		)
+		(pin "6"
+			(uuid "df609661-14b1-4f9c-975e-6caa22cfa700")
+		)
+		(pin "7"
+			(uuid "2a47079d-3cd5-4aed-9372-8bb724eaaeac")
+		)
+		(pin "8"
+			(uuid "0d264cc9-ebb6-485b-9fd2-76bfb3de552a")
+		)
+		(pin "9"
+			(uuid "dbd895d8-71e5-433f-9731-03fb9c808b9e")
 		)
 		(instances
 			(project "AK4490DAC"
@@ -5516,8 +6034,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:LM1117MP-3.3")
-		(at 63.5 139.7 0)
+		(lib_id "Regulator_Linear:ADP7142ARDZ-3.3")
+		(at 88.9 254 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5525,23 +6043,23 @@
 		(dnp no)
 		(uuid "f2338e3f-ced2-488a-b3bd-cc2647b95433")
 		(property "Reference" "IC2"
-			(at 63.5 133.35 0)
+			(at 88.9 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "LM1117MP-3.3"
-			(at 63.5 135.89 0)
+		(property "Value" "ADP7142ARDZ-3.3"
+			(at 88.9 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 63.5 139.7 0)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 88.9 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5550,7 +6068,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 139.7 0)
+			(at 88.9 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5559,7 +6077,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 139.7 0)
+			(at 88.9 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5567,18 +6085,354 @@
 			)
 		)
 		(pin "1"
-			(uuid "404e9e26-858d-4b7c-98d0-5085be2917dc")
+			(uuid "7955ac63-2323-4459-9f2a-cf558afa08bd")
 		)
 		(pin "2"
-			(uuid "9bbcc985-c9c3-4597-8d0b-e5cd4bf924c4")
+			(uuid "ca7d94ee-7e29-458d-8e6d-8f442ba08443")
 		)
 		(pin "3"
-			(uuid "77549516-aed3-465d-8151-2b18dfe67056")
+			(uuid "3f8c9bf5-b2dd-4d9a-9638-4341235f384c")
+		)
+		(pin "4"
+			(uuid "1df3927f-4c51-4417-b283-9c5e42215bda")
+		)
+		(pin "5"
+			(uuid "7c88b950-0830-442d-8ed9-c655f2ea2aa8")
+		)
+		(pin "6"
+			(uuid "29195ace-dd0d-4a46-b319-c8b84dd3671a")
+		)
+		(pin "7"
+			(uuid "778259c2-fd73-409c-8dc9-b14315e1b4fe")
+		)
+		(pin "8"
+			(uuid "d60e2c7a-8f24-4ad4-a0b0-8d941e5963db")
+		)
+		(pin "9"
+			(uuid "918b7e4c-3518-42b9-8a67-82d2b0004176")
 		)
 		(instances
 			(project "AK4490DAC"
 				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
 					(reference "IC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+		(symbol
+		(lib_id "AK4490DAC:SA9227")
+		(at 50.8 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de1c7078-e718-4c7f-b689-8bd5e2ecc6f4")
+		(property "Reference" "U2"
+			(at 50.8 158.75 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "SA9227"
+			(at 50.8 161.29 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_QFP:LQFP-64_7x7mm_P0.4mm"
+			(at 50.8 165.1 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" "https://hifi-audio.ru/wp-content/uploads/sa9227.pdf"
+			(at 50.8 165.1 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "7e303811-82e5-4453-b507-34aec3bda37b")
+		)
+		(pin "2"
+			(uuid "91529515-de70-45c4-a0ec-48c427d55766")
+		)
+		(pin "3"
+			(uuid "310d1002-98db-4e11-a7ff-29cad306bae8")
+		)
+		(pin "4"
+			(uuid "842b8179-5460-422c-9ce2-d6d1f72f27cc")
+		)
+		(pin "5"
+			(uuid "c8e74c9c-2d8b-4869-81b1-c6cca099ed86")
+		)
+		(pin "6"
+			(uuid "f214c59a-7ab6-4a9f-95e8-999b2d0671fc")
+		)
+		(pin "7"
+			(uuid "bd6c7f9c-a622-4e16-a58e-f1a180e06804")
+		)
+		(pin "8"
+			(uuid "290d19a9-4adc-4a18-8244-c6bd78f2908e")
+		)
+		(pin "9"
+			(uuid "a5dfb4b6-374b-48ae-9684-605a7ad23ca9")
+		)
+		(pin "10"
+			(uuid "f1367929-7ef5-49bb-b75a-f37c3d2b43a5")
+		)
+		(pin "11"
+			(uuid "933190d2-78c3-452e-811b-65a26a01b250")
+		)
+		(pin "12"
+			(uuid "ba88ec87-8625-409d-b31d-3d27a549793a")
+		)
+		(pin "13"
+			(uuid "f7665d7d-c757-46d1-8174-bd8ffa1fd759")
+		)
+		(pin "14"
+			(uuid "dea67358-03e5-4fd7-abb4-85d388e8da26")
+		)
+		(pin "15"
+			(uuid "a0d80163-6650-4107-b557-ed25690399dc")
+		)
+		(pin "16"
+			(uuid "2c3f0939-718b-4383-8b35-75b621ea08d5")
+		)
+		(pin "17"
+			(uuid "6891dc57-14f6-4b11-a9f3-64e844c7a58d")
+		)
+		(pin "18"
+			(uuid "0889e6a6-b741-4611-9f2e-0022baeb031a")
+		)
+		(pin "19"
+			(uuid "6b0508bf-2647-4841-ab17-16f72db0b123")
+		)
+		(pin "20"
+			(uuid "3db13866-9c6d-47f1-b646-144b24a4b680")
+		)
+		(pin "21"
+			(uuid "cb197c70-4db8-48a0-ba13-0d76f23e650c")
+		)
+		(pin "22"
+			(uuid "70aa9a90-affa-47f6-9fc0-91cca1a61e9d")
+		)
+		(pin "23"
+			(uuid "599a9d02-a13f-460e-88be-7b58b4337aa5")
+		)
+		(pin "24"
+			(uuid "4efa1fb3-d62a-41b4-8cc3-985afd889505")
+		)
+		(pin "25"
+			(uuid "913de0aa-7887-4ba8-a1fb-32f6d0a9d73a")
+		)
+		(pin "26"
+			(uuid "a021cec7-d274-4d7b-baf6-1c46ecb57749")
+		)
+		(pin "27"
+			(uuid "5690b902-8beb-459e-80ce-dc132bd860e4")
+		)
+		(pin "28"
+			(uuid "8db7a119-5291-4d94-a2be-43f4cb8773a6")
+		)
+		(pin "29"
+			(uuid "a675e20a-cdaf-4e82-8604-00deba501066")
+		)
+		(pin "30"
+			(uuid "45532508-ce6d-44fb-b916-85cfe2710ef1")
+		)
+		(pin "31"
+			(uuid "11cce346-2bb4-43e1-9504-55860217489a")
+		)
+		(pin "32"
+			(uuid "c7e6459d-6ac9-476d-b787-13af75915412")
+		)
+		(pin "33"
+			(uuid "2219c56a-d9ca-4b60-8e38-0b43b9347206")
+		)
+		(pin "34"
+			(uuid "88c4f093-531b-4353-ac68-501107b50d6a")
+		)
+		(pin "35"
+			(uuid "5901a7f6-9dc0-4732-bd26-63eb4d075e91")
+		)
+		(pin "36"
+			(uuid "b256b2f0-3430-4461-bd9d-cf76477e7d2c")
+		)
+		(pin "37"
+			(uuid "c34814fe-9d1f-4f34-adc2-52372b547f8d")
+		)
+		(pin "38"
+			(uuid "3a9c7283-1f61-4369-aa70-281f4a53e30e")
+		)
+		(pin "39"
+			(uuid "0081637d-6fef-45f4-bc12-1e5ab59c50bc")
+		)
+		(pin "40"
+			(uuid "80ca0f00-39c0-4a73-99ce-e579a6adc9a8")
+		)
+		(pin "41"
+			(uuid "f117896c-bcc1-49bb-b7d8-2d1263d3cbf2")
+		)
+		(pin "42"
+			(uuid "73b4fbc5-6620-465d-b875-6fb5978f4188")
+		)
+		(pin "43"
+			(uuid "e9972585-84ac-43b5-88e3-572fa911398a")
+		)
+		(pin "44"
+			(uuid "e54d2fce-b929-44dc-b15a-e44f101824b2")
+		)
+		(pin "45"
+			(uuid "cc1e97c9-29f1-47c0-9a35-87ef634b5a94")
+		)
+		(pin "46"
+			(uuid "f32d8de8-aec8-4ab6-90d2-6c11528bbdc1")
+		)
+		(pin "47"
+			(uuid "9cdb56f1-bb91-4d4b-97ef-1b8843cff4f4")
+		)
+		(pin "48"
+			(uuid "67cd6918-8dbe-45c4-92e9-49f45abb65db")
+		)
+		(pin "49"
+			(uuid "cd88c347-dfec-47b2-bc6f-3a3c2fff78c9")
+		)
+		(pin "50"
+			(uuid "6784718d-efe0-472c-b780-3e381058d91f")
+		)
+		(pin "51"
+			(uuid "5cefb97a-9cdc-4992-8740-a327989cc595")
+		)
+		(pin "52"
+			(uuid "0740ff33-37ae-4940-84d7-7fc1308ea1c3")
+		)
+		(pin "53"
+			(uuid "071afc0d-e37e-449f-9a42-f57ac90156ca")
+		)
+		(pin "54"
+			(uuid "7da864e4-0978-4110-b050-5cec9246064e")
+		)
+		(pin "55"
+			(uuid "f45b9955-54e6-4bc9-aa1d-69eb7ad99aba")
+		)
+		(pin "56"
+			(uuid "593e43f3-92f6-4a3d-81e9-619683bc8a5a")
+		)
+		(pin "57"
+			(uuid "eb71c77f-3ba3-4bfb-b8c5-8eebc6f5b411")
+		)
+		(pin "58"
+			(uuid "8f21f4aa-08e5-4e5b-9d62-2bd94393eaba")
+		)
+		(pin "59"
+			(uuid "621c8a85-3728-4226-b6c8-91fd8629eec0")
+		)
+		(pin "60"
+			(uuid "40e8741e-5c21-4277-823d-e767dfdbdc51")
+		)
+		(pin "61"
+			(uuid "a5a34a7d-0764-456b-be3e-23f05b8145fe")
+		)
+		(pin "62"
+			(uuid "fa3b0db1-8561-45d3-b95f-aa60ee4ab97f")
+		)
+		(pin "63"
+			(uuid "9c2de06a-6f1e-4a7d-b123-cdf0a12f9089")
+		)
+		(pin "64"
+			(uuid "378c1480-de35-4b1e-8008-508cc7d4f395")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Memory_EEPROM:24LC02")
+		(at 203.2 254 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ce90e4a-5251-4b94-b989-ff8894312da6")
+		(property "Reference" "U8"
+			(at 203.2 247.65 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "24LC02"
+			(at 203.2 250.19 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 203.2 254 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 203.2 254 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "5c41361c-a46e-4271-a8ce-bedd4e205e3b")
+		)
+		(pin "2"
+			(uuid "30f6615d-a8cd-4636-a1d2-aae97856c67c")
+		)
+		(pin "3"
+			(uuid "6803c17a-921e-49fd-826d-cbb069103010")
+		)
+		(pin "4"
+			(uuid "12a97df7-7327-4f04-9b55-fb083d88a6f2")
+		)
+		(pin "5"
+			(uuid "aac50b47-c725-4ab3-8625-9d2c010b17a6")
+		)
+		(pin "6"
+			(uuid "180a62ce-bd78-4d02-8342-ed9c54f2364e")
+		)
+		(pin "7"
+			(uuid "eca7ff1e-2983-4b29-bf1c-2b9c7cfda2f5")
+		)
+		(pin "8"
+			(uuid "052ec788-d1a6-46b5-8868-def15f1d49de")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS157")
+		(at 152.4 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d15383f1-f828-4409-b4f3-fe7f41e12bed")
+		(property "Reference" "U7"
+			(at 152.4 82.55 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "74LS157"
+			(at 152.4 85.09 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+			(at 152.4 88.9 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 152.4 88.9 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/"
+					(reference "U7")
 					(unit 1)
 				)
 			)
