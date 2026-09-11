@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "AK4490DAC")(type "KiCad")(uri "${KIPRJMOD}/AK4490DAC.pretty")(options "")(descr "DA103C transformer footprint recovered from verified Eagle library"))
+)

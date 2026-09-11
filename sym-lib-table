@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "AK4490DAC")(type "KiCad")(uri "${KIPRJMOD}/AK4490DAC.kicad_sym")(options "")(descr "AK4490/AK4118 symbols recovered from verified Eagle library pinout"))
+)
