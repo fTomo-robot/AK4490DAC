@@ -4260,7 +4260,7 @@
 				)
 			)
 		)
-		(property "Value" "TCM809RENB713"
+		(property "Value" "TCM809TENB713"
 			(at 231.14 199.39 0)
 			(effects
 				(font
@@ -4957,7 +4957,7 @@
 				)
 			)
 		)
-		(property "Value" "TCM809RENB713"
+		(property "Value" "TCM809TENB713"
 			(at 269.24 199.39 0)
 			(effects
 				(font
@@ -8244,6 +8244,182 @@
 			(project "AK4490DAC"
 				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 218.44 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cbd58080-2d86-46b5-9bf9-562c4ed5c2b7")
+		(property "Reference" "R25"
+			(at 218.44 212.09 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "100k"
+			(at 218.44 214.63 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 218.44 218.44 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 218.44 218.44 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "TCM809T (U3) RESET pull-down, datasheet Sec.4.2: keeps ~RESET valid down to VDD=0V"
+			(at 218.44 218.44 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "73cbe22c-6517-4844-a4e8-79184bc38be3")
+		)
+		(pin "2"
+			(uuid "0901f19e-c5df-4e57-849c-6cb5caefa07e")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 218.44 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7efdaa60-bc1a-42db-a614-174441f3eeb1")
+		(property "Reference" "C28"
+			(at 218.44 189.23 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "0.1uF"
+			(at 218.44 191.77 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 218.44 195.58 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 218.44 195.58 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "TCM809T (U3) VDD decoupling, datasheet Sec.4.1 transient immunity"
+			(at 218.44 195.58 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "a76d6f3c-8eb4-4908-87a1-c1d43544a273")
+		)
+		(pin "2"
+			(uuid "7ee07145-99ae-4ba3-afed-f9d06c431230")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "C28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 281.94 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ffc56c2-9105-48b4-8f99-0def1a3d15e0")
+		(property "Reference" "R26"
+			(at 281.94 212.09 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "100k"
+			(at 281.94 214.63 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 281.94 218.44 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 281.94 218.44 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "TCM809T (U4) RESET pull-down, datasheet Sec.4.2: keeps ~RESET valid down to VDD=0V"
+			(at 281.94 218.44 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "f059a4f5-d8c1-4004-af97-5849348cf262")
+		)
+		(pin "2"
+			(uuid "983092a0-1b00-4631-a772-546d33143202")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 281.94 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b8d79281-ca79-41e5-8496-d24a71cf42a0")
+		(property "Reference" "C29"
+			(at 281.94 189.23 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "0.1uF"
+			(at 281.94 191.77 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 281.94 195.58 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 281.94 195.58 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "TCM809T (U4) VDD decoupling, datasheet Sec.4.1 transient immunity"
+			(at 281.94 195.58 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "0e34018e-c1f5-4074-8263-dfeb02c0fcf8")
+		)
+		(pin "2"
+			(uuid "63e376eb-27e1-4988-8fb9-a0675ad8075c")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "C29")
 					(unit 1)
 				)
 			)
