@@ -27,7 +27,7 @@
 	      (pin input line (at -15.24 0.00 0) (length 2.54)
 	        (name "IPS0" (effects (font (size 1.27 1.27))))
 	        (number "1" (effects (font (size 1.27 1.27)))))
-	      (pin no_connect line (at -15.24 -2.54 0) (length 2.54)
+	      (pin passive line (at -15.24 -2.54 0) (length 2.54)
 	        (name "NC2" (effects (font (size 1.27 1.27))))
 	        (number "2" (effects (font (size 1.27 1.27)))))
 	      (pin input line (at -15.24 -5.08 0) (length 2.54)
@@ -150,7 +150,7 @@
 	      (pin input line (at 15.24 -15.24 180) (length 2.54)
 	        (name "RX0" (effects (font (size 1.27 1.27))))
 	        (number "42" (effects (font (size 1.27 1.27)))))
-	      (pin no_connect line (at 15.24 -12.70 180) (length 2.54)
+	      (pin passive line (at 15.24 -12.70 180) (length 2.54)
 	        (name "NC43" (effects (font (size 1.27 1.27))))
 	        (number "43" (effects (font (size 1.27 1.27)))))
 	      (pin input line (at 15.24 -10.16 180) (length 2.54)
@@ -8382,6 +8382,346 @@
 			(justify left)
 		)
 		(uuid "c181148d-1f03-4020-bf53-63082d5eb31b")
+	)
+	(wire
+		(pts
+			(xy 215.9 104.14) (xy 213.36 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20b67fe9-e5b6-420f-ae5d-5f5b3ec5b511")
+	)
+	(label "GND"
+		(at 213.36 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3a36444e-fca0-463d-9e9b-d0faee70dfde")
+	)
+	(wire
+		(pts
+			(xy 215.9 106.68) (xy 213.36 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18c753b5-d607-4ce1-952c-db65698b3a2c")
+	)
+	(label "+3V3_118"
+		(at 213.36 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1b2de8fe-1d7e-42ea-9182-a76002c46864")
+	)
+	(wire
+		(pts
+			(xy 215.9 109.22) (xy 213.36 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f853416a-013a-4122-85b9-0b7c7df37f55")
+	)
+	(label "GND"
+		(at 213.36 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e180ed31-5432-44ae-8208-659c3d622438")
+	)
+	(wire
+		(pts
+			(xy 215.9 111.76) (xy 213.36 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa78b893-c15d-43b4-a05e-9a11be9748df")
+	)
+	(label "GND"
+		(at 213.36 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "06ef4d0f-262e-4908-85af-25d79260eb59")
+	)
+	(wire
+		(pts
+			(xy 215.9 116.84) (xy 213.36 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfd09d9c-6b31-4674-9387-a4cd81bcfe47")
+	)
+	(label "+3V3_118"
+		(at 213.36 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7cbb05f8-f4a4-48ec-9cdf-73c9fcb0cac7")
+	)
+	(wire
+		(pts
+			(xy 215.9 119.38) (xy 213.36 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a461ee02-3be2-4037-a216-dc1f1a84f54e")
+	)
+	(label "GND"
+		(at 213.36 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bed1726a-4b53-4080-a9e6-5b3a98b1e831")
+	)
+	(wire
+		(pts
+			(xy 215.9 121.92) (xy 213.36 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d174a53-db7d-4d7b-b67e-35fd98cef81a")
+	)
+	(label "+3V3_118"
+		(at 213.36 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b0480946-1dd0-4f4d-967f-5b3d0c5a2460")
+	)
+	(wire
+		(pts
+			(xy 215.9 124.46) (xy 213.36 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad7ca56c-353f-4fda-9786-c1f47614a2bd")
+	)
+	(label "GND"
+		(at 213.36 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4fed36c5-f420-41a0-a5a4-256d6f4d54b0")
+	)
+	(wire
+		(pts
+			(xy 215.9 127.0) (xy 213.36 127.0)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce1b3ba4-ccb3-4c8f-8edc-4df51ce15093")
+	)
+	(label "GND"
+		(at 213.36 127.0 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7eb9745d-08d0-4a56-b6cb-2a6f0c0188b7")
+	)
+	(wire
+		(pts
+			(xy 215.9 129.54) (xy 213.36 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b485766-e314-49d8-9ac4-26ef52a96408")
+	)
+	(label "GND"
+		(at 213.36 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "77b64a0a-9b3e-4728-8d31-12c0771dbd6b")
+	)
+	(wire
+		(pts
+			(xy 215.9 134.62) (xy 213.36 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de92ebf4-44f2-4643-a178-f1dbc0dc3942")
+	)
+	(label "GND"
+		(at 213.36 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f9c6c0b0-e2ff-41a5-93fb-1d097a97441f")
+	)
+	(wire
+		(pts
+			(xy 246.38 142.24) (xy 248.92 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "266f2763-76ed-4f63-b703-cf51b337951b")
+	)
+	(label "GND"
+		(at 248.92 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8fce0d12-3bbb-4471-aaaf-7cb15ac14c1f")
+	)
+	(wire
+		(pts
+			(xy 246.38 139.7) (xy 248.92 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e8176d0-0673-46e5-8715-4778122554d3")
+	)
+	(label "GND"
+		(at 248.92 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4afdf640-77a7-4ee2-8d00-fc533346e516")
+	)
+	(wire
+		(pts
+			(xy 246.38 137.16) (xy 248.92 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d41310c5-42ea-419c-a771-25501235950b")
+	)
+	(label "GND"
+		(at 248.92 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "368b5329-544d-4c40-91ca-615805089917")
+	)
+	(wire
+		(pts
+			(xy 246.38 134.62) (xy 248.92 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55b5d809-e199-47af-8e37-82c6ba8601e0")
+	)
+	(label "GND"
+		(at 248.92 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4711328f-a8c1-4be7-9282-112f9ec8863b")
+	)
+	(wire
+		(pts
+			(xy 246.38 114.3) (xy 248.92 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fdc8193-0287-436d-9fa1-91c3a2a6d415")
+	)
+	(label "GND"
+		(at 248.92 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7c0d96c6-bc6a-4286-ae34-eda3d3ae107e")
+	)
+	(wire
+		(pts
+			(xy 246.38 109.22) (xy 248.92 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "326b9d45-4ee7-4c91-84fc-09ff379d6f7c")
+	)
+	(label "GND"
+		(at 248.92 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "da14acaf-95a6-41d0-bb93-5ddf3956f534")
 	)
 	(sheet_instances
 		(path "/"
