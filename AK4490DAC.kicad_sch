@@ -4125,75 +4125,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Amplifier_Operational:TL072")
-		(at 292.1 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7cd548cd-2152-4cf3-86e0-30281ed6b9ec")
-		(property "Reference" "IC6"
-			(at 292.1 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MUSES8920"
-			(at 292.1 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 292.1 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 292.1 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 292.1 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "81003a9b-07db-4710-8b33-1217623a5d1e")
-		)
-		(pin "2"
-			(uuid "68a2537e-61e3-4b9c-84d0-4c68218c2a20")
-		)
-		(pin "3"
-			(uuid "de42fd6a-d9bd-4c3a-95a3-2748f827e908")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "IC6")
-					(unit 1)
-				)
-			)
-		)
-	)
+
 	
 
 	(symbol
@@ -8546,97 +8478,8 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Amplifier_Operational:TL072")
-		(at 292.1 271.78000000000003 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ce18c9fe-5dc3-44c7-be0c-ff21695d85c5")
-		(property "Reference" "IC6"
-			(at 292.1 265.43 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "MUSES8920"
-			(at 292.1 267.97 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 292.1 271.78000000000003 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 292.1 271.78000000000003 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" ""
-			(at 292.1 271.78000000000003 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "5"
-			(uuid "e9fe62d7-9a25-4afc-8f62-61adc7e95dad")
-		)
-		(pin "6"
-			(uuid "d8a67480-e988-4a3f-b662-23da812b7ea1")
-		)
-		(pin "7"
-			(uuid "b7bd05ac-e96b-49eb-b349-42ea8a9989c4")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "IC6")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:TL072")
-		(at 292.1 297.18 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a3935e91-55ad-4848-ab92-51d181d6da4a")
-		(property "Reference" "IC6"
-			(at 292.1 290.83 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "MUSES8920"
-			(at 292.1 293.37 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 292.1 297.18 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 292.1 297.18 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" ""
-			(at 292.1 297.18 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "8"
-			(uuid "a11ddace-f606-4e35-ba4c-8bf0f83f7b41")
-		)
-		(pin "4"
-			(uuid "51a843d8-a493-4870-a86e-b853ce183c2a")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "IC6")
-					(unit 3)
-				)
-			)
-		)
-	)
+
+
 
 
 	(symbol
@@ -8664,7 +8507,7 @@
 			(at 389.89 260.35 0)
 			(effects (font (size 1.27 1.27)) hide)
 		)
-		(property "Description" "Isolated +-15V supply for output op-amp stage (IC5/IC6), fed from main DC input, reused from NEWDAC"
+		(property "Description" "Isolated +-15V supply for output op-amp stage (IC5, unit1=L unit2=R), fed from main DC input, reused from NEWDAC"
 			(at 389.89 260.35 0)
 			(effects (font (size 1.27 1.27)) hide)
 		)
@@ -8857,46 +8700,6 @@
 			(justify left)
 		)
 		(uuid "9e9c0eec-adae-492b-8883-884061b636e7")
-	)
-	(wire
-		(pts
-			(xy 289.56 289.56) (xy 289.56 287.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7c28c89-cb9e-4533-820e-c5ee3d78c774")
-	)
-	(label "+15V"
-		(at 289.56 287.02 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "701a181c-d868-45bd-a659-46fa878ab351")
-	)
-	(wire
-		(pts
-			(xy 289.56 304.8) (xy 289.56 307.34000000000003)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6143bb3-3e91-4720-bc7e-f95704dbe289")
-	)
-	(label "-15V"
-		(at 289.56 307.34000000000003 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "659701c7-f88a-44ed-8ae2-6a0e4b82dc2c")
 	)
 	(wire
 		(pts
@@ -10930,66 +10733,6 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 233.68) (xy 300.99 233.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b11858a2-eacf-46dc-bb03-3d2e865d91d7")
-	)
-	(label "R_OUT"
-		(at 300.99 233.68 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c6fa9f1e-8020-42c5-b772-643542d52d94")
-	)
-	(wire
-		(pts
-			(xy 284.48 236.22) (xy 283.21000000000004 236.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12594597-5b16-44fa-9214-7d8077f28b30")
-	)
-	(label "R_INV"
-		(at 283.21000000000004 236.22 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fc901d8f-dd5b-47d2-8656-91fc403963f1")
-	)
-	(wire
-		(pts
-			(xy 284.48 231.14) (xy 283.21000000000004 231.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc565aff-af99-480f-8d4a-b2cd23c3571e")
-	)
-	(label "R_NONINV"
-		(at 283.21000000000004 231.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4a90aea5-eeb7-483a-9147-d892068bfa57")
-	)
-	(wire
-		(pts
 			(xy 246.38 269.24) (xy 245.11 269.24)
 		)
 		(stroke
@@ -10998,19 +10741,19 @@
 		)
 		(uuid "7595fdd2-ff7f-4b5a-a80e-a5736eef64d5")
 	)
-	(label "GND"
-		(at 245.11 269.24 0)
+	(label "R_NONINV"
+		(at 245.11 269.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "bb497f01-629d-45f9-b3ad-5e7aa8443848")
 	)
 	(wire
 		(pts
-			(xy 246.38 274.32) (xy 261.62 274.32)
+			(xy 246.38 274.32) (xy 245.11 274.32)
 		)
 		(stroke
 			(width 0)
@@ -11018,9 +10761,19 @@
 		)
 		(uuid "59106b98-cba7-4ab9-bc25-411dc68c8006")
 	)
+	(label "R_INV"
+		(at 245.11 274.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6d2e4f1a-9b3c-4d5e-8f6a-1b2c3d4e5f6a")
+	)
 	(wire
 		(pts
-			(xy 261.62 274.32) (xy 261.62 271.78)
+			(xy 261.62 271.78) (xy 262.89 271.78)
 		)
 		(stroke
 			(width 0)
@@ -11028,45 +10781,15 @@
 		)
 		(uuid "f2a1e6d4-1c3b-4e5a-9f0d-7b6c8a9d0e1f")
 	)
-	(wire
-		(pts
-			(xy 284.48 269.24) (xy 283.21 269.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9112c99c-02b4-44ee-b727-6cbc66d5967c")
-	)
-	(label "GND"
-		(at 283.21 269.24 0)
+	(label "R_OUT"
+		(at 262.89 271.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "883c6cfb-ec69-458c-b2d9-4ac29a455629")
-	)
-	(wire
-		(pts
-			(xy 284.48 274.32) (xy 299.72 274.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d88513b-3133-4f2d-b23b-5741d273d4c5")
-	)
-	(wire
-		(pts
-			(xy 299.72 274.32) (xy 299.72 271.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4b5c6d7-2e3f-4a5b-8c9d-0e1f2a3b4c5d")
+		(uuid "7c8d9e0f-2a3b-4c5d-9e0f-1a2b3c4d5e6f")
 	)
 	(sheet_instances
 		(path "/"
