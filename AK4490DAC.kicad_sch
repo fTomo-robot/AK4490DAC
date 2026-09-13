@@ -9135,6 +9135,974 @@
 		)
 		(uuid "a12fb524-4c1e-4a70-8d7f-ac7506b77215")
 	)
+	(symbol
+		(lib_id "Device:R")
+		(at 355.6 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8fee1d22-49e4-4145-a8fa-3aedf2caabee")
+		(property "Reference" "R11"
+			(at 355.6 13.97 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1.5k"
+			(at 355.6 16.51 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 355.6 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 355.6 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 L ch: AOUTLN input R (Ra1)"
+			(at 355.6 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "4290c107-2134-4be4-a10e-48c8dc09ed66")
+		)
+		(pin "2"
+			(uuid "0b173cc1-6438-4f43-8a28-73cf539cf302")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 355.6 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a7467ac1-154c-4fec-99d5-2a1103b490ea")
+		(property "Reference" "R12"
+			(at 355.6 25.4 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1.5k"
+			(at 355.6 27.94 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 355.6 31.75 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 355.6 31.75 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 L ch: AOUTLP input R (Ra2)"
+			(at 355.6 31.75 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "f8489649-4277-4eff-8aae-19c816ad90fd")
+		)
+		(pin "2"
+			(uuid "a3115287-1cde-46f7-ba09-4ce38f5c72b2")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 355.6 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "36f6df8b-a00e-4e02-9d9f-a2b769c80e65")
+		(property "Reference" "C22"
+			(at 355.6 38.1 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "2.2nF"
+			(at 355.6 40.64 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 355.6 44.45 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 355.6 44.45 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 L ch: differential-mode pole cap"
+			(at 355.6 44.45 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "ec11bfac-4632-4dd9-b59c-8fb7a54f5253")
+		)
+		(pin "2"
+			(uuid "6df02028-6363-4ae8-8fb2-f9eae9531675")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 375.92 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c586b70-abb0-4ad8-988f-4f06e1bd6eed")
+		(property "Reference" "R13"
+			(at 375.92 13.97 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "390"
+			(at 375.92 16.51 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 375.92 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 375.92 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 L ch: inv-input series R (Rb1)"
+			(at 375.92 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "d8b408e8-9e4a-4ab7-9f3a-011d3b0c8232")
+		)
+		(pin "2"
+			(uuid "44073bbd-0fb1-464c-ad39-57e231ce1192")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 375.92 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c1a1b84a-74ab-4919-8dc7-966e71a3ddba")
+		(property "Reference" "R14"
+			(at 375.92 25.4 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "390"
+			(at 375.92 27.94 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 375.92 31.75 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 375.92 31.75 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 L ch: non-inv-input series R (Rb2)"
+			(at 375.92 31.75 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "62d534f9-6bc9-4250-b189-286a1950ec05")
+		)
+		(pin "2"
+			(uuid "9c0ea6c8-f69f-4e68-9f30-17e5d7bc21cc")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 397.51 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "849e407d-d04f-4be8-a013-167179c73329")
+		(property "Reference" "R15"
+			(at 397.51 13.97 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1.5k"
+			(at 397.51 16.51 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 397.51 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 397.51 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 L ch: feedback R (Rf)"
+			(at 397.51 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "eacbed1f-6657-4d07-923e-7cf182619f5c")
+		)
+		(pin "2"
+			(uuid "b067dd04-9148-44bf-8b7a-52d0c287fc12")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 397.51 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a3148baf-6ce2-4550-bb8c-2c4ea9359334")
+		(property "Reference" "C23"
+			(at 397.51 25.4 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1nF"
+			(at 397.51 27.94 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 397.51 31.75 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 397.51 31.75 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 L ch: feedback C (Cf), parallel with Rf"
+			(at 397.51 31.75 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "73c0d690-91ba-4ceb-80c2-00129ec64020")
+		)
+		(pin "2"
+			(uuid "552658a0-751e-4672-a60c-a427363e57b5")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 397.51 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ae47d84-ad6d-460c-ad46-46652bd3afb5")
+		(property "Reference" "R16"
+			(at 397.51 38.1 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1.5k"
+			(at 397.51 40.64 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 397.51 44.45 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 397.51 44.45 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 L ch: non-inv reference R (Rg), matches Rf"
+			(at 397.51 44.45 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "37c03bb6-fddb-448a-8493-de18f7e68226")
+		)
+		(pin "2"
+			(uuid "62544d41-4404-496c-815f-03e4b92174c7")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 397.51 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b42dc7bd-fff6-4362-9aff-ab87f423b201")
+		(property "Reference" "C24"
+			(at 397.51 50.8 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1nF"
+			(at 397.51 53.34 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 397.51 57.15 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 397.51 57.15 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 L ch: non-inv reference C (Cg), matches Cf"
+			(at 397.51 57.15 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "03b815fe-c106-4364-900e-de62b61c41e8")
+		)
+		(pin "2"
+			(uuid "463b3e12-e12d-4e44-bd52-96c91cb1c729")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 417.83 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "98a5e684-66f0-41aa-b77a-140e25b39d79")
+		(property "Reference" "C25"
+			(at 417.83 13.97 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1uF"
+			(at 417.83 16.51 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 417.83 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 417.83 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "L ch output DC-block coupling cap"
+			(at 417.83 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "57a15a79-a52d-4a1f-95b9-afb4f3db084e")
+		)
+		(pin "2"
+			(uuid "fc42461e-a4b4-4d8e-9d7b-a98452a4c181")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 439.42 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44e717a7-4b62-43fd-ad2d-76b50f4f9fc7")
+		(property "Reference" "J4"
+			(at 439.42 13.97 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "LINE_OUT_L"
+			(at 439.42 16.51 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 439.42 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 439.42 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Line output L (signal, GND)"
+			(at 439.42 20.32 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "2cc69cd2-1f09-4f3a-9b42-e125239c94fe")
+		)
+		(pin "2"
+			(uuid "b9cc6e81-eb88-4a1a-9019-47ad04bfe7f9")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 355.6 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e236ba41-54c7-4ce5-93da-3c88f5b8fb28")
+		(property "Reference" "R17"
+			(at 355.6 69.85 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1.5k"
+			(at 355.6 72.39 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 355.6 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 355.6 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 R ch: AOUTRN input R (Ra1)"
+			(at 355.6 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "0b39a25b-c481-4831-b33b-b39d5311aef6")
+		)
+		(pin "2"
+			(uuid "ce50817a-dca8-482a-86ee-9631c8486be4")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 355.6 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "398245cb-b3c2-4ef8-81be-4fdccd948602")
+		(property "Reference" "R18"
+			(at 355.6 81.28 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1.5k"
+			(at 355.6 83.82 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 355.6 87.63 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 355.6 87.63 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 R ch: AOUTRP input R (Ra2)"
+			(at 355.6 87.63 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "f5dadaa3-34b5-49e2-8855-5f681384a3a3")
+		)
+		(pin "2"
+			(uuid "d5abdcd4-a2cb-4edd-ac53-f1919cf5be72")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 355.6 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6bb7a385-4220-4d74-81a9-137b0629a681")
+		(property "Reference" "C26"
+			(at 355.6 93.98 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "2.2nF"
+			(at 355.6 96.52 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 355.6 100.33 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 355.6 100.33 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 R ch: differential-mode pole cap"
+			(at 355.6 100.33 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "9878d54e-9bb0-4acc-a80c-00e7669dbc14")
+		)
+		(pin "2"
+			(uuid "4b088382-9bb4-446a-a85a-54feb99857ce")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 375.92 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dbb2683d-2427-4431-9c84-dfa61844663c")
+		(property "Reference" "R19"
+			(at 375.92 69.85 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "390"
+			(at 375.92 72.39 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 375.92 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 375.92 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 R ch: inv-input series R (Rb1)"
+			(at 375.92 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "1c57ecae-a047-47db-8c76-e4b3978fb821")
+		)
+		(pin "2"
+			(uuid "901b51bc-8b28-4329-8193-67bf2b5ebb80")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 375.92 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0a935e85-dce6-4dc0-9298-cd37b68822cb")
+		(property "Reference" "R20"
+			(at 375.92 81.28 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "390"
+			(at 375.92 83.82 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 375.92 87.63 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 375.92 87.63 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 R ch: non-inv-input series R (Rb2)"
+			(at 375.92 87.63 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "07919c9d-bdd1-4802-adca-e64086141d7f")
+		)
+		(pin "2"
+			(uuid "71a49da5-7cb8-4204-a034-65f775352782")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 397.51 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ac04a4da-012a-4cd7-a52d-2792f04c566a")
+		(property "Reference" "R21"
+			(at 397.51 69.85 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1.5k"
+			(at 397.51 72.39 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 397.51 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 397.51 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 R ch: feedback R (Rf)"
+			(at 397.51 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "cca01503-d4af-47d2-b924-ad538fa77d90")
+		)
+		(pin "2"
+			(uuid "c25fffe7-a5d2-4ee9-9255-db7ca650710e")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 397.51 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4148adf-d5dd-4023-80fc-df476e416304")
+		(property "Reference" "C27"
+			(at 397.51 81.28 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1nF"
+			(at 397.51 83.82 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 397.51 87.63 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 397.51 87.63 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 R ch: feedback C (Cf), parallel with Rf"
+			(at 397.51 87.63 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "9725504d-3a0c-4ef0-b6d1-4e622d22f5cd")
+		)
+		(pin "2"
+			(uuid "977d4f07-6663-4cf3-9e8e-689638e61f47")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 397.51 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a533de4-ede1-480b-9c62-8923ddd5d776")
+		(property "Reference" "R23"
+			(at 397.51 93.98 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1.5k"
+			(at 397.51 96.52 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 397.51 100.33 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 397.51 100.33 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 R ch: non-inv reference R (Rg), matches Rf"
+			(at 397.51 100.33 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "3237478e-1f37-4065-9e13-458ac53f2a37")
+		)
+		(pin "2"
+			(uuid "13c9689b-f160-42b3-8cab-dcf486cc2a02")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 397.51 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f3913f2d-48bc-40a3-985a-0bd406e919b7")
+		(property "Reference" "C32"
+			(at 397.51 106.68 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1nF"
+			(at 397.51 109.22 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 397.51 113.03 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 397.51 113.03 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Fig.40 R ch: non-inv reference C (Cg), matches Cf"
+			(at 397.51 113.03 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "51a2f881-3472-4d89-9bd2-79983a571f3b")
+		)
+		(pin "2"
+			(uuid "bfb5858d-3739-47ac-9c58-9c0ed6c3b5c3")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 417.83 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6341fa98-6f07-4a94-bf36-40905671b2aa")
+		(property "Reference" "C33"
+			(at 417.83 69.85 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "1uF"
+			(at 417.83 72.39 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 417.83 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 417.83 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "R ch output DC-block coupling cap"
+			(at 417.83 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "82523a27-085a-4e8c-b338-c32e793caca2")
+		)
+		(pin "2"
+			(uuid "11a4afe9-f505-4bd8-8ca9-dd7458814951")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 439.42 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "060e39a3-120a-4349-9cc9-468566fb9012")
+		(property "Reference" "J5"
+			(at 439.42 69.85 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "LINE_OUT_R"
+			(at 439.42 72.39 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 439.42 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 439.42 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Line output R (signal, GND)"
+			(at 439.42 76.2 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "61dc2c13-c2fa-4df3-b05c-4a03b3b15af0")
+		)
+		(pin "2"
+			(uuid "26bf85c2-b25e-426d-ab57-6fd37ce1a18f")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
