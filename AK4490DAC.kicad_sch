@@ -968,6 +968,43 @@
 	        (number "5" (effects (font (size 1.27 1.27)))))
 	    )
 	  )
+	(symbol "AK4490DAC:MCWI03-12D15" (in_bom yes) (on_board yes)
+	    (property "Reference" "U" (at -10.16 12.7 0)
+	      (effects (font (size 1.27 1.27))))
+	    (property "Value" "MCWI03-12D15" (at -10.16 15.24 0)
+	      (effects (font (size 1.27 1.27))))
+	    (property "Footprint" "" (at 0 20.32 0)
+	      (effects (font (size 1.27 1.27)) hide))
+	    (property "Datasheet" "https://www.minmaxpower.com/storage/media/download/MCWI03_Datasheet.pdf" (at 0 22.86 0)
+	      (effects (font (size 1.27 1.27)) hide))
+	    (property "Description" "MinMax MCWI03-12D15: isolated 3W DC-DC, 12V input family (4.5-18V), dual +-15V/100mA output. Reused from the original NEWDAC Eagle design (net \"15V\" fed both this module and the LM1117 regulators). Pinout per MCWI03 datasheet dual-output table: 1=-Vin 2=+Vin 3=Remote On/Off 5=NC 6=+Vout 7=Common 8=-Vout. No footprint set: no exact match in KiCad libraries, needs a custom SIP-8 THT footprint (21.8x9.3mm body, 2.54mm pin pitch, single row, pin 4 physically absent) before fab." (at 0 0 0)
+	      (effects (font (size 1.27 1.27)) hide))
+	    (symbol "MCWI03-12D15_0_1"
+	      (rectangle (start -10.16 10.16) (end 10.16 -10.16)
+	        (stroke (width 0.254) (type default)) (fill (type background)))
+	      (pin power_in line (at -12.7 5.08 0) (length 2.54)
+	        (name "-Vin" (effects (font (size 1.27 1.27))))
+	        (number "1" (effects (font (size 1.27 1.27)))))
+	      (pin power_in line (at -12.7 2.54 0) (length 2.54)
+	        (name "+Vin" (effects (font (size 1.27 1.27))))
+	        (number "2" (effects (font (size 1.27 1.27)))))
+	      (pin input line (at -12.7 0 0) (length 2.54)
+	        (name "CON" (effects (font (size 1.27 1.27))))
+	        (number "3" (effects (font (size 1.27 1.27)))))
+	      (pin no_connect line (at -12.7 -2.54 0) (length 2.54) hide
+	        (name "NC" (effects (font (size 1.27 1.27))))
+	        (number "5" (effects (font (size 1.27 1.27)))))
+	      (pin power_out line (at 12.7 5.08 180) (length 2.54)
+	        (name "+Vout" (effects (font (size 1.27 1.27))))
+	        (number "6" (effects (font (size 1.27 1.27)))))
+	      (pin power_out line (at 12.7 2.54 180) (length 2.54)
+	        (name "Common" (effects (font (size 1.27 1.27))))
+	        (number "7" (effects (font (size 1.27 1.27)))))
+	      (pin power_out line (at 12.7 0 180) (length 2.54)
+	        (name "-Vout" (effects (font (size 1.27 1.27))))
+	        (number "8" (effects (font (size 1.27 1.27)))))
+	    )
+	  )
 	(symbol "Regulator_Linear:AMS1117"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4079,21 +4116,6 @@
 		(pin "3"
 			(uuid "fe4b8299-fc76-494b-a891-acec7571aad2")
 		)
-		(pin "5"
-			(uuid "c498f018-457d-4dfe-b8a3-c7352cc88f12")
-		)
-		(pin "6"
-			(uuid "a411ccb6-e6c7-4565-8a95-a1dba203b991")
-		)
-		(pin "7"
-			(uuid "f8946f22-642c-4fde-a43e-4f6b0c4d42cb")
-		)
-		(pin "8"
-			(uuid "d578e262-91e3-4102-83a6-6196db6fc5df")
-		)
-		(pin "4"
-			(uuid "d71183af-4887-4362-89e8-5df06b4a9762")
-		)
 		(instances
 			(project "AK4490DAC"
 				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
@@ -4162,21 +4184,6 @@
 		)
 		(pin "3"
 			(uuid "de42fd6a-d9bd-4c3a-95a3-2748f827e908")
-		)
-		(pin "5"
-			(uuid "27979400-d98d-4429-9841-567b10962548")
-		)
-		(pin "6"
-			(uuid "2d1588cd-a0ce-4b6a-85b0-9a42ad3c33c2")
-		)
-		(pin "7"
-			(uuid "1df99dc4-f3f2-4c41-ba7f-e58abf7972c9")
-		)
-		(pin "8"
-			(uuid "3caa99de-23e0-478c-9e49-30da13239bb6")
-		)
-		(pin "4"
-			(uuid "bf86ea5c-0a4d-4a7d-8138-50c48b9aad3c")
 		)
 		(instances
 			(project "AK4490DAC"
@@ -4247,21 +4254,6 @@
 		)
 		(pin "3"
 			(uuid "433d164b-4d9f-4a61-89a4-da00662c5eb5")
-		)
-		(pin "5"
-			(uuid "89ff970c-77f4-4d02-962d-e9f8b59c529a")
-		)
-		(pin "6"
-			(uuid "32cb1821-143d-4bed-9cc2-2c6ce0794a7d")
-		)
-		(pin "7"
-			(uuid "bcb9c12f-a614-4534-b788-f24c45105d68")
-		)
-		(pin "8"
-			(uuid "f521e3fc-d13c-4fa2-aa82-4721350e2a37")
-		)
-		(pin "4"
-			(uuid "f756dade-d553-4979-93ce-134f70c7c6b9")
 		)
 		(instances
 			(project "AK4490DAC"
@@ -7007,886 +6999,26 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:R")
-		(at 210.82 260.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3da1e7ff-6b96-4459-9e2f-f592f1d05a3e")
-		(property "Reference" "R11"
-			(at 210.82 254.0 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "1k"
-			(at 210.82 256.54 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 210.82 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 210.82 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "L ch I/V converter feedback R (AOUTLP -> IC5A out, transimpedance)"
-			(at 210.82 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "d2df254b-ee33-45f5-b66e-9f443a6fc879")
-		)
-		(pin "2"
-			(uuid "c54d7fbc-700e-458e-8431-f7178a68faca")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 210.82 271.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5bd23c12-3bd9-4c07-bd73-d74200dce98a")
-		(property "Reference" "C22"
-			(at 210.82 265.43 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "100pF"
-			(at 210.82 267.97 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 210.82 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 210.82 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "L ch I/V converter feedback C, HF stability (parallel w/ R11)"
-			(at 210.82 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "4dc5c37d-9ea2-4ac1-9115-b07feb546f10")
-		)
-		(pin "2"
-			(uuid "1dd7b91a-4cfe-44fd-a560-08cf59a71fcc")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "C22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 224.79 260.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "424f2d07-73c2-44d4-ac6e-c9d6d113542e")
-		(property "Reference" "R12"
-			(at 224.79 254.0 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "1k"
-			(at 224.79 256.54 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 224.79 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 224.79 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "L ch I/V converter feedback R (AOUTLN -> IC5B out, transimpedance)"
-			(at 224.79 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "bf1ea294-51fa-4567-ba32-6b0daffb0c09")
-		)
-		(pin "2"
-			(uuid "a5b9fb02-3907-40e3-b6a7-bb9ad88519f6")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 224.79 271.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ffc5c0a2-0a57-49ba-bdd9-f4aa262900db")
-		(property "Reference" "C23"
-			(at 224.79 265.43 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "100pF"
-			(at 224.79 267.97 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 224.79 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 224.79 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "L ch I/V converter feedback C, HF stability (parallel w/ R12)"
-			(at 224.79 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "b69eebde-2188-420e-b72d-4fb44cdc5f61")
-		)
-		(pin "2"
-			(uuid "56cf94f4-b983-4cbe-be5a-090d667a40ca")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "C23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 238.76 260.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3c2336a8-5553-4eaf-853d-1bbe848fd619")
-		(property "Reference" "R13"
-			(at 238.76 254.0 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "10k"
-			(at 238.76 256.54 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 238.76 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 238.76 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "L ch diff-amp (IC6A) input R from I/V+ stage"
-			(at 238.76 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "57999444-5d11-4a76-bd9d-63595f79d5df")
-		)
-		(pin "2"
-			(uuid "1a1bf21b-5eda-4fd4-8e03-86a49b4ea10f")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 238.76 271.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "73d57694-bae7-4547-bd26-d782297dc75e")
-		(property "Reference" "R14"
-			(at 238.76 265.43 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "10k"
-			(at 238.76 267.97 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 238.76 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 238.76 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "L ch diff-amp (IC6A) input R from I/V- stage"
-			(at 238.76 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "e86b44a4-324c-4a4d-9ef2-96f8172bd447")
-		)
-		(pin "2"
-			(uuid "22f612b9-a874-4759-b1f5-5d1f39714872")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 238.76 283.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "717693aa-3335-41a3-a5f0-4d7fe4bf6e94")
-		(property "Reference" "R15"
-			(at 238.76 276.86 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "10k"
-			(at 238.76 279.4 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 238.76 283.21 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 238.76 283.21 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "L ch diff-amp (IC6A) feedback R"
-			(at 238.76 283.21 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "e6474cfc-fa93-4735-a515-fa3c611cdb02")
-		)
-		(pin "2"
-			(uuid "0a381c66-c39e-4778-94e4-eaab82e70a7b")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 238.76 294.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3c638e8c-5131-4197-b91f-e646f340acd3")
-		(property "Reference" "R16"
-			(at 238.76 288.29 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "10k"
-			(at 238.76 290.83 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 238.76 294.64 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 238.76 294.64 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "L ch diff-amp (IC6A) non-inverting divider R to GND"
-			(at 238.76 294.64 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "8cf1e51f-666c-4ed1-8f65-0721233be418")
-		)
-		(pin "2"
-			(uuid "16f33a70-16ec-4b9e-b85a-8e36cc9c0700")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 252.73 260.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d2367f85-f947-4503-87dc-cf044c50a2ad")
-		(property "Reference" "C24"
-			(at 252.73 254.0 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "1uF"
-			(at 252.73 256.54 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 252.73 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 252.73 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "L ch output DC-block coupling cap (film preferred, non-polar)"
-			(at 252.73 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "1929ae2d-5426-4c33-bff5-e9345278e971")
-		)
-		(pin "2"
-			(uuid "9e591475-dd5c-4a24-bdb1-6c62fb61a808")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "C24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 281.94 260.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9d57f011-da23-4d56-8a32-d76e7753787c")
-		(property "Reference" "R17"
-			(at 281.94 254.0 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "1k"
-			(at 281.94 256.54 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 281.94 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 281.94 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "R ch I/V converter feedback R (AOUTRP -> IC6B out, transimpedance)"
-			(at 281.94 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "df92620e-856a-4be2-be76-f84affd8880c")
-		)
-		(pin "2"
-			(uuid "145bd9c7-1497-4fb3-ae9a-c5b03a07d814")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 281.94 271.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3296e61a-ace1-4f4c-b6b8-48db40231074")
-		(property "Reference" "C25"
-			(at 281.94 265.43 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "100pF"
-			(at 281.94 267.97 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 281.94 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 281.94 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "R ch I/V converter feedback C, HF stability (parallel w/ R17)"
-			(at 281.94 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "40e5cb41-078d-405f-a79e-6609c71ff76e")
-		)
-		(pin "2"
-			(uuid "a3f245f4-f5e6-448e-b906-10376e4cfa5d")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "C25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 295.91 260.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b9e733ea-f349-44f8-a247-3240b58cc492")
-		(property "Reference" "R18"
-			(at 295.91 254.0 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "1k"
-			(at 295.91 256.54 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 295.91 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 295.91 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "R ch I/V converter feedback R (AOUTRN -> IC7A out, transimpedance)"
-			(at 295.91 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "027bad03-dfe9-4818-96fe-cdcca2585772")
-		)
-		(pin "2"
-			(uuid "5a315d06-3e0e-49fd-a79c-512658d53463")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 295.91 271.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ffd8dee5-ae31-4ace-82f6-732e418bc83e")
-		(property "Reference" "C26"
-			(at 295.91 265.43 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "100pF"
-			(at 295.91 267.97 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 295.91 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 295.91 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "R ch I/V converter feedback C, HF stability (parallel w/ R18)"
-			(at 295.91 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "2baa7567-53f5-420e-b771-8fd5b3923d61")
-		)
-		(pin "2"
-			(uuid "d20128a8-88de-4e36-a612-f8189abf959f")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "C26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 309.88 260.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "56f298f0-30ca-4990-a712-c23666adf328")
-		(property "Reference" "R19"
-			(at 309.88 254.0 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "10k"
-			(at 309.88 256.54 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 309.88 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 309.88 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "R ch diff-amp (IC7B) input R from I/V+ stage"
-			(at 309.88 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "3492fb55-d635-458f-8900-650bbcb44eb2")
-		)
-		(pin "2"
-			(uuid "f82b929c-6745-4b41-9d46-4004087416d5")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 309.88 271.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4ab06d46-c149-46f7-a440-1bfea3afabe1")
-		(property "Reference" "R20"
-			(at 309.88 265.43 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "10k"
-			(at 309.88 267.97 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 309.88 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 309.88 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "R ch diff-amp (IC7B) input R from I/V- stage"
-			(at 309.88 271.78 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "22d131cd-cd4c-438b-be93-05ff72f34cdf")
-		)
-		(pin "2"
-			(uuid "52b57293-2372-4a89-898d-103b96bd4cf9")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 309.88 283.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "52de6d09-3b05-4258-9d1d-ecec5996de64")
-		(property "Reference" "R21"
-			(at 309.88 276.86 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "10k"
-			(at 309.88 279.4 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 309.88 283.21 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 309.88 283.21 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "R ch diff-amp feedback R"
-			(at 309.88 283.21 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "0864668d-ee72-4350-ab1f-a79006277bc6")
-		)
-		(pin "2"
-			(uuid "18bef0a3-6909-40f1-b39a-dedc7e2d146d")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 309.88 294.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5caec4cb-d5a7-489e-b0da-d75d317861d3")
-		(property "Reference" "R22"
-			(at 309.88 288.29 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "10k"
-			(at 309.88 290.83 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 309.88 294.64 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 309.88 294.64 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "R ch diff-amp non-inverting divider R to GND"
-			(at 309.88 294.64 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "526f3e1f-2f2a-4029-9cc1-7fea7d871baf")
-		)
-		(pin "2"
-			(uuid "addf5138-3439-4851-b452-2a16c47ebfec")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 323.85 260.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "042fd37f-35aa-4ae4-9c8d-732afa3e7c40")
-		(property "Reference" "C27"
-			(at 323.85 254.0 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "1uF"
-			(at 323.85 256.54 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 323.85 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 323.85 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "R ch output DC-block coupling cap (film preferred, non-polar)"
-			(at 323.85 260.35 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "a869c94e-0263-4e34-8598-4b5740fe4493")
-		)
-		(pin "2"
-			(uuid "c57eeeb5-0b07-4527-92b3-5f9cbea7b255")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "C27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 252.73 300.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fec03b0d-49aa-4a89-a6b2-93329f6897ca")
-		(property "Reference" "J4"
-			(at 252.73 294.64 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "LINE_OUT_L"
-			(at 252.73 297.18 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" ""
-			(at 252.73 300.99 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 252.73 300.99 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "Line output L (signal, GND) after diff-amp + C24"
-			(at 252.73 300.99 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "f63747aa-dd35-4052-a93c-750edeb3bf47")
-		)
-		(pin "2"
-			(uuid "fb627d40-4190-435e-9cef-d9500df237bd")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 323.85 300.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0ba018ae-b4e0-46c5-8b8e-fac038cb4960")
-		(property "Reference" "J5"
-			(at 323.85 294.64 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "LINE_OUT_R"
-			(at 323.85 297.18 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Footprint" ""
-			(at 323.85 300.99 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Datasheet" ""
-			(at 323.85 300.99 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(property "Description" "Line output R (signal, GND) after diff-amp + C27"
-			(at 323.85 300.99 0)
-			(effects (font (size 1.27 1.27)) hide)
-		)
-		(pin "1"
-			(uuid "880f59e1-16de-4f8c-bb78-3b4a66f0aed7")
-		)
-		(pin "2"
-			(uuid "df0d8221-7e6b-4664-abb3-072215876c4e")
-		)
-		(instances
-			(project "AK4490DAC"
-				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	(symbol
 		(lib_id "Device:R")
 		(at 218.44 218.44 0)
@@ -9390,6 +8522,618 @@
 			(justify left)
 		)
 		(uuid "c2e24726-ca70-420e-b4ea-68040e642195")
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 254 271.78000000000003 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a7d1d4f0-bf80-4c51-8b35-bbb6f8e6c44c")
+		(property "Reference" "IC5"
+			(at 254 265.43 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "MUSES8920"
+			(at 254 267.97 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 254 271.78000000000003 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 254 271.78000000000003 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" ""
+			(at 254 271.78000000000003 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "5"
+			(uuid "614ddff2-98d0-4d0e-8f0e-349ef3f75f91")
+		)
+		(pin "6"
+			(uuid "10059b53-5f89-4519-8c1e-0fa4c6951600")
+		)
+		(pin "7"
+			(uuid "ae7e1760-324c-463a-905a-6eb9ffccdfba")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "IC5")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 254 297.18 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2279b4fd-7614-4254-bcef-73bf931819a2")
+		(property "Reference" "IC5"
+			(at 254 290.83 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "MUSES8920"
+			(at 254 293.37 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 254 297.18 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 254 297.18 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" ""
+			(at 254 297.18 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "8"
+			(uuid "29c63bf9-584e-4aa7-9bc2-84340ca3698e")
+		)
+		(pin "4"
+			(uuid "a8bcf398-26f4-4543-9ff6-85effae9989c")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "IC5")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 292.1 271.78000000000003 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce18c9fe-5dc3-44c7-be0c-ff21695d85c5")
+		(property "Reference" "IC6"
+			(at 292.1 265.43 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "MUSES8920"
+			(at 292.1 267.97 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 292.1 271.78000000000003 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 292.1 271.78000000000003 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" ""
+			(at 292.1 271.78000000000003 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "5"
+			(uuid "e9fe62d7-9a25-4afc-8f62-61adc7e95dad")
+		)
+		(pin "6"
+			(uuid "d8a67480-e988-4a3f-b662-23da812b7ea1")
+		)
+		(pin "7"
+			(uuid "b7bd05ac-e96b-49eb-b349-42ea8a9989c4")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "IC6")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 292.1 297.18 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a3935e91-55ad-4848-ab92-51d181d6da4a")
+		(property "Reference" "IC6"
+			(at 292.1 290.83 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "MUSES8920"
+			(at 292.1 293.37 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 292.1 297.18 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 292.1 297.18 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" ""
+			(at 292.1 297.18 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "8"
+			(uuid "a11ddace-f606-4e35-ba4c-8bf0f83f7b41")
+		)
+		(pin "4"
+			(uuid "51a843d8-a493-4870-a86e-b853ce183c2a")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "IC6")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 330.2 271.78000000000003 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e76f2bc9-18e1-471f-a724-957257529487")
+		(property "Reference" "IC7"
+			(at 330.2 265.43 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "MUSES8920"
+			(at 330.2 267.97 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 330.2 271.78000000000003 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 330.2 271.78000000000003 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" ""
+			(at 330.2 271.78000000000003 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "5"
+			(uuid "d0597917-cd5e-496e-a670-6085ed459381")
+		)
+		(pin "6"
+			(uuid "ae602427-bff2-474c-bcb4-d6617f386fd7")
+		)
+		(pin "7"
+			(uuid "742910e9-850c-4ab4-865e-c4af9edc5380")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "IC7")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 330.2 297.18 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b00dc1e-0e3b-4d95-8f31-230484e45223")
+		(property "Reference" "IC7"
+			(at 330.2 290.83 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "MUSES8920"
+			(at 330.2 293.37 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 330.2 297.18 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 330.2 297.18 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" ""
+			(at 330.2 297.18 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "8"
+			(uuid "68d71653-07e1-4233-9e65-a1d498a4379e")
+		)
+		(pin "4"
+			(uuid "7336a4d8-396e-4b65-848f-998566465f5f")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "IC7")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "AK4490DAC:MCWI03-12D15")
+		(at 389.89 260.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6aab3b11-5b22-4ed8-ac5a-02582a12b9d6")
+		(property "Reference" "U7"
+			(at 389.89 245.11 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "MCWI03-12D15"
+			(at 389.89 247.65 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 389.89 260.35 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Datasheet" ""
+			(at 389.89 260.35 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Description" "Isolated +-15V supply for output op-amp stage (IC5/IC6/IC7), fed from main DC input, reused from NEWDAC"
+			(at 389.89 260.35 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(pin "1"
+			(uuid "7923a4f4-dd37-4e49-9954-569276ee25c8")
+		)
+		(pin "2"
+			(uuid "4febe1f0-35d6-4cbc-9cfa-de4c8d3b2516")
+		)
+		(pin "3"
+			(uuid "2a1b8f23-92fb-412a-8c7f-dc9a8d2c78d0")
+		)
+		(pin "5"
+			(uuid "af7093c8-2d43-42f3-98cc-1ee80a239e86")
+		)
+		(pin "6"
+			(uuid "6042f309-77d9-43ed-91fe-8b37ed02856f")
+		)
+		(pin "7"
+			(uuid "c320ee37-1415-4852-b296-bcd0106b97ab")
+		)
+		(pin "8"
+			(uuid "82b0e594-2059-4b48-8033-54635bea0ec0")
+		)
+		(instances
+			(project "AK4490DAC"
+				(path "/43171a2d-7dc9-4067-85e7-263b74d7a8f4"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 377.19 255.27) (xy 374.65 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a4c0c44-820b-46c9-848a-106afee406d1")
+	)
+	(label "GND"
+		(at 374.65 255.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3c123a35-c7fa-4819-bb8f-643b9eb50a0f")
+	)
+	(wire
+		(pts
+			(xy 377.19 257.81) (xy 374.65 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12a2f91e-0cc9-47c3-8989-ba35a17a2c84")
+	)
+	(label "+VIN_RAW"
+		(at 374.65 257.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "874b2aec-0736-42f9-a565-6a10c99b9659")
+	)
+	(wire
+		(pts
+			(xy 377.19 260.35) (xy 374.65 260.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39993c12-b49e-4a21-b0fe-4c5e7868d8c8")
+	)
+	(label "GND"
+		(at 374.65 260.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "18390912-3fbc-43a0-b50c-09b846cb3525")
+	)
+	(wire
+		(pts
+			(xy 402.59 255.27) (xy 405.13 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efecf882-1756-42e7-b581-cdd6c2040eb9")
+	)
+	(label "+15V"
+		(at 405.13 255.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a0692b31-b9bd-4b27-b0eb-55aeca1902bf")
+	)
+	(wire
+		(pts
+			(xy 402.59 257.81) (xy 405.13 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06682887-826b-4da3-a281-4ddd2cecb09e")
+	)
+	(label "GND"
+		(at 405.13 257.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e28cbf05-19d1-4fe6-aa52-879a16244aca")
+	)
+	(wire
+		(pts
+			(xy 402.59 260.35) (xy 405.13 260.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0ea704b-376e-4157-9b8a-efc011d1ed5b")
+	)
+	(label "-15V"
+		(at 405.13 260.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6fc11331-fc0a-45ba-8e3b-db0695c21d11")
+	)
+	(wire
+		(pts
+			(xy 251.46 289.56) (xy 251.46 287.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "043da423-3078-418c-a2b7-9518319a3aca")
+	)
+	(label "+15V"
+		(at 251.46 287.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a8a25894-9675-4fec-9f4d-aa0ccd44fab0")
+	)
+	(wire
+		(pts
+			(xy 251.46 304.8) (xy 251.46 307.34000000000003)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebb57dc8-849a-45b1-9991-bed8297ba0fb")
+	)
+	(label "-15V"
+		(at 251.46 307.34000000000003 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9e9c0eec-adae-492b-8883-884061b636e7")
+	)
+	(wire
+		(pts
+			(xy 289.56 289.56) (xy 289.56 287.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7c28c89-cb9e-4533-820e-c5ee3d78c774")
+	)
+	(label "+15V"
+		(at 289.56 287.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "701a181c-d868-45bd-a659-46fa878ab351")
+	)
+	(wire
+		(pts
+			(xy 289.56 304.8) (xy 289.56 307.34000000000003)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6143bb3-3e91-4720-bc7e-f95704dbe289")
+	)
+	(label "-15V"
+		(at 289.56 307.34000000000003 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "659701c7-f88a-44ed-8ae2-6a0e4b82dc2c")
+	)
+	(wire
+		(pts
+			(xy 327.65999999999997 289.56) (xy 327.65999999999997 287.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80abdf14-a127-42f3-93f8-c02ca8d0da46")
+	)
+	(label "+15V"
+		(at 327.65999999999997 287.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3d54b209-5893-4153-a91e-13335e96b44d")
+	)
+	(wire
+		(pts
+			(xy 327.65999999999997 304.8) (xy 327.65999999999997 307.34000000000003)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "734e9846-475f-4481-81c7-0f04405566a5")
+	)
+	(label "-15V"
+		(at 327.65999999999997 307.34000000000003 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a2f00043-cbe6-46fd-8830-7b569379a252")
+	)
+	(wire
+		(pts
+			(xy 13.97 101.6) (xy 11.43 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "736007e1-1a16-46a2-85fb-e6e6df44c561")
+	)
+	(label "+VIN_RAW"
+		(at 11.43 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "049d0fda-5da2-4a29-9780-891be9582670")
+	)
+	(wire
+		(pts
+			(xy 13.97 104.14) (xy 11.43 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "866c8766-cd6e-4ba8-a14e-3695aed49e9b")
+	)
+	(label "GND"
+		(at 11.43 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a12fb524-4c1e-4a70-8d7f-ac7506b77215")
 	)
 	(sheet_instances
 		(path "/"
