@@ -1,0 +1,98 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-14T10:22:43",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.3",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/43171a2d-7dc9-4067-85e7-263b74d7a8f4",
+            "violations": [
+                {
+                    "description": "シンボル 'USB_C_Receptacle_USB2.0_16P' が、ライブラリ 'Connector' のコピーと一致しません",
+                    "items": [
+                        {
+                            "description": "シンボル J2 [USB_C_Receptacle_USB2.0_16P]",
+                            "pos": {
+                                "x": 0.4572,
+                                "y": 0.7493
+                            },
+                            "uuid": "c030b1c8-3c5c-4fb4-aff2-e0d71ef19ea3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "シンボル 'TL072' が、ライブラリ 'Amplifier_Operational' のコピーと一致しません",
+                    "items": [
+                        {
+                            "description": "シンボル IC5 [TL072]",
+                            "pos": {
+                                "x": 6.2484,
+                                "y": 0.9017
+                            },
+                            "uuid": "529041c5-0db4-4e62-ac25-ba753697b1ec"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "シンボル 'TL072' が、ライブラリ 'Amplifier_Operational' のコピーと一致しません",
+                    "items": [
+                        {
+                            "description": "シンボル IC5 [TL072]",
+                            "pos": {
+                                "x": 6.2484,
+                                "y": 2.3495
+                            },
+                            "uuid": "a7d1d4f0-bf80-4c51-8b35-bbb6f8e6c44c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "シンボル 'TL072' が、ライブラリ 'Amplifier_Operational' のコピーと一致しません",
+                    "items": [
+                        {
+                            "description": "シンボル IC5 [TL072]",
+                            "pos": {
+                                "x": 7.2517,
+                                "y": 4.3307
+                            },
+                            "uuid": "2279b4fd-7614-4254-bcef-73bf931819a2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                }
+            ]
+        }
+    ],
+    "source": "AK4490DAC.kicad_sch"
+}

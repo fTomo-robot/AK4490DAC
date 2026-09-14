@@ -1,0 +1,239 @@
+{"ref": "#PWR068", "value": "USB_GND", "at": ["561.34", "44.45", "90"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [561.34, 44.45]}]}
+{"ref": "#PWR015", "value": "+3V3_118", "at": ["213.36", "116.84", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [213.36, 116.84]}]}
+{"ref": "#PWR013", "value": "GND", "at": ["213.36", "109.22", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [213.36, 109.22]}]}
+{"ref": "J5", "value": "LINE_OUT_R", "at": ["439.42", "76.2", "0"], "unit": "1", "pins": [{"num": "1", "name": "Pin_1", "type": "passive", "xy": [434.34, 76.2]}, {"num": "2", "name": "Pin_2", "type": "passive", "xy": [434.34, 78.74]}]}
+{"ref": "IC3", "value": "LP5907MFX-3.3/NOPB", "at": ["127", "254", "0"], "unit": "1", "pins": [{"num": "1", "name": "IN", "type": "power_in", "xy": [119.38, 251.46]}, {"num": "3", "name": "EN", "type": "input", "xy": [119.38, 254.0]}, {"num": "2", "name": "GND", "type": "power_in", "xy": [127.0, 261.62]}, {"num": "4", "name": "NC", "type": "no_connect", "xy": [132.08, 254.0]}, {"num": "5", "name": "OUT", "type": "power_out", "xy": [134.62, 251.46]}]}
+{"ref": "R20", "value": "390", "at": ["375.92", "87.63", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [375.92, 83.82]}, {"num": "2", "name": "~", "type": "passive", "xy": [375.92, 91.44]}]}
+{"ref": "U5", "value": "AK4118", "at": ["231.14", "101.6", "0"], "unit": "1", "pins": [{"num": "1", "name": "IPS0", "type": "input", "xy": [215.9, 101.6]}, {"num": "2", "name": "NC2", "type": "passive", "xy": [215.9, 104.14]}, {"num": "3", "name": "DIF0", "type": "input", "xy": [215.9, 106.68]}, {"num": "4", "name": "TEST2", "type": "input", "xy": [215.9, 109.22]}, {"num": "5", "name": "DIF1", "type": "input", "xy": [215.9, 111.76]}, {"num": "6", "name": "VSS1", "type": "power_in", "xy": [215.9, 114.3]}, {"num": "7", "name": "DIF2", "type": "input", "xy": [215.9, 116.84]}, {"num": "8", "name": "IPS1", "type": "input", "xy": [215.9, 119.38]}, {"num": "9", "name": "PSN", "type": "input", "xy": [215.9, 121.92]}, {"num": "10", "name": "XTL0", "type": "input", "xy": [215.9, 124.46]}, {"num": "11", "name": "XTL1", "type": "input", "xy": [215.9, 127.0]}, {"num": "12", "name": "VIN", "type": "input", "xy": [215.9, 129.54]}, {"num": "13", "name": "TVDD", "type": "power_in", "xy": [215.9, 132.08]}, {"num": "14", "name": "GP1", "type": "input", "xy": [215.9, 134.62]}, {"num": "15", "name": "TX0", "type": "output", "xy": [215.9, 137.16]}, {"num": "16", "name": "TX1", "type": "output", "xy": [215.9, 139.7]}, {"num": "17", "name": "BOUT", "type": "output", "xy": [215.9, 142.24]}, {"num": "18", "name": "COUT", "type": "output", "xy": [215.9, 144.78]}, {"num": "19", "name": "UOUT", "type": "output", "xy": [215.9, 147.32]}, {"num": "20", "name": "VOUT", "type": "output", "xy": [215.9, 149.86]}, {"num": "21", "name": "DVDD", "type": "power_in", "xy": [215.9, 152.4]}, {"num": "22", "name": "VSS2", "type": "power_in", "xy": [215.9, 154.94]}, {"num": "23", "name": "MCKO1", "type": "output", "xy": [215.9, 157.48]}, {"num": "24", "name": "LRCK", "type": "output", "xy": [215.9, 160.02]}, {"num": "48", "name": "RX3", "type": "input", "xy": [246.38, 101.6]}, {"num": "47", "name": "VSS4", "type": "power_in", "xy": [246.38, 104.14]}, {"num": "46", "name": "RX2", "type": "input", "xy": [246.38, 106.68]}, {"num": "45", "name": "TEST1", "type": "input", "xy": [246.38, 109.22]}, {"num": "44", "name": "RX1", "type": "input", "xy": [246.38, 111.76]}, {"num": "43", "name": "NC43", "type": "passive", "xy": [246.38, 114.3]}, {"num": "42", "name": "RX0", "type": "input", "xy": [246.38, 116.84]}, {"num": "41", "name": "VSS3", "type": "power_in", "xy": [246.38, 119.38]}, {"num": "40", "name": "VCOM", "type": "passive", "xy": [246.38, 121.92]}, {"num": "39", "name": "R", "type": "passive", "xy": [246.38, 124.46]}, {"num": "38", "name": "AVDD", "type": "power_in", "xy": [246.38, 127.0]}, {"num": "37", "name": "INT1", "type": "output", "xy": [246.38, 129.54]}, {"num": "36", "name": "INT0", "type": "output", "xy": [246.38, 132.08]}, {"num": "35", "name": "OCKS0", "type": "input", "xy": [246.38, 134.62]}, {"num": "34", "name": "OCKS1", "type": "input", "xy": [246.38, 137.16]}, {"num": "33", "name": "CM1", "type": "input", "xy": [246.38, 139.7]}, {"num": "32", "name": "CM0", "type": "input", "xy": [246.38, 142.24]}, {"num": "31", "name": "PDN", "type": "input", "xy": [246.38, 144.78]}, {"num": "30", "name": "XTI", "type": "passive", "xy": [246.38, 147.32]}, {"num": "29", "name": "XTO", "type": "passive", "xy": [246.38, 149.86]}, {"num": "28", "name": "DAUX", "type": "input", "xy": [246.38, 152.4]}, {"num": "27", "name": "MCKO2", "type": "output", "xy": [246.38, 154.94]}, {"num": "26", "name": "BICK", "type": "output", "xy": [246.38, 157.48]}, {"num": "25", "name": "SDTO", "type": "output", "xy": [246.38, 160.02]}]}
+{"ref": "#PWR051", "value": "GND", "at": ["374.65", "255.27", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [374.65, 255.27]}]}
+{"ref": "C1", "value": "18pF", "at": ["19.05", "31.75", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [19.05, 27.94]}, {"num": "2", "name": "~", "type": "passive", "xy": [19.05, 35.56]}]}
+{"ref": "C30", "value": "0.1uF", "at": ["400.05", "20.32", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [400.05, 16.51]}, {"num": "2", "name": "~", "type": "passive", "xy": [400.05, 24.13]}]}
+{"ref": "#PWR047", "value": "GND", "at": ["334.01", "121.92", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [334.01, 121.92]}]}
+{"ref": "U3", "value": "TCM809TENB713", "at": ["231.14", "203.2", "0"], "unit": "1", "pins": [{"num": "3", "name": "V_{DD}", "type": "power_in", "xy": [228.6, 193.04]}, {"num": "1", "name": "GND", "type": "power_in", "xy": [228.6, 213.36]}, {"num": "2", "name": "~{RESET}", "type": "output", "xy": [238.76, 203.2]}]}
+{"ref": "C17", "value": "1uF", "at": ["508", "31.75", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [508.0, 27.94]}, {"num": "2", "name": "~", "type": "passive", "xy": [508.0, 35.56]}]}
+{"ref": "#PWR053", "value": "GND", "at": ["374.65", "260.35", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [374.65, 260.35]}]}
+{"ref": "R16", "value": "1.5k", "at": ["397.51", "44.45", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [397.51, 40.64]}, {"num": "2", "name": "~", "type": "passive", "xy": [397.51, 48.26]}]}
+{"ref": "#PWR065", "value": "GND", "at": ["397.51", "118.11", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [397.51, 118.11]}]}
+{"ref": "#PWR058", "value": "-15V", "at": ["251.46", "307.34", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [251.46, 307.34]}]}
+{"ref": "IC9", "value": "AMS1117", "at": ["44.45", "101.6", "0"], "unit": "1", "pins": [{"num": "3", "name": "VI", "type": "power_in", "xy": [36.83, 101.6]}, {"num": "1", "name": "ADJ", "type": "input", "xy": [44.45, 109.22]}, {"num": "2", "name": "VO", "type": "power_out", "xy": [52.07, 101.6]}]}
+{"ref": "#PWR048", "value": "GND", "at": ["334.01", "114.3", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [334.01, 114.3]}]}
+{"ref": "R26", "value": "100k", "at": ["281.94", "218.44", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [281.94, 214.63]}, {"num": "2", "name": "~", "type": "passive", "xy": [281.94, 222.25]}]}
+{"ref": "R9", "value": "120", "at": ["180.34", "31.75", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [180.34, 27.94]}, {"num": "2", "name": "~", "type": "passive", "xy": [180.34, 35.56]}]}
+{"ref": "IC5", "value": "MUSES8920", "at": ["254", "297.18", "0"], "unit": "3", "pins": [{"num": "8", "name": "V+", "type": "power_in", "xy": [251.46, 289.56]}, {"num": "4", "name": "V-", "type": "power_in", "xy": [251.46, 304.8]}]}
+{"ref": "#PWR022", "value": "GND", "at": ["248.92", "142.24", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [248.92, 142.24]}]}
+{"ref": "#PWR063", "value": "GND", "at": ["433.07", "22.86", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [433.07, 22.86]}]}
+{"ref": "C14", "value": "22pF", "at": ["490.22", "31.75", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [490.22, 27.94]}, {"num": "2", "name": "~", "type": "passive", "xy": [490.22, 35.56]}]}
+{"ref": "R13", "value": "390", "at": ["375.92", "20.32", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [375.92, 16.51]}, {"num": "2", "name": "~", "type": "passive", "xy": [375.92, 24.13]}]}
+{"ref": "#PWR006", "value": "+3V3_4490", "at": ["266.7", "190.5", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [266.7, 190.5]}]}
+{"ref": "IC4", "value": "TPS7A2050PDBVR", "at": ["165.1", "254", "0"], "unit": "1", "pins": [{"num": "1", "name": "IN", "type": "power_in", "xy": [157.48, 251.46]}, {"num": "3", "name": "EN", "type": "input", "xy": [157.48, 254.0]}, {"num": "2", "name": "GND", "type": "power_in", "xy": [165.1, 261.62]}, {"num": "4", "name": "NC", "type": "no_connect", "xy": [170.18, 254.0]}, {"num": "5", "name": "OUT", "type": "power_out", "xy": [172.72, 251.46]}]}
+{"ref": "C7", "value": "0.1uF", "at": ["44.45", "69.85", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [44.45, 66.04]}, {"num": "2", "name": "~", "type": "passive", "xy": [44.45, 73.66]}]}
+{"ref": "C22", "value": "2.2nF", "at": ["355.6", "44.45", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [355.6, 40.64]}, {"num": "2", "name": "~", "type": "passive", "xy": [355.6, 48.26]}]}
+{"ref": "R27", "value": "5.1k", "at": ["591.82", "48.26", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [591.82, 44.45]}, {"num": "2", "name": "~", "type": "passive", "xy": [591.82, 52.07]}]}
+{"ref": "R18", "value": "1.5k", "at": ["355.6", "87.63", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [355.6, 83.82]}, {"num": "2", "name": "~", "type": "passive", "xy": [355.6, 91.44]}]}
+{"ref": "#PWR012", "value": "+3V3_118", "at": ["213.36", "106.68", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [213.36, 106.68]}]}
+{"ref": "#PWR007", "value": "GND", "at": ["266.7", "215.9", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [266.7, 215.9]}]}
+{"ref": "IC8", "value": "TPS7A2050PDBVR", "at": ["165.1", "292.1", "0"], "unit": "1", "pins": [{"num": "1", "name": "IN", "type": "power_in", "xy": [157.48, 289.56]}, {"num": "3", "name": "EN", "type": "input", "xy": [157.48, 292.1]}, {"num": "2", "name": "GND", "type": "power_in", "xy": [165.1, 299.72]}, {"num": "4", "name": "NC", "type": "no_connect", "xy": [170.18, 292.1]}, {"num": "5", "name": "OUT", "type": "power_out", "xy": [172.72, 289.56]}]}
+{"ref": "C16", "value": "1uF", "at": ["508", "20.32", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [508.0, 16.51]}, {"num": "2", "name": "~", "type": "passive", "xy": [508.0, 24.13]}]}
+{"ref": "#PWR014", "value": "GND", "at": ["213.36", "111.76", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [213.36, 111.76]}]}
+{"ref": "J4", "value": "LINE_OUT_L", "at": ["439.42", "20.32", "0"], "unit": "1", "pins": [{"num": "1", "name": "Pin_1", "type": "passive", "xy": [434.34, 20.32]}, {"num": "2", "name": "Pin_2", "type": "passive", "xy": [434.34, 22.86]}]}
+{"ref": "#PWR037", "value": "GND", "at": ["298.45", "134.62", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 134.62]}]}
+{"ref": "#PWR064", "value": "GND", "at": ["397.51", "105.41", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [397.51, 105.41]}]}
+{"ref": "#PWR003", "value": "+3V3_118", "at": ["218.44", "189.23", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [218.44, 189.23]}]}
+{"ref": "#PWR026", "value": "GND", "at": ["248.92", "114.3", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [248.92, 114.3]}]}
+{"ref": "#PWR021", "value": "GND", "at": ["213.36", "134.62", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [213.36, 134.62]}]}
+{"ref": "#PWR002", "value": "GND", "at": ["228.6", "215.9", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [228.6, 215.9]}]}
+{"ref": "R8", "value": "240", "at": ["180.34", "20.32", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [180.34, 16.51]}, {"num": "2", "name": "~", "type": "passive", "xy": [180.34, 24.13]}]}
+{"ref": "#PWR049", "value": "+3V3A_4490", "at": ["400.05", "13.97", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [400.05, 13.97]}]}
+{"ref": "IC5", "value": "MUSES8920", "at": ["254", "233.68", "0"], "unit": "1", "pins": [{"num": "3", "name": "+", "type": "input", "xy": [246.38, 231.14]}, {"num": "2", "name": "-", "type": "input", "xy": [246.38, 236.22]}, {"num": "1", "name": "", "type": "output", "xy": [261.62, 233.68]}]}
+{"ref": "R1", "value": "10k", "at": ["19.05", "57.15", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [19.05, 53.34]}, {"num": "2", "name": "~", "type": "passive", "xy": [19.05, 60.96]}]}
+{"ref": "R7", "value": "22", "at": ["530.86", "44.45", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [530.86, 40.64]}, {"num": "2", "name": "~", "type": "passive", "xy": [530.86, 48.26]}]}
+{"ref": "#PWR072", "value": "GND", "at": ["7.62", "139.7", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [7.62, 139.7]}]}
+{"ref": "#PWR050", "value": "+3V3A_4490", "at": ["400.05", "38.1", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [400.05, 38.1]}]}
+{"ref": "#PWR054", "value": "+15V", "at": ["405.13", "255.27", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [405.13, 255.27]}]}
+{"ref": "R5", "value": "1.5k", "at": ["530.86", "20.32", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [530.86, 16.51]}, {"num": "2", "name": "~", "type": "passive", "xy": [530.86, 24.13]}]}
+{"ref": "Y1", "value": "11.2896MHz", "at": ["19.05", "19.05", "0"], "unit": "1", "pins": [{"num": "1", "name": "1", "type": "passive", "xy": [15.24, 19.05]}, {"num": "2", "name": "2", "type": "passive", "xy": [22.86, 19.05]}]}
+{"ref": "#PWR035", "value": "GND", "at": ["298.45", "129.54", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 129.54]}]}
+{"ref": "#PWR039", "value": "GND", "at": ["298.45", "139.7", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 139.7]}]}
+{"ref": "#PWR056", "value": "-15V", "at": ["405.13", "260.35", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [405.13, 260.35]}]}
+{"ref": "#PWR062", "value": "GND", "at": ["397.51", "62.23", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [397.51, 62.23]}]}
+{"ref": "R3", "value": "240", "at": ["69.85", "88.9", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [69.85, 85.09]}, {"num": "2", "name": "~", "type": "passive", "xy": [69.85, 92.71]}]}
+{"ref": "C33", "value": "1uF", "at": ["417.83", "76.2", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [417.83, 72.39]}, {"num": "2", "name": "~", "type": "passive", "xy": [417.83, 80.01]}]}
+{"ref": "#PWR010", "value": "GND", "at": ["281.94", "224.79", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [281.94, 224.79]}]}
+{"ref": "#PWR040", "value": "+3V3_4490", "at": ["298.45", "142.24", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 142.24]}]}
+{"ref": "#PWR036", "value": "+3V3_4490", "at": ["298.45", "132.08", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 132.08]}]}
+{"ref": "U7", "value": "MCWI03-12D15", "at": ["389.89", "260.35", "0"], "unit": "1", "pins": [{"num": "1", "name": "-Vin", "type": "power_in", "xy": [377.19, 255.27]}, {"num": "2", "name": "+Vin", "type": "power_in", "xy": [377.19, 257.81]}, {"num": "3", "name": "CON", "type": "input", "xy": [377.19, 260.35]}, {"num": "5", "name": "NC", "type": "no_connect", "xy": [377.19, 262.89]}, {"num": "6", "name": "+Vout", "type": "power_out", "xy": [402.59, 255.27]}, {"num": "7", "name": "Common", "type": "power_out", "xy": [402.59, 257.81]}, {"num": "8", "name": "-Vout", "type": "power_out", "xy": [402.59, 260.35]}]}
+{"ref": "C26", "value": "2.2nF", "at": ["355.6", "100.33", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [355.6, 96.52]}, {"num": "2", "name": "~", "type": "passive", "xy": [355.6, 104.14]}]}
+{"ref": "J1", "value": "JST_XA_B02B-XASK-1", "at": ["19.05", "101.6", "0"], "unit": "1", "pins": [{"num": "1", "name": "Pin_1", "type": "passive", "xy": [13.97, 101.6]}, {"num": "2", "name": "Pin_2", "type": "passive", "xy": [13.97, 104.14]}]}
+{"ref": "#PWR009", "value": "GND", "at": ["281.94", "201.93", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [281.94, 201.93]}]}
+{"ref": "#PWR046", "value": "GND", "at": ["334.01", "124.46", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [334.01, 124.46]}]}
+{"ref": "#PWR070", "value": "USB_GND", "at": ["591.82", "53.34", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [591.82, 53.34]}]}
+{"ref": "#PWR069", "value": "VBUS", "at": ["577.85", "5.08", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [577.85, 5.08]}]}
+{"ref": "#PWR066", "value": "GND", "at": ["433.07", "78.74", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [433.07, 78.74]}]}
+{"ref": "#PWR059", "value": "+VIN_RAW", "at": ["11.43", "101.6", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [11.43, 101.6]}]}
+{"ref": "#PWR017", "value": "+3V3_118", "at": ["213.36", "121.92", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [213.36, 121.92]}]}
+{"ref": "C28", "value": "0.1uF", "at": ["218.44", "195.58", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [218.44, 191.77]}, {"num": "2", "name": "~", "type": "passive", "xy": [218.44, 199.39]}]}
+{"ref": "C13", "value": "0.1uF", "at": ["383.54", "31.75", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [383.54, 27.94]}, {"num": "2", "name": "~", "type": "passive", "xy": [383.54, 35.56]}]}
+{"ref": "R15", "value": "1.5k", "at": ["397.51", "20.32", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [397.51, 16.51]}, {"num": "2", "name": "~", "type": "passive", "xy": [397.51, 24.13]}]}
+{"ref": "#PWR067", "value": "USB_GND", "at": ["553.72", "44.45", "90"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [553.72, 44.45]}]}
+{"ref": "#PWR004", "value": "GND", "at": ["218.44", "201.93", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [218.44, 201.93]}]}
+{"ref": "#PWR027", "value": "GND", "at": ["248.92", "109.22", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [248.92, 109.22]}]}
+{"ref": "C19", "value": "1uF", "at": ["508", "57.15", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [508.0, 53.34]}, {"num": "2", "name": "~", "type": "passive", "xy": [508.0, 60.96]}]}
+{"ref": "#PWR019", "value": "GND", "at": ["213.36", "127", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [213.36, 127.0]}]}
+{"ref": "C12", "value": "0.1uF", "at": ["383.54", "19.05", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [383.54, 15.24]}, {"num": "2", "name": "~", "type": "passive", "xy": [383.54, 22.86]}]}
+{"ref": "#PWR025", "value": "GND", "at": ["248.92", "134.62", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [248.92, 134.62]}]}
+{"ref": "#PWR030", "value": "GND", "at": ["298.45", "116.84", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 116.84]}]}
+{"ref": "R11", "value": "1.5k", "at": ["355.6", "20.32", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [355.6, 16.51]}, {"num": "2", "name": "~", "type": "passive", "xy": [355.6, 24.13]}]}
+{"ref": "C15", "value": "22pF", "at": ["490.22", "44.45", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [490.22, 40.64]}, {"num": "2", "name": "~", "type": "passive", "xy": [490.22, 48.26]}]}
+{"ref": "U1", "value": "SN74LS06NSR", "at": ["381", "25.4", "0"], "unit": "1", "pins": [{"num": "1", "name": "", "type": "input", "xy": [373.38, 25.4]}, {"num": "2", "name": "", "type": "open_collector", "xy": [388.62, 25.4]}]}
+{"ref": "#PWR061", "value": "GND", "at": ["397.51", "49.53", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [397.51, 49.53]}]}
+{"ref": "R4", "value": "820", "at": ["69.85", "107.95", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [69.85, 104.14]}, {"num": "2", "name": "~", "type": "passive", "xy": [69.85, 111.76]}]}
+{"ref": "C25", "value": "1uF", "at": ["417.83", "20.32", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [417.83, 16.51]}, {"num": "2", "name": "~", "type": "passive", "xy": [417.83, 24.13]}]}
+{"ref": "C18", "value": "1uF", "at": ["508", "44.45", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [508.0, 40.64]}, {"num": "2", "name": "~", "type": "passive", "xy": [508.0, 48.26]}]}
+{"ref": "R23", "value": "1.5k", "at": ["397.51", "100.33", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [397.51, 96.52]}, {"num": "2", "name": "~", "type": "passive", "xy": [397.51, 104.14]}]}
+{"ref": "U6", "value": "AK4490", "at": ["316.23", "101.6", "0"], "unit": "1", "pins": [{"num": "1", "name": "NC1", "type": "passive", "xy": [300.99, 101.6]}, {"num": "2", "name": "PDN", "type": "input", "xy": [300.99, 104.14]}, {"num": "3", "name": "BICK", "type": "input", "xy": [300.99, 106.68]}, {"num": "4", "name": "SDATA", "type": "input", "xy": [300.99, 109.22]}, {"num": "5", "name": "LRCK", "type": "input", "xy": [300.99, 111.76]}, {"num": "6", "name": "SSLOW", "type": "input", "xy": [300.99, 114.3]}, {"num": "7", "name": "SMUTE", "type": "input", "xy": [300.99, 116.84]}, {"num": "8", "name": "SD", "type": "input", "xy": [300.99, 119.38]}, {"num": "9", "name": "SLOW", "type": "input", "xy": [300.99, 121.92]}, {"num": "10", "name": "DIF0", "type": "input", "xy": [300.99, 124.46]}, {"num": "11", "name": "DIF1", "type": "input", "xy": [300.99, 127.0]}, {"num": "12", "name": "DIF2", "type": "input", "xy": [300.99, 129.54]}, {"num": "13", "name": "PSN", "type": "input", "xy": [300.99, 132.08]}, {"num": "14", "name": "I2C", "type": "input", "xy": [300.99, 134.62]}, {"num": "15", "name": "DEM0", "type": "input", "xy": [300.99, 137.16]}, {"num": "16", "name": "DEM1", "type": "input", "xy": [300.99, 139.7]}, {"num": "17", "name": "ACKS", "type": "input", "xy": [300.99, 142.24]}, {"num": "18", "name": "NC18", "type": "passive", "xy": [300.99, 144.78]}, {"num": "19", "name": "VREFHR", "type": "passive", "xy": [300.99, 147.32]}, {"num": "20", "name": "VREFHR*", "type": "passive", "xy": [300.99, 149.86]}, {"num": "21", "name": "VREFLR", "type": "passive", "xy": [300.99, 152.4]}, {"num": "22", "name": "VREFLR*", "type": "passive", "xy": [300.99, 154.94]}, {"num": "23", "name": "VCMR", "type": "passive", "xy": [300.99, 157.48]}, {"num": "24", "name": "NC24", "type": "passive", "xy": [300.99, 160.02]}, {"num": "48", "name": "DVDD", "type": "power_in", "xy": [331.47, 101.6]}, {"num": "47", "name": "DVSS", "type": "power_in", "xy": [331.47, 104.14]}, {"num": "46", "name": "MCLK", "type": "input", "xy": [331.47, 106.68]}, {"num": "45", "name": "AVSS", "type": "power_in", "xy": [331.47, 109.22]}, {"num": "44", "name": "AVDD", "type": "power_in", "xy": [331.47, 111.76]}, {"num": "43", "name": "NC43", "type": "passive", "xy": [331.47, 114.3]}, {"num": "42", "name": "VREFHL*", "type": "passive", "xy": [331.47, 116.84]}, {"num": "41", "name": "VREFHL", "type": "passive", "xy": [331.47, 119.38]}, {"num": "40", "name": "VREFLL*", "type": "passive", "xy": [331.47, 121.92]}, {"num": "39", "name": "VREFLL", "type": "passive", "xy": [331.47, 124.46]}, {"num": "38", "name": "VCML", "type": "passive", "xy": [331.47, 127.0]}, {"num": "37", "name": "NC37", "type": "passive", "xy": [331.47, 129.54]}, {"num": "36", "name": "AOUTLP", "type": "output", "xy": [331.47, 132.08]}, {"num": "35", "name": "AOUTLN", "type": "output", "xy": [331.47, 134.62]}, {"num": "34", "name": "VDDL*", "type": "power_in", "xy": [331.47, 137.16]}, {"num": "33", "name": "VDDL", "type": "power_in", "xy": [331.47, 139.7]}, {"num": "32", "name": "VSSL*", "type": "power_in", "xy": [331.47, 142.24]}, {"num": "31", "name": "VSSL", "type": "power_in", "xy": [331.47, 144.78]}, {"num": "30", "name": "VSSR*", "type": "power_in", "xy": [331.47, 147.32]}, {"num": "29", "name": "VSSR", "type": "power_in", "xy": [331.47, 149.86]}, {"num": "28", "name": "VDDR*", "type": "power_in", "xy": [331.47, 152.4]}, {"num": "27", "name": "VDDR", "type": "power_in", "xy": [331.47, 154.94]}, {"num": "26", "name": "AOUTRN", "type": "output", "xy": [331.47, 157.48]}, {"num": "25", "name": "AOUTRP", "type": "output", "xy": [331.47, 160.02]}]}
+{"ref": "#PWR028", "value": "GND", "at": ["298.45", "101.6", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 101.6]}]}
+{"ref": "C8", "value": "10uF", "at": ["358.14", "19.05", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [358.14, 15.24]}, {"num": "2", "name": "~", "type": "passive", "xy": [358.14, 22.86]}]}
+{"ref": "U4", "value": "TCM809TENB713", "at": ["269.24", "203.2", "0"], "unit": "1", "pins": [{"num": "3", "name": "V_{DD}", "type": "power_in", "xy": [266.7, 193.04]}, {"num": "1", "name": "GND", "type": "power_in", "xy": [266.7, 213.36]}, {"num": "2", "name": "~{RESET}", "type": "output", "xy": [276.86, 203.2]}]}
+{"ref": "C23", "value": "1nF", "at": ["397.51", "31.75", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [397.51, 27.94]}, {"num": "2", "name": "~", "type": "passive", "xy": [397.51, 35.56]}]}
+{"ref": "R12", "value": "1.5k", "at": ["355.6", "31.75", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [355.6, 27.94]}, {"num": "2", "name": "~", "type": "passive", "xy": [355.6, 35.56]}]}
+{"ref": "IC5", "value": "MUSES8920", "at": ["254", "271.78", "0"], "unit": "2", "pins": [{"num": "5", "name": "+", "type": "input", "xy": [246.38, 269.24]}, {"num": "6", "name": "-", "type": "input", "xy": [246.38, 274.32]}, {"num": "7", "name": "", "type": "output", "xy": [261.62, 271.78]}]}
+{"ref": "#PWR060", "value": "GND", "at": ["11.43", "104.14", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [11.43, 104.14]}]}
+{"ref": "R21", "value": "1.5k", "at": ["397.51", "76.2", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [397.51, 72.39]}, {"num": "2", "name": "~", "type": "passive", "xy": [397.51, 80.01]}]}
+{"ref": "#PWR011", "value": "GND", "at": ["213.36", "104.14", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [213.36, 104.14]}]}
+{"ref": "IC2", "value": "LP5907MFX-3.3/NOPB", "at": ["88.9", "254", "0"], "unit": "1", "pins": [{"num": "1", "name": "IN", "type": "power_in", "xy": [81.28, 251.46]}, {"num": "3", "name": "EN", "type": "input", "xy": [81.28, 254.0]}, {"num": "2", "name": "GND", "type": "power_in", "xy": [88.9, 261.62]}, {"num": "4", "name": "NC", "type": "no_connect", "xy": [93.98, 254.0]}, {"num": "5", "name": "OUT", "type": "power_out", "xy": [96.52, 251.46]}]}
+{"ref": "#PWR073", "value": "+3V3_118", "at": ["7.62", "142.24", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [7.62, 142.24]}]}
+{"ref": "#PWR029", "value": "GND", "at": ["298.45", "114.3", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 114.3]}]}
+{"ref": "T1", "value": "DA103C", "at": ["152.4", "33.02", "0"], "unit": "1", "pins": [{"num": "1", "name": "1", "type": "passive", "xy": [137.16, 33.02]}, {"num": "3", "name": "3", "type": "passive", "xy": [137.16, 35.56]}, {"num": "6", "name": "6", "type": "passive", "xy": [167.64, 33.02]}, {"num": "4", "name": "4", "type": "passive", "xy": [167.64, 35.56]}]}
+{"ref": "C24", "value": "1nF", "at": ["397.51", "57.15", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [397.51, 53.34]}, {"num": "2", "name": "~", "type": "passive", "xy": [397.51, 60.96]}]}
+{"ref": "C3", "value": "0.47uF", "at": ["19.05", "69.85", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [19.05, 66.04]}, {"num": "2", "name": "~", "type": "passive", "xy": [19.05, 73.66]}]}
+{"ref": "C6", "value": "0.1uF", "at": ["44.45", "57.15", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [44.45, 53.34]}, {"num": "2", "name": "~", "type": "passive", "xy": [44.45, 60.96]}]}
+{"ref": "R6", "value": "22", "at": ["530.86", "31.75", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [530.86, 27.94]}, {"num": "2", "name": "~", "type": "passive", "xy": [530.86, 35.56]}]}
+{"ref": "C29", "value": "0.1uF", "at": ["281.94", "195.58", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [281.94, 191.77]}, {"num": "2", "name": "~", "type": "passive", "xy": [281.94, 199.39]}]}
+{"ref": "#PWR034", "value": "+3V3_4490", "at": ["298.45", "127", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 127.0]}]}
+{"ref": "#PWR057", "value": "+15V", "at": ["251.46", "287.02", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [251.46, 287.02]}]}
+{"ref": "#PWR074", "value": "+3V3_118", "at": ["44.45", "13.97", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [44.45, 13.97]}]}
+{"ref": "C20", "value": "10uF", "at": ["508", "69.85", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [508.0, 66.04]}, {"num": "2", "name": "~", "type": "passive", "xy": [508.0, 73.66]}]}
+{"ref": "#PWR031", "value": "+3V3_4490", "at": ["298.45", "119.38", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 119.38]}]}
+{"ref": "J2", "value": "USB_C_Receptacle_USB2.0_16P", "at": ["561.34", "20.32", "0"], "unit": "1", "pins": [{"num": "S1", "name": "SHIELD", "type": "passive", "xy": [553.72, 43.18]}, {"num": "A1", "name": "GND", "type": "passive", "xy": [561.34, 43.18]}, {"num": "A12", "name": "GND", "type": "passive", "xy": [561.34, 43.18]}, {"num": "B1", "name": "GND", "type": "passive", "xy": [561.34, 43.18]}, {"num": "B12", "name": "GND", "type": "passive", "xy": [561.34, 43.18]}, {"num": "A4", "name": "VBUS", "type": "passive", "xy": [576.58, 5.08]}, {"num": "A9", "name": "VBUS", "type": "passive", "xy": [576.58, 5.08]}, {"num": "B4", "name": "VBUS", "type": "passive", "xy": [576.58, 5.08]}, {"num": "B9", "name": "VBUS", "type": "passive", "xy": [576.58, 5.08]}, {"num": "A5", "name": "CC1", "type": "bidirectional", "xy": [576.58, 10.16]}, {"num": "B5", "name": "CC2", "type": "bidirectional", "xy": [576.58, 12.7]}, {"num": "A7", "name": "D-", "type": "bidirectional", "xy": [576.58, 17.78]}, {"num": "B7", "name": "D-", "type": "bidirectional", "xy": [576.58, 20.32]}, {"num": "A6", "name": "D+", "type": "bidirectional", "xy": [576.58, 22.86]}, {"num": "B6", "name": "D+", "type": "bidirectional", "xy": [576.58, 25.4]}, {"num": "A8", "name": "SBU1", "type": "bidirectional", "xy": [576.58, 33.02]}, {"num": "B8", "name": "SBU2", "type": "bidirectional", "xy": [576.58, 35.56]}]}
+{"ref": "#PWR044", "value": "GND", "at": ["295.91", "160.02", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [295.91, 160.02]}]}
+{"ref": "R14", "value": "390", "at": ["375.92", "31.75", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [375.92, 27.94]}, {"num": "2", "name": "~", "type": "passive", "xy": [375.92, 35.56]}]}
+{"ref": "#PWR033", "value": "+3V3_4490", "at": ["298.45", "124.46", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 124.46]}]}
+{"ref": "#PWR016", "value": "GND", "at": ["213.36", "119.38", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [213.36, 119.38]}]}
+{"ref": "#PWR018", "value": "GND", "at": ["213.36", "124.46", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [213.36, 124.46]}]}
+{"ref": "#PWR052", "value": "+VIN_RAW", "at": ["374.65", "257.81", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [374.65, 257.81]}]}
+{"ref": "IC1", "value": "LP5907MFX-3.3/NOPB", "at": ["50.8", "254", "0"], "unit": "1", "pins": [{"num": "1", "name": "IN", "type": "power_in", "xy": [43.18, 251.46]}, {"num": "3", "name": "EN", "type": "input", "xy": [43.18, 254.0]}, {"num": "2", "name": "GND", "type": "power_in", "xy": [50.8, 261.62]}, {"num": "4", "name": "NC", "type": "no_connect", "xy": [55.88, 254.0]}, {"num": "5", "name": "OUT", "type": "power_out", "xy": [58.42, 251.46]}]}
+{"ref": "#PWR041", "value": "GND", "at": ["298.45", "144.78", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 144.78]}]}
+{"ref": "R25", "value": "100k", "at": ["218.44", "218.44", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [218.44, 214.63]}, {"num": "2", "name": "~", "type": "passive", "xy": [218.44, 222.25]}]}
+{"ref": "C5", "value": "0.1uF", "at": ["44.45", "44.45", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [44.45, 40.64]}, {"num": "2", "name": "~", "type": "passive", "xy": [44.45, 48.26]}]}
+{"ref": "JP1", "value": "IPS0_SEL", "at": ["259.08", "139.7", "0"], "unit": "1", "pins": [{"num": "1", "name": "Pin_1", "type": "passive", "xy": [254.0, 137.16]}, {"num": "2", "name": "Pin_2", "type": "passive", "xy": [254.0, 139.7]}, {"num": "3", "name": "Pin_3", "type": "passive", "xy": [254.0, 142.24]}]}
+{"ref": "#PWR055", "value": "GND", "at": ["405.13", "257.81", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [405.13, 257.81]}]}
+{"ref": "Y2", "value": "12MHz", "at": ["490.22", "20.32", "0"], "unit": "1", "pins": [{"num": "1", "name": "1", "type": "passive", "xy": [486.41, 20.32]}, {"num": "2", "name": "2", "type": "passive", "xy": [494.03, 20.32]}]}
+{"ref": "J3", "value": "TORX147FT", "at": ["19.05", "139.7", "0"], "unit": "1", "pins": [{"num": "1", "name": "Output", "type": "output", "xy": [8.89, 137.16]}, {"num": "2", "name": "GND", "type": "power_in", "xy": [8.89, 139.7]}, {"num": "3", "name": "Vcc", "type": "power_in", "xy": [8.89, 142.24]}]}
+{"ref": "U2", "value": "PCM2704CDBR", "at": ["449.58", "59.69", "0"], "unit": "1", "pins": [{"num": "1", "name": "XTO", "type": "output", "xy": [434.34, 59.69]}, {"num": "2", "name": "CK", "type": "output", "xy": [434.34, 62.23]}, {"num": "3", "name": "DT", "type": "passive", "xy": [434.34, 64.77]}, {"num": "4", "name": "PSEL", "type": "input", "xy": [434.34, 67.31]}, {"num": "5", "name": "DOUT", "type": "output", "xy": [434.34, 69.85]}, {"num": "6", "name": "DGND", "type": "power_in", "xy": [434.34, 72.39]}, {"num": "7", "name": "VDD", "type": "power_in", "xy": [434.34, 74.93]}, {"num": "8", "name": "D-", "type": "passive", "xy": [434.34, 77.47]}, {"num": "9", "name": "D+", "type": "passive", "xy": [434.34, 80.01]}, {"num": "10", "name": "VBUS", "type": "power_in", "xy": [434.34, 82.55]}, {"num": "11", "name": "ZGND", "type": "power_in", "xy": [434.34, 85.09]}, {"num": "12", "name": "AGNDL", "type": "power_in", "xy": [434.34, 87.63]}, {"num": "13", "name": "VCCL", "type": "power_in", "xy": [434.34, 90.17]}, {"num": "14", "name": "VOUTL", "type": "output", "xy": [434.34, 92.71]}, {"num": "28", "name": "XTI", "type": "input", "xy": [464.82, 59.69]}, {"num": "27", "name": "SSPND", "type": "output", "xy": [464.82, 62.23]}, {"num": "26", "name": "TEST0", "type": "input", "xy": [464.82, 64.77]}, {"num": "25", "name": "TEST1", "type": "input", "xy": [464.82, 67.31]}, {"num": "24", "name": "HID2_MD", "type": "input", "xy": [464.82, 69.85]}, {"num": "23", "name": "HID1_MC", "type": "input", "xy": [464.82, 72.39]}, {"num": "22", "name": "HID0_MS", "type": "input", "xy": [464.82, 74.93]}, {"num": "21", "name": "HOST", "type": "input", "xy": [464.82, 77.47]}, {"num": "20", "name": "VCCP", "type": "power_in", "xy": [464.82, 80.01]}, {"num": "19", "name": "PGND", "type": "power_in", "xy": [464.82, 82.55]}, {"num": "18", "name": "VCOM", "type": "passive", "xy": [464.82, 85.09]}, {"num": "17", "name": "AGNDR", "type": "power_in", "xy": [464.82, 87.63]}, {"num": "16", "name": "VCCR", "type": "power_in", "xy": [464.82, 90.17]}, {"num": "15", "name": "VOUTR", "type": "output", "xy": [464.82, 92.71]}]}
+{"ref": "R19", "value": "390", "at": ["375.92", "76.2", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [375.92, 72.39]}, {"num": "2", "name": "~", "type": "passive", "xy": [375.92, 80.01]}]}
+{"ref": "C10", "value": "0.1uF", "at": ["358.14", "44.45", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [358.14, 40.64]}, {"num": "2", "name": "~", "type": "passive", "xy": [358.14, 48.26]}]}
+{"ref": "C2", "value": "18pF", "at": ["19.05", "44.45", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [19.05, 40.64]}, {"num": "2", "name": "~", "type": "passive", "xy": [19.05, 48.26]}]}
+{"ref": "R17", "value": "1.5k", "at": ["355.6", "76.2", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [355.6, 72.39]}, {"num": "2", "name": "~", "type": "passive", "xy": [355.6, 80.01]}]}
+{"ref": "C21", "value": "0.1uF", "at": ["200.66", "20.32", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [200.66, 16.51]}, {"num": "2", "name": "~", "type": "passive", "xy": [200.66, 24.13]}]}
+{"ref": "#PWR023", "value": "GND", "at": ["248.92", "139.7", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [248.92, 139.7]}]}
+{"ref": "#PWR008", "value": "+3V3_4490", "at": ["281.94", "189.23", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [281.94, 189.23]}]}
+{"ref": "#PWR032", "value": "GND", "at": ["298.45", "121.92", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 121.92]}]}
+{"ref": "#PWR045", "value": "GND", "at": ["334.01", "129.54", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [334.01, 129.54]}]}
+{"ref": "R10", "value": "75", "at": ["200.66", "31.75", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [200.66, 27.94]}, {"num": "2", "name": "~", "type": "passive", "xy": [200.66, 35.56]}]}
+{"ref": "#PWR043", "value": "GND", "at": ["295.91", "154.94", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [295.91, 154.94]}]}
+{"ref": "#PWR020", "value": "GND", "at": ["213.36", "129.54", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [213.36, 129.54]}]}
+{"ref": "#PWR005", "value": "GND", "at": ["218.44", "224.79", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [218.44, 224.79]}]}
+{"ref": "C31", "value": "0.1uF", "at": ["400.05", "44.45", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [400.05, 40.64]}, {"num": "2", "name": "~", "type": "passive", "xy": [400.05, 48.26]}]}
+{"ref": "C4", "value": "0.1uF", "at": ["44.45", "19.05", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [44.45, 15.24]}, {"num": "2", "name": "~", "type": "passive", "xy": [44.45, 22.86]}]}
+{"ref": "#PWR042", "value": "GND", "at": ["294.64", "152.4", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [294.64, 152.4]}]}
+{"ref": "C32", "value": "1nF", "at": ["397.51", "113.03", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [397.51, 109.22]}, {"num": "2", "name": "~", "type": "passive", "xy": [397.51, 116.84]}]}
+{"ref": "R2", "value": "470", "at": ["44.45", "31.75", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [44.45, 27.94]}, {"num": "2", "name": "~", "type": "passive", "xy": [44.45, 35.56]}]}
+{"ref": "C9", "value": "10uF", "at": ["358.14", "31.75", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [358.14, 27.94]}, {"num": "2", "name": "~", "type": "passive", "xy": [358.14, 35.56]}]}
+{"ref": "C27", "value": "1nF", "at": ["397.51", "87.63", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [397.51, 83.82]}, {"num": "2", "name": "~", "type": "passive", "xy": [397.51, 91.44]}]}
+{"ref": "#PWR001", "value": "+3V3_118", "at": ["228.6", "190.5", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [228.6, 190.5]}]}
+{"ref": "C11", "value": "0.1uF", "at": ["358.14", "57.15", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [358.14, 53.34]}, {"num": "2", "name": "~", "type": "passive", "xy": [358.14, 60.96]}]}
+{"ref": "#PWR024", "value": "GND", "at": ["248.92", "137.16", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [248.92, 137.16]}]}
+{"ref": "#PWR071", "value": "USB_GND", "at": ["604.52", "53.34", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [604.52, 53.34]}]}
+{"ref": "#PWR075", "value": "GND", "at": ["44.45", "24.13", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [44.45, 24.13]}]}
+{"ref": "R28", "value": "5.1k", "at": ["604.52", "48.26", "0"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "passive", "xy": [604.52, 44.45]}, {"num": "2", "name": "~", "type": "passive", "xy": [604.52, 52.07]}]}
+{"ref": "#PWR038", "value": "+3V3_4490", "at": ["298.45", "137.16", "180"], "unit": "1", "pins": [{"num": "1", "name": "~", "type": "power_in", "xy": [298.45, 137.16]}]}
+label L_NODE2 (355.6, 49.53)
+label LRCK (295.91, 111.76)
+label RST_118 (218.44, 212.09)
+label L_NONINV (245.11, 231.14)
+label RX0 (44.45, 36.83)
+label R_OUT (397.51, 81.28)
+label L_NODE1 (355.6, 25.4)
+label SPDIF_OPT (7.62, 137.16)
+label USB_D+ (577.85, 22.86)
+label VREFHR_NET (298.45, 149.86)
+label L_OUT (262.89, 233.68)
+label USB_CC1 (577.85, 10.16)
+label MCLK (336.55, 106.68)
+label R_INV (397.51, 82.55)
+label LP_SIG (332.74, 132.08)
+label VREFHL_NET (334.01, 119.38)
+label RX0 (248.92, 116.84)
+label RP_SIG (355.6, 82.55)
+label R_OUT (397.51, 92.71)
+label R_NONINV (397.51, 95.25)
+label LN_SIG (355.6, 15.24)
+label USB_CC1 (591.82, 43.18)
+label LINE_OUT_L (433.07, 20.32)
+label R_NODE2 (375.92, 82.55)
+label R_NODE1 (355.6, 81.28)
+label LN_SIG (332.74, 134.62)
+label R_INV (397.51, 71.12)
+label L_INV (397.51, 15.24)
+label R_INV (375.92, 81.28)
+label USB_CC2 (577.85, 12.7)
+label RP_SIG (332.74, 160.02)
+label BICK (295.91, 106.68)
+label R_INV (245.11, 274.32)
+label R_OUT (262.89, 271.78)
+label R_NODE1 (375.92, 71.12)
+label LINE_OUT_L (417.83, 25.4)
+label USB_CC2 (604.52, 43.18)
+label USB_D+ (577.85, 25.4)
+label LP_SIG (355.6, 26.67)
+label R_NODE1 (355.6, 95.25)
+label L_INV (375.92, 25.4)
+label R_NONINV (375.92, 92.71)
+label L_NONINV (397.51, 52.07)
+label SPDIF_OPT (44.45, 26.67)
+label L_NODE2 (375.92, 26.67)
+label L_NONINV (397.51, 39.37)
+label SDATA (295.91, 109.22)
+label L_NODE1 (375.92, 15.24)
+label USB_D- (577.85, 20.32)
+label L_OUT (397.51, 25.4)
+label MCLK (210.82, 157.48)
+label LRCK (210.82, 160.02)
+label RST_118 (248.92, 144.78)
+label RST_4490 (279.4, 203.2)
+label RST_4490 (281.94, 212.09)
+label R_NONINV (245.11, 269.24)
+label L_INV (245.11, 236.22)
+label BICK (251.46, 157.48)
+label R_NODE2 (355.6, 105.41)
+label VREFHR_NET (298.45, 147.32)
+label RST_4490 (298.45, 104.14)
+label VREFHL_NET (400.05, 50.8)
+label LINE_OUT_R (417.83, 81.28)
+label L_INV (397.51, 26.67)
+label RST_118 (241.3, 203.2)
+label R_NODE2 (355.6, 92.71)
+label RN_SIG (355.6, 71.12)
+label L_NODE2 (355.6, 36.83)
+label SDATA (251.46, 160.02)
+label R_NONINV (397.51, 107.95)
+label VREFHR_NET (400.05, 26.67)
+label RN_SIG (332.74, 157.48)
+label R_OUT (417.83, 71.12)
+label L_OUT (417.83, 15.24)
+label L_NODE1 (355.6, 39.37)
+label LINE_OUT_R (433.07, 76.2)
+label USB_D- (577.85, 17.78)
+label VREFHL_NET (334.01, 116.84)
+label L_OUT (397.51, 36.83)
+label L_NONINV (375.92, 36.83)

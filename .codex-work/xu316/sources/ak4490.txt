@@ -1,0 +1,3602 @@
+PAGE 1
+                                                                             [AK4490]
+
+                          AK4490
+
+                             Premium 32-Bit 2ch DAC
+
+                                   1. General Description
+AK4490 is a new generation Premium 32-bit 2ch DAC with new technologies, achieving industry’s leading
+level low distortion characteristics and wide dynamic range. The AK4490 integrates a newly developed
+switched capacitor  filter “OSR Doubler”, making  it capable of supporting wide range signals and
+achieving low out-of-band noise while realizing low power consumption. Moreover, the AK4490 has five
+types of 32-bit digital filters, realizing simple and flexible sound tuning in wide range of applications. The
+AK4490 accepts up to 768kHz PCM data and 11.2MHz DSD data, ideal for a high-resolution audio source
+playback that are becoming widespread in network audios, USB-DACs and Car Audio Systems.
+
+Application: AV Receivers, CD/SACD player, Network Audios, USB DACs, USB Headphones, Sound
+              Plates/Bars, Car Audios, Automotive External Amplifiers, Measurement Equipment, Control
+            Systems, Public Audios (PA), Smart Cellular Phones, IC-Recorders, Bluetooth Headphones, HD
+            Audio/Voice Conference Systems
+
+                                          2. Features
+            256x Over sampling
+            Sampling Rate: 30kHz  768kHz
+            32-bit 8x Digital Filter
+                       - Ripple: 0.005dB, Attenuation: 100dB
+                       - Short Delay Sharp Roll-off, GD=6.25/fs
+                       - Short Delay Slow Roll-off, GD=5.3/fs
+                       - Sharp Roll-off
+                       - Slow Roll-off
+                       - Super Slow Roll-off
+            High Tolerance to Clock Jitter
+            Low Distortion Differential Output
+            2.8MHz, 5.6MHz and 11.2MHz DSD Input Support
+                       - Filter (fc=50kHz, fc=150kHz, 2.8MHz mode)
+            Digital De-emphasis for 32, 44.1, 48kHz sampling
+            Soft Mute
+            Digital Attenuator (255 levels and 0.5dB step)
+            Mono Mode
+            External Digital Filter Mode
+            THD+N: -112dB
+            DR, S/N: 120dB (Mono mode: 123dB)
+            I/F Format: 24/32bit MSB justified, 16/20/24/32bit LSB justified, I2S, DSD
+            Master Clock:
+               30kHz ~ 32kHz: 1152fs
+               30kHz ~ 54kHz: 512fs or 768fs
+               30kHz ~ 108kHz: 256fs or 384fs
+               108kHz ~ 216kHz: 128fs or 192fs
+                         ~ 384kHz: 64fs or 128fs
+                         ~ 768kHz: 64fs
+            Power Supply: DVDD=AVDD=3.0  3.6V, VDD1/2=4.75  7.2V
+            Digital Input Level: CMOS
+            Package: 48-pin LQFP
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 1 -
+PAGE 2
+                                                                             [AK4490]
+
+
+                                     3. Table of Contents
+
+1. General Description ....................................................................................................................................... 1
+2. Features.......................................................................................................................................................... 1
+3. Table of Contents .......................................................................................................................................... 2
+4. Block Diagram............................................................................................................................................... 4
+5. Pin Configurations and Functions ................................................................................................................. 5
+ ■ Ordering Guide ......................................................................................................................................... 5
+ ■ Pin Layout ................................................................................................................................................ 5
+ ■ Pin Functions ............................................................................................................................................ 6
+ ■ Handling of Unused Pin ........................................................................................................................... 8
+6. Absolute Maximum Ratings .......................................................................................................................... 9
+7. Recommended Operating Conditions ............................................................................................................ 9
+8. Electrical Characteristics ............................................................................................................................. 10
+ ■ Analog Characteristics ............................................................................................................................ 10
+ ■ Sharp Roll-Off Filter Characteristics (fs=44.1kHz) ............................................................................... 11
+ ■ Sharp Roll-Off Filter Characteristics (fs=96kHz) .................................................................................. 11
+ ■ Sharp Roll-Off Filter Characteristics (fs=192kHz) ................................................................................ 11
+ ■ Short Delay Sharp Roll-Off Filter Characteristics (fs=44.1kHz) ........................................................... 13
+ ■ Short Delay Sharp Roll-Off Filter Characteristics (fs=96kHz) .............................................................. 13
+ ■ Short Delay Sharp Roll-Off Filter Characteristics (fs=192kHz) ............................................................ 13
+ ■ Slow Roll-Off Filter Characteristics (fs=44.1kHz) ................................................................................ 15
+ ■ Slow Roll-Off Filter Characteristics (fs=96kHz) ................................................................................... 15
+ ■ Slow Roll-Off Filter Characteristics (fs=192kHz) ................................................................................. 15
+ ■ Short Delay Slow Roll-Off Filter Characteristics (fs=44.1kHz) ............................................................ 17
+ ■ Short Delay Slow Roll-Off Filter Characteristics (fs=96kHz) ............................................................... 17
+ ■ Short Delay Slow Roll-Off Filter Characteristics (fs=192kHz) ............................................................. 17
+ ■ DSD Mode Characteristics ..................................................................................................................... 19
+ ■ DC Characteristics .................................................................................................................................. 19
+ ■ Switching Characteristics ....................................................................................................................... 20
+ ■ Timing Diagram ..................................................................................................................................... 22
+9. Functional Descriptions ............................................................................................................................... 27
+ ■ D/A Conversion Mode ........................................................................................................................... 27
+ ■ System Clock .......................................................................................................................................... 27
+ ■ Audio Interface Format .......................................................................................................................... 34
+ ■ D/A Conversion Mode Switching Timing .............................................................................................. 39
+ ■ De-emphasis Filter .................................................................................................................................. 40
+ ■ Output Volume (PCM, DSD) ................................................................................................................. 40
+ ■ Zero Detection (PCM, DSD) .................................................................................................................. 41
+ ■ Mono Output (PCM, DSD, EX DF I/F) ................................................................................................. 41
+ ■ Sound Quality Control (PCM, DSD, Ex DF I/F).................................................................................... 41
+ ■ Soft Mute Operation (PCM, DSD) ......................................................................................................... 43
+ ■ System Reset .......................................................................................................................................... 43
+ ■ Power ON/OFF timing ........................................................................................................................... 44
+ ■ Reset Function ........................................................................................................................................ 45
+ ■ Synchronize Function ............................................................................................................................. 47
+ ■ Register Control Interface ...................................................................................................................... 49
+ ■ Register Map .......................................................................................................................................... 54
+ ■ Register Definitions ................................................................................................................................ 54
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 2 -
+PAGE 3
+                                                                             [AK4490]
+
+
+10. Recommended External Circuits ............................................................................................................... 60
+11. Package ...................................................................................................................................................... 64
+ ■ Outline Dimensions ................................................................................................................................ 64
+ ■ Material & Lead finish ........................................................................................................................... 64
+ ■ Marking .................................................................................................................................................. 65
+12. Revision History ........................................................................................................................................ 65
+IMPORTANT NOTICE .................................................................................................................................. 68
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 3 -
+PAGE 4
+                                                                             [AK4490]
+
+
+                                      4. Block Diagram
+
+
+
+
+
+                             DVDD     DVSS              PDN               AVDD      AVSS
+
+                                                                                                   VSSL
+                                                                                               VDDL
+       BICK/DCLK/BCK
+                        PCM                                         Interpolator                                                                                   SCF        AOUTLP     LRCK/DSDR/DINR            Data
+                                       Interface                                                               AOUTLN
+     SDATA/DSDL/DINL
+
+                                                                                           VCML
+                                                    Normal path   DATT                                                        VREFHL                         DSD                                        DSDD bit “0”  Soft Mute                              Modulator          Bias         VREFLL
+                                  Data                                                                               Vref
+                                       Interface  Volume bypass                                                       VREFLR
+                                       DSDD bit “1”                                                           VREFLL
+                                                                                      VCMR
+
+                                     External                                                             AOUTRP
+                           DF                                                      SCF
+                                       Interface                                                            AOUTRN
+           WCK
+
+
+
+
+          SSLOW
+                                                                                         VDDR        CSN/SMUTE                                  Control                                Clock
+                                                        Register                                  Divider        CCLK/DEM0
+          CDTI/DEM1                                                                            VSSR
+
+
+                           CAD1/ACKS PSN DZFL/DIF0 DZFR/DIF1 CAD0/DIF2     MCLK
+
+
+                                       Block Diagram
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 4 -
+PAGE 5
+                                                                             [AK4490]
+
+
+                           5. Pin Configurations and Functions
+
+■ Ordering Guide
+
+      AK4490EQ       40  +85C             48pin LQFP (0.5mm pitch)
+      AKD4490          Evaluation Board for AK4490
+
+
+■ Pin Layout
+
+                                                                AOUTLP     AOUTLN   VDDL   VDDL  VSSL   VSSL   VSSR   VSSR   VDDR   VDDR    AOUTRN    AOUTRP
+
+
+
+                     36 35 34 33 32 31 30 29 28 27 26 25
+         NC     37                                         24    NC
+       VCML     38                                         23    VCMR
+      VREFLL     39                                         22     VREFLR
+      VREFLL     40        AK4490              21     VREFLR
+      VREFHL     41                                         20    VREFHR
+                   42                                         19     VREFHR      VREFHL
+         NC     43                                         18    NC
+                                        Top View                   44                                         17     ACKS/CAD1       AVDD
+                   45                                         16    DEM1        AVSS
+                   46                                         15    DEM0       MCLK
+       DVSS     47                                         14      I2C
+       DVDD     48                                        13    PSN
+           1 2 3 4 5 6 7 8 9 10 11 12
+                     NC  PDN          BICK/DCLK/BCK          SDATA/DSDL/DINL        LRCK/DSDR/DINR      SSLOW/WCK      SMUTE/CSN        SD/CCLK/SCL        SLOW/CDTI/SDA            DIF0/DZFL/TSTO           DIF1/DZFR/TSTO     DIF2/CAD0
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 5 -
+PAGE 6
+                                                                             [AK4490]
+
+
+■ Pin Functions
+
+ No.  Pin Name        I/O                                Function
+  1  NC                   -   No internal bonding. Connect to GND.
+                        Power-Down Mode Pin
+  2  PDN                  I     When at “L”, the AK4490  is in power-down mode and  is held in
+                                  reset.The AK4490 must always be reset upon power-up.
+     BICK                I   Audio Serial Data Clock Pin in PCM Mode
+  3  DCLK               I  DSD Clock Pin in DSD Mode
+     BCK                 I   Audio Serial Data Clock Pin
+     SDATA              I   Audio Serial Data Input Pin in PCM Mode
+  4  DSDL                I  DSD Lch Data Input Pin in DSD Mode
+     DINL                I   Lch Audio Serial Data Input Pin
+     LRCK                I   L/R Clock Pin in PCM Mode
+  5  DSDR                I  DSD Rch Data Input Pin in DSD Mode in Serial Control Mode
+     DINR                I   Rch Audio Serial Data Input Pin in Serial Control Mode
+     SSLOW             I    Digital Filter Setting in Parallel Control Mode
+  6
+    WCK                 I   Word Clock input pin in Serial Control Mode
+                               Soft Mute Pin in Parallel Control Mode
+     SMUTE             I    When this pin is changed to “H”, soft mute cycle is initiated.
+  7
+                        When returning “L”, the output mute releases.
+     CSN                  I   Chip Select Pin in Serial Control Mode, I2C= “L”
+     SD                    I    Digital Filter Setting Pin in Parallel Control Mode
+  8  CCLK                I    Control Data Clock Pin in Serial Control Mode, I2C= “L”
+     SCL                  I    Control Data Clock Input Pin in Serial Control Mode, I2C= “H”
+    SLOW               I    Digital Filter Setting Pin in Parallel Control Mode
+  9   CDTI                 I    Control Data Input Pin in Serial Control Mode, I2C= “L”
+     SDA            I/O  I2C=”H”: Control Data Input Pin in Serial Control Mode, I2C= “H”
+      DIF0                 I    Digital Input Format 0 Pin in PCM Mode
+  10
+     DZFL       O   Lch Zero Input Detect Pin in Serial Control Mode
+      DIF1                 I    Digital Input Format 1 Pin in PCM Mode
+  11
+     DZFR       O   Rch Zero Input Detect Pin in Serial Control Mode
+      DIF2                 I    Digital Input Format 2 Pin in PCM Control Mode
+  12
+     CAD0                I   Chip Address 0 Pin in Serial Control Mode
+                                  Parallel or Serial Select Pin               (Internal pull-up pin)
+  13  PSN                  I
+                                “L”: Serial Control Mode, “H”: Parallel Control Mode
+  14   I2C                   I   I2C mode select pin in Serial mode       (Internal pull-down pin)
+  15  DEM0               I   De-emphasis Enable 0 Pin in Parallel Control Mode (Internal pull-up pin)
+Note: All input pins except internal pull-up/down pins must not be left floating.
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 6 -
+PAGE 7
+                                                                             [AK4490]
+
+
+
+  16  DEM1          I   De-emphasis Enable 1 Pin in Parallel Control Mode (Internal pull-down pin)
+     ACKS           I    Master Clock Auto Setting Mode Pin in Parallel Mode (Internal pull-down pin)
+  17
+     CAD1           I   Chip Address 1 Pin in Serial Control Mode
+  18  NC              -   No internal bonding. Connect to GND.
+  19  VREFHR       I   Rch High Level Voltage Reference Input Pin
+  20  VREFHR       I   Rch High Level Voltage Reference Input Pin
+  21  VREFLR       I   Rch Low Level Voltage Reference Input Pin
+  22  VREFLR       I   Rch Low Level Voltage Reference Input Pin
+                          Right channel Common Voltage Pin,
+  23  VCMR          -
+                          Normally connected to VREFLR with a 10uF electrolytic cap.
+  24  NC              -   No internal bonding. Connect to GND.
+  25  AOUTRP   O   Rch Positive Analog Output Pin
+  26  AOUTRN   O   Rch Negative Analog Output Pin
+  27  VDDR          -   Rch Analog Power Supply Pin, 4.75  7.2V
+  28  VDDR          -   Rch Analog Power Supply Pin, 4.75  7.2V
+  29  VSSR           -   Ground Pin
+  30  VSSR           -   Ground Pin
+  31  VSSL           Ground Pin
+  32  VSSL           Ground Pin
+  33  VDDL          -   Lch Analog Power Supply Pin, 4.75  7.2V
+  34  VDDL          -   Lch Analog Power Supply Pin, 4.75  7.2V
+  35  AOUTLN   O   Lch Negative Analog Output Pin
+  36  AOUTLP   O   Lch Positive Analog Output Pin
+                   No internal bonding.
+  37  NC              -                          Connect to GND.
+                           Left channel Common Voltage Pin,
+  38  VCML          -
+                          Normally connected to VREFLL with a 10uF electrolytic cap.
+  39  VREFLL       I   Lch Low Level Voltage Reference Input Pin
+  40  VREFLL       I   Lch Low Level Voltage Reference Input Pin
+  41  VREFHL       I   Lch High Level Voltage Reference Input Pin
+  42  VREFHL       I   Lch High Level Voltage Reference Input Pin
+                   No internal bonding.
+  43  NC              -
+                          Connect to GND.
+  44  AVDD          -   Analog Power Supply Pin, 3.0  3.6V
+  45  AVSS           -   Ground Pin
+  46  MCLK          I    Master Clock Input Pin
+  47  DVSS           -   Ground Pin
+  48  DVDD          -    Digital Power Supply Pin, 3.0  3.6V
+Note. All input pins except internal pull-up/down pins must not be left floating.
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 7 -
+PAGE 8
+                                                                             [AK4490]
+
+
+■ Handling of Unused Pin
+
+The unused I/O pins should be processed appropriately as below.
+
+(1) Parallel Mode (PCM Mode only)
+
+          Classification  Pin Name               Setting
+                 AOUTLP, AOUTLN    These pins must be open.
+        Analog
+                 AOUTRP, AOUTRN   These pins must be open.
+          Digital       I2C                    This pin must be connected to DVSS or open.
+
+
+(2) Serial Mode
+
+1. PCM Mode
+
+           Classification  Pin Name                 Setting
+                  AOUTLP, AOUTLN     These pins must be open.
+         Analog
+                  AOUTRP, AOUTRN     These pins must be open.
+                     PSN, DEM1            These pins must be connected to DVSS
+           Digital
+                DEM0                  This pin must be connected to DVDD.
+
+
+
+2. DSD Mode
+
+         Classification    Pin Name                    Setting
+                  AOUTLP, AOUTLN       These pins must be open.
+       Analog
+                  AOUTRP, AOUTRN       These pins must be open.
+                     PSN, DEM1              These pins must be connected to DVSS
+         Digital
+                DEM0                     This pin must be connected to DVDD.
+
+
+
+
+pull-up pin List
+         pull-up pin              13, 15
+
+
+pull-down pin List
+        pull-down pin           14, 16, 17
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 8 -
+PAGE 9
+                                                                             [AK4490]
+
+
+                               6. Absolute Maximum Ratings
+(AVSS=DVSS=VSSL=VSSR=VREFLL=VREFLR=0V; Note 1)
+ Parameter                                Symbol      min        max       Unit
+                 Analog                AVDD        0.3            4.6      V
+ Power Supplies:                 Analog                  VDDL/R       0.3            7.5      V
+                     Digital                DVDD        0.3            4.6      V
+               |AVSS  DVSS|   (Note 2)     GND             -              0.3      V
+ Input Current, Any Pin Except Supplies               IIN               -           10     mA
+ Digital Input Voltage                      VIND         0.3      DVDD+0.3    V
+ Ambient Temperature (Power applied)              Ta         40           85        C
+ Storage Temperature                                Tstg        65          150       C
+Note 1. All voltages with respect to ground.
+Note 2. AVSS, DVSS, VSSL and VSSR must be connected to the same analog ground plane.
+Note 3. Connect at least 0.1uF or more decoupling capacitors between VDDL/VDDR and VSSL/VSSR to
+        suppress affections by a static electricity noise or an over voltage (includes over shooting) that exceeds
+        absolute maximum ratings.
+
+WARNING: Operation at or beyond these limits may result in permanent damage to the device.
+           Normal operation is not guaranteed at these extremes.
+
+
+                          7. Recommended Operating Conditions
+(AVSS=DVSS=VSSL=VSSR =0V; Note 1)
+ Parameter                            Symbol       min         typ     max    Unit
+                   Analog           AVDD           3.0           3.3        3.6    V
+ Power Supplies
+                   Analog            VDDL/R         4.75          5.0        7.2    V
+     (Note 4)
+                       Digital           DVDD           3.0           3.3        3.6    V
+ Voltage Reference  “H” voltage reference  VREFHL/R  VDDL/R0.5        -    VDDL/R  V
+ (Note 5)           “L” voltage reference  VREFLL/R              VSSL/R        -     V
+Note 1. All voltages with respect to ground.
+Note 4. The power up sequence between AVDD, VDDL/R and DVDD is not critical.
+Note 5. The analog output voltage scales with the voltage of (VREFH  VREFL).
+    AOUT (typ.@0dB) = (AOUT+)  (AOUT) = 2.8Vpp  (VREFHL/R  VREFLL/R)/5.
+
+
+* AKM assumes no responsibility for the usage beyond the conditions in this data sheet.
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 9 -
+PAGE 10
+                                                                             [AK4490]
+
+
+                                8. Electrical Characteristics
+■ Analog Characteristics
+
+(Ta=25C; AVDD=DVDD=3.3V; AVSS=DVSS=VSSL/R=0V; VREFHL/R=VDDL/R=5V, VREFLL/R=
+VSSL/R=0V; Input data = 24bit; RL  1k; BICK=64fs; Signal Frequency = 1kHz; Sampling Frequency =
+44.1kHz; Measurement bandwidth = 20Hz ~ 20kHz; External Circuit: Figure 41; unless otherwise specified.)
+Parameter                                       min        typ     max      Unit
+Resolution                                                                   -              -        32        Bits
+Dynamic Characteristics      (Note 6)
+THD+N                   fs=44.1kHz   0dBFS                 -         -112       -105     dB
+                    BW=20kHz   60dBFS              -          -57        -49      dB
+                        fs=96kHz    0dBFS                 -         -109       -100     dB
+                    BW=40kHz   60dBFS              -          -54        -44      dB
+                        fs=192kHz    0dBFS                      -106       -100     dB
+                    BW=40kHz   60dBFS                     -54        -44      dB
+                    BW=80kHz   60dBFS                     -51        -41      dB
+Dynamic Range (60dBFS with A-weighted)    (Note 7)     115       120            -      dB
+S/N (A-weighted)                             (Note 8)     115       120            -      dB
+S/N (Mono mode, A-weighted)                           118       123            -      dB
+Interchannel Isolation  (1kHz)                            110       120            -      dB
+DC Accuracy
+Interchannel Gain Mismatch                                              -         0.15        0.3      dB
+Gain Drift                                    (Note 9)         -              -        20     ppm/C
+Output Voltage                               (Note 10)    2.65       2.8      2.95    Vpp
+Load Capacitance                                                           -              -        25       pF
+Load Resistance                              (Note 11)      1              -             -      k
+Power Supplies
+Power Supply Current
+          Normal operation (PDN pin = “H”)
+             VDDL/R                                        22        32    mA
+           AVDD                                                  0.6         1.2    mA
+           DVDD (fs= 44.1kHz)                              -         10        14    mA
+           DVDD (fs= 96kHz)                                 -         15        20    mA
+           DVDD (fs = 192kHz)                              -         17        23    mA
+          Power down (PDN pin = “L”)       (Note 12)
+            AVDD+VDDL/R+DVDD                         -         10       100     A
+Note 6. Measured by Audio Precision, System Two. Averaging mode. Refer to the evaluation board manual.
+Note 7. Figure 41 External LPF Circuit Example 2. 101dB for 16-bit data and 118dB for 20-bit data.
+Note 8. Figure 41 External LPF Circuit Example 2. S/N does not depend on input data size.
+Note 9. The voltage on (VREFH  VREFL) is held +5V externally.
+Note 10. Full-scale voltage(0dB). Output voltage scales with the voltage of (VREFHL/R  VREFLL/R).
+    AOUT (typ.@0dB) = (AOUT+)  (AOUT) = 2.8Vpp  (VREFHL/R  VREFLL/R)/5.
+Note 11. Regarding Load Resistance, AC load is 1k (min) with a DC cut capacitor (Figure 41). DC load is
+        1.5k ohm (min) without a DC cut capacitor (Figure 40). The load resistance value is with respect to
+        ground. Analog characteristics are sensitive to capacitive load that is connected to the output pin.
+        Therefore the capacitive load must be minimized.
+Note 12. In the power down mode. The PSN pin = DVDD, and all other digital input pins including clock pins
+     (MCLK, BICK and LRCK) are held DVSS.
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 10 -
+PAGE 11
+                                                                             [AK4490]
+
+
+■ Sharp Roll-Off Filter Characteristics (fs=44.1kHz)
+
+(Ta=25C; AVDD=DVDD=3.0~3.6V, VREFHL/R=VDDL/R=4.75  7.2V; Normal Speed Mode;
+DEM=OFF; SD bit=“0” or SD pin = “L”, SLOW bit=“0” or SLOW pin = “L”)
+Parameter                         Symbol     min         typ      max        Unit
+Digital Filter
+Passband         (Note 13)  0.01dB     PB         0                       20.0       kHz
+                         6.0dB                            -         22.05             -        kHz
+Stopband                   (Note 13)    SB         24.1                           kHz
+Passband Ripple                    PR                               0.005      dB
+Stopband Attenuation                SA        100                          dB
+Group Delay                (Note 14)   GD              -          29.4             -            1/fs
+Digital Filter + SCF
+Frequency Response: 0  20.0kHz                                 -         +0.1/-0.2          -        dB
+
+
+■ Sharp Roll-Off Filter Characteristics (fs=96kHz)
+
+Ta=25C; AVDD=DVDD=3.0~3.6V, VREFHL/R=VDDL/R=4.75  7.2V; Double Speed Mode; DEM=OFF;
+SD bit=“0” or SD pin = “L”, SLOW bit=“0” or SLOW pin = “L”)
+Parameter                         Symbol     min         typ      max        Unit
+Digital Filter
+Passband         (Note 13)  0.01dB     PB         0                       43.5       kHz
+                         6.0dB                            -          48.0             -        kHz
+Stopband                   (Note 13)    SB         52.5                           kHz
+Passband Ripple                    PR                               0.005      dB
+Stopband Attenuation                SA        100                          dB
+Group Delay                (Note 14)   GD              -          28.8             -            1/fs
+Digital Filter + SCF
+Frequency Response: 0  40.0kHz                                 -         +0.1/-0.6          -        dB
+
+
+■ Sharp Roll-Off Filter Characteristics (fs=192kHz)
+
+(Ta=25C; AVDD=DVDD=3.0~3.6V, VREFHL/R=VDDL/R=4.75  7.2V; Quad Speed Mode; DEM=OFF;
+SD bit=“0” or SD pin = “L”, SLOW bit=“0” or SLOW pin = “L”)
+Parameter                         Symbol     min         typ      max        Unit
+Digital Filter
+Passband         (Note 13)  0.01dB     PB         0                       87.0       kHz
+                         6.0dB                            -          96.0             -        kHz
+Stopband                   (Note 13)    SB        105                           kHz
+Passband Ripple                    PR                               0.005      dB
+Stopband Attenuation                SA         92                          dB
+Group Delay                (Note 14)   GD              -          28.8             -            1/fs
+Digital Filter + SCF
+Frequency Response: 0  80.0kHz                                 -         +0.1/-0.2          -        dB
+Note 13. The passband and stopband frequencies scale with fs. For example, PB=0.4535×fs (@0.01dB),
+        SB=0.546×fs.
+Note 14. The calculating delay time which occurred by digital filtering. This time is from setting the
+         16/20/24/32 bit data of both channels to the output of analog signal.
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 11 -
+PAGE 12
+                                                                             [AK4490]
+
+
+
+
+
+                           Figure 1. Sharp Roll-off Filter Frequency Response
+
+
+
+
+
+                            Figure 2. Sharp Roll-off Filter Passband Ripple
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 12 -
+PAGE 13
+                                                                             [AK4490]
+
+
+■ Short Delay Sharp Roll-Off Filter Characteristics (fs=44.1kHz)
+
+(Ta=25C; AVDD=DVDD=3.0~3.6V, VREFHL/R=VDDL/R=4.75  7.2V; Normal Speed Mode;
+DEM=OFF; SD bit=“1” or SD pin = “H”, SLOW bit=“0” or SLOW pin = “L”)
+Parameter                         Symbol     min         typ      max        Unit
+Digital Filter
+Passband         (Note 13)  0.01dB     PB         0                       20.0       kHz
+                         6.0dB                            -         22.05             -        kHz
+Stopband                   (Note 13)    SB         24.1                           kHz
+Passband Ripple                    PR                               0.005      dB
+Stopband Attenuation                SA        100                          dB
+Group Delay                (Note 14)   GD              -          6.25             -            1/fs
+Digital Filter + SCF
+Frequency Response : 0  20.0kHz                                -         -0.1/-0.2           -        dB
+
+
+■ Short Delay Sharp Roll-Off Filter Characteristics (fs=96kHz)
+
+(Ta=25C; AVDD=DVDD=3.0~3.6V, VREFHL/R=VDDL/R=4.75  7.2V; Double Speed Mode;
+DEM=OFF; SD bit=“1” or SD pin = “H”, SLOW bit=“0” or SLOW pin = “L”)
+Parameter                         Symbol     min         typ      max        Unit
+Digital Filter
+Passband         (Note 13)  0.01dB     PB         0                       43.5       kHz
+                         6.0dB                            -          48.0             -        kHz
+Stopband                   (Note 13)    SB         52.5                           kHz
+Passband Ripple                    PR                               0.005      dB
+Stopband Attenuation                SA        100                          dB
+Group Delay                (Note 14)   GD              -          5.63             -            1/fs
+Digital Filter + SCF
+Frequency Response : 0  40.0kHz                                -         +0.1/-0.6          -        dB
+
+
+■ Short Delay Sharp Roll-Off Filter Characteristics (fs=192kHz)
+
+(Ta=25C; AVDD=DVDD=3.0~3.6V, VREFHL/R=VDDL/R=4.75  7.2V; Quad Speed Mode; DEM=OFF;
+SD bit=“1” or SD pin = “H”, SLOW bit=“0” or SLOW pin = “L”)
+Parameter                         Symbol     min         typ      max        Unit
+Digital Filter
+Passband         (Note 13)  0.01dB     PB         0                       87.0       kHz
+                         6.0dB                            -          96.0             -        kHz
+Stopband                   (Note 13)    SB        105                           kHz
+Passband Ripple                    PR                               0.005      dB
+Stopband Attenuation                SA         92                          dB
+Group Delay                (Note 14)   GD              -          5.63             -            1/fs
+Digital Filter + SCF
+Frequency Response : 0  80.0kHz                                -         +0.1/-2.0          -        dB
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 13 -
+PAGE 14
+                                                                             [AK4490]
+
+
+
+
+
+                     Figure 3. Short delay Sharp Roll-off Filter Frequency Response
+
+
+
+
+
+                       Figure 4. Short delay Sharp Roll-off Filter Passband Ripple
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 14 -
+PAGE 15
+                                                                             [AK4490]
+
+
+■ Slow Roll-Off Filter Characteristics (fs=44.1kHz)
+
+(Ta=25C; AVDD=DVDD=3.0  3.6, VREFHL/R=VDDL/R=4.75  7.2V; Normal Speed Mode; DEM=OFF;
+SD bit=“0” or SD pin = “L”, SLOW bit=“1” or SLOW pin = “H”)
+Parameter                         Symbol     min         typ      max        Unit
+Digital Filter
+Passband         (Note 13)  0.01dB     PB         0                        4.4       kHz
+                         6.0dB                            -          18.2             -        kHz
+Stopband                   (Note 13)    SB         39.1                           kHz
+Passband Ripple                    PR                               0.005      dB
+Stopband Attenuation                SA         94                          dB
+Group Delay                (Note 14)   GD              -          6.63             -            1/fs
+Digital Filter + SCF
+Frequency Response: 0  20.0kHz                                 -         +0.1/-4.5          -        dB
+
+
+■ Slow Roll-Off Filter Characteristics (fs=96kHz)
+
+(Ta=25C; AVDD=DVDD=3.0  3.6, VREFHL/R=VDDL/R=4.75  7.2V; Double Speed Mode; DEM=OFF;
+SD bit=“0” or SD pin = “L”, SLOW bit=“1” or SLOW pin = “H”)
+Parameter                         Symbol     min         typ      max        Unit
+Digital Filter
+Passband         (Note 13)  0.01dB     PB         0                       18.1       kHz
+                         6.0dB                            -          45.6             -        kHz
+Stopband                   (Note 13)    SB         85.0                           kHz
+Passband Ripple                    PR                               0.005      dB
+Stopband Attenuation                SA        100                          dB
+Group Delay                (Note 14)   GD              -          6.00             -            1/fs
+Digital Filter + SCF
+Frequency Response: 0  40.0kHz                                 -         +0.1/-4.0          -        dB
+
+
+■ Slow Roll-Off Filter Characteristics (fs=192kHz)
+
+(Ta=25C; AVDD=DVDD=3.0  3.6, VREFHL/R=VDDL/R=4.75  7.2V; Quad Speed Mode; DEM=OFF;
+SD bit=“0” or SD pin = “L”, SLOW bit=“1” or SLOW pin = “H”)
+Parameter                         Symbol     min         typ      max        Unit
+Digital Filter
+Passband         (Note 13)  0.01dB     PB         0                       32.9       kHz
+                         6.0dB                            -          90.4             -        kHz
+Stopband                   (Note 13)    SB        171                           kHz
+Passband Ripple                    PR                               0.005      dB
+Stopband Attenuation                SA         97                          dB
+Group Delay                (Note 14)   GD              -          6.00             -            1/fs
+Digital Filter + SCF
+Frequency Response: 0  80.0kHz                                 -         +0.1/-5.5          -        dB
+Note 15. The passband and stopband frequencies scale with fs. For example, PB=0.4535×fs (@0.01dB),
+        SB=0.546×fs.
+Note 16. The calculating delay time which occurred by digital filtering. This time is from setting the
+         16/20/24/32 bit data of both channels to the output of analog signal.
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 15 -
+PAGE 16
+                                                                             [AK4490]
+
+
+
+
+
+                           Figure 5. Slow Roll-off Filter Frequency Response
+
+
+
+
+
+                             Figure 6. Slow Roll-off Filter Passband Ripple
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 16 -
+PAGE 17
+                                                                             [AK4490]
+
+
+■ Short Delay Slow Roll-Off Filter Characteristics (fs=44.1kHz)
+
+(Ta=25C; AVDD=DVDD=3.0  3.6, VREFHL/R=VDDL/R=4.75  7.2V; Normal Speed Mode; DEM=OFF;
+SD bit=“1” or SD pin = “H”, SLOW bit=“1” or SLOW pin = “H”)
+Parameter                         Symbol     min         typ      max        Unit
+Digital Filter
+Passband         (Note 13)  0.01dB     PB         0                        4.4       kHz
+                         6.0dB                            -          18.2             -        kHz
+Stopband                   (Note 13)    SB         39.1                           kHz
+Passband Ripple                    PR                               0.005      dB
+Stopband Attenuation                SA         94                          dB
+Group Delay               (Note 14)    GD              -           5.3              -            1/fs
+Digital Filter + SCF
+Frequency Response : 0  20.0kHz                                -         +0.1/-4.5          -        dB
+
+
+■ Short Delay Slow Roll-Off Filter Characteristics (fs=96kHz)
+
+(Ta=25C; AVDD=DVDD=3.0  3.6, VREFHL/R=VDDL/R=4.75  7.2V; Double Speed Mode; DEM=OFF;
+SD bit=“1” or SD pin = “H”)
+Parameter                         Symbol     min         typ      max        Unit
+Digital Filter
+Passband         (Note 13)  0.01dB     PB         0                       18.1       kHz
+                         6.0dB                            -          45.6             -        kHz
+Stopband                   (Note 13)    SB         85.0                           kHz
+Passband Ripple                    PR                               0.005      dB
+Stopband Attenuation                SA        100                          dB
+Group Delay               (Note 14)    GD              -          4.68             -            1/fs
+Digital Filter + SCF
+Frequency Response : 0  40.0kHz                                -         +0.1/-0.4          -        dB
+
+
+■ Short Delay Slow Roll-Off Filter Characteristics (fs=192kHz)
+
+(Ta=25C; AVDD=DVDD=3.0  3.6, VREFHL/R=VDDL/R=4.75  7.2V; Quad Speed Mode; DEM=OFF;
+SD bit=“1” or SD pin = “H”)
+Parameter                         Symbol     min         typ      max        Unit
+Digital Filter
+Passband         (Note 13)  0.01dB     PB         0                       32.9       kHz
+                         6.0dB                            -          96.0             -        kHz
+Stopband                   (Note 13)    SB        170                           kHz
+Passband Ripple                    PR                               0.005      dB
+Stopband Attenuation                SA         97                          dB
+Group Delay                (Note 14)   GD              -          4.68             -            1/fs
+Digital Filter + SCF
+Frequency Response : 0  80.0kHz                                -         +0.1/-5.5          -        dB
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 17 -
+PAGE 18
+                                                                             [AK4490]
+
+
+
+
+
+                     Figure 7. Short Delay Slow Roll-off Filter Frequency Response
+
+
+
+
+
+                       Figure 8. Short Delay Slow Roll-off Filter Passband Ripple
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 18 -
+PAGE 19
+                                                                              [AK4490]
+
+
+■ DSD Mode Characteristics
+
+(Ta=-40~85C; VDDL/R=4.75  7.2V, AVDD= DVDD=3.0 3.6V; fs=44.1kHz; D/P bit=“1”, DSDF
+bit=“0”)
+Parameter                              min        typ      max       Unit
+Digital Filter Response
+Frequency Response (Note 18)    20kHz                      -0.4               dB
+                            50kHz                      -2.8               dB
+                            100kHz                    -15.5               dB
+
+(Ta=-40~85C; VDDL/R=4.75  7.2V, AVDD= DVDD=3.0 3.6V; fs=44.1kHz; D/P bit=“1”, DSDF bit=“1”
+DSDD bit=“1”)
+Parameter                              min        typ      max       Unit
+Digital Filter Response
+                            20kHz                     -0.05               dB
+Frequency Response (Note 18)                            50kHz                     -0.29               dB
+                            100kHz                    -1.16               dB
+                            150kHz                      -2.8               dB
+Note 17. The peak level of DSD signal should be in the range of 25% ~ 75% Duty according to the SACD
+         format book (Scarlet Book).
+Note 18. The output level is assumed as 0dB when a 1kHz 25% ~ 75% Duty sine wave is input.
+
+
+■ DC Characteristics
+
+(Ta=25C; AVDD=DVDD=3.0  3.6, VREFHL/R=VDDL/R=4.75  7.2V)
+Parameter                             Symbol     min        typ      max      Unit
+High-Level Input Voltage                  VIH   70%DVDD        -               -      V
+Low-Level Input Voltage                   VIL             -               -    30%DVDD   V
+High-Level Output Voltage   (Iout=100A)   VOH   DVDD0.5        -               -      V
+Low-Level Output Voltage
+         (DZFL, DZFR pins: Iout=100A)    VOL             -               -           0.5     V
+        (SDA pin:          Iout=3mA)    VOL             -               -           0.4     V
+Input Leakage Current           (Note 19)        Iin              -               -        10     A
+Note 19. The DEM1, I2C and ACKS pins have internal pull-down and DEM0 and PSN pins have internal
+         pull-up devices, nominally 100k. Therefore the DEM1, I2C, ACKS, DEM0 and PSN pins are not
+         included.
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 19 -
+PAGE 20
+                                                                             [AK4490]
+
+
+■ Switching Characteristics
+
+(Ta=25C; AVDD=DVDD=3.0  3.6, VREFHL/R=VDDL/R=4.75  7.2V))
+Parameter                                    Symbol    min       typ    max   Unit
+Master Clock Timing
+       Frequency                                fCLK        7.7               49.152  MHz
+       Duty Cycle                             dCLK       40               60   %
+      Minimum Pulse Width                     tCLKH     9.155                        ns
+                                              tCLKL     9.155                        ns
+LRCK Frequency                   (Note 20)
+        1152fs, 512fs or 768fs                                  fsn        30               54    kHz
+       256fs or 384fs                                           fsd        54               108   kHz
+       128fs or 192fs                                           fsq       108              216   kHz
+        64fs                                                    fsoc                384           kHz
+        64fs                                                      fssd                768           kHz
+       Duty Cycle                                     Duty       45               55   %
+PCM Audio Interface Timing
+      BICK Period
+           1152fs, 512fs or 768fs                    tBCK     1/128fsn                      ns
+          256fs or 384fs                           tBCK     1/64fsd                       ns
+          128fs or 192fs                           tBCK     1/64fsq                       ns
+          64fs                                  tBCK     1/64fso                       ns
+          64fs                                  tBCK     1/64fsh                       ns
+      BICK Pulse Width Low                     tBCKL       9                          ns
+      BICK Pulse Width High                    tBCKH       9                          ns
+      BICK “” to LRCK Edge   (Note 21)           tBLR       5                          ns
+     LRCK Edge to BICK “”   (Note 21)           tLRB       5                          ns
+     SDATA Hold Time                          tSDH       5                          ns
+     SDATA Setup Time                           tSDS       5                          ns
+External Digital Filter Mode
+     BICK Period                                       tB        27                         ns
+    BCK Pulse Width Low                          tBL       10                         ns
+     BCK Pulse Width High                        tBH       10                         ns
+     BCK “” to WCK Edge                    tBW        5                          ns
+    WCK Period                           tWCK       1.3                       s
+    WCK Edge to BCK “”                     tWB        5                          ns
+    WCK Pulse Width Low                   tWCK      54                         ns
+    WCK Pulse Width High                   tWCH      54                         ns
+     DATA Hold Time                           tDH        5                          ns
+     DATA Setup Time                             tDS        5                          ns
+DSD Audio Interface Timing (64 mode,
+DSDSEL 1-0 bits = “00”)
+     DCLK Period                             tDCK                 1/64fs             ns
+     DCLK Pulse Width Low                    tDCKL      160                         ns
+     DCLK Pulse Width High                   tDCKH      160                         ns
+     DCLK Edge to DSDL/R   (Note 22)           tDDD      20               20      ns
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 20 -
+PAGE 21
+                                                                             [AK4490]
+
+
+DSD Audio Interface Timing (128 mode,
+DSDSEL 1-0 bits = “01”)
+     DCLK Period                             tDCK                1/128fs             ns
+     DCLK Pulse Width Low                    tDCKL      80                         ns
+     DCLK Pulse Width High                   tDCKH      80                         ns
+     DCLK Edge to DSDL/R  (Note 22)           tDDD      10               10      ns
+DSD Audio Interface Timing (256 mode,
+DSDSEL 1-0 bit = “10”)
+     DCLK Period                             tDCK                1/256fs             ns
+     DCLK Pulse Width Low                    tDCKL      40                         ns
+     DCLK Pulse Width High                   tDCKH      40                         ns
+     DCLK Edge to DSDL/R   (Note 22)           tDDD      5                5      ns
+Control Interface Timing
+     CCLK Period                             tCCK      200                         ns
+     CCLK Pulse Width Low                    tCCKL      80                         ns
+              Pulse Width High                   tCCKH      80                         ns
+      CDTI Setup Time                            tCDS       50                         ns
+      CDTI Hold Time                          tCDH       50                         ns
+     CSN High Time                          tCSW      150                         ns
+     CSN “” to CCLK “”                         tCSS       50                         ns
+     CCLK “” to CSN “”                       tCSH       50                         ns
+Control Interface Timing (I2C Bus mode):
+ SCL Clock Frequency                              fSCL           -                400   kHz
+ Bus Free Time Between Transmissions                tBUF        1.3                        -      s
+ Start Condition Hold Time (prior to first clock pulse)    tHD:STA      0.6                        -      s
+ Clock Low Time                             tLOW        1.3                        -      s
+ Clock High Time                                 tHIGH       0.6                        -      s
+ Setup Time for Repeated Start Condition              tSU:STA      0.6                        -      s
+ SDA Hold Time from SCL Falling    (Note 23)      tHD:DAT      0                         -      s
+ SDA Setup Time from SCL Rising                  tSU:DAT      0.1                        -      s
+ Rise Time of Both SDA and SCL Lines                    tR             -                   0.3     s
+ Fall Time of Both SDA and SCL Lines                       tF             -                   0.3     s
+ Setup Time for Stop Condition                      tSU:STO      0.6                        -      s
+ Pulse Width of Spike Noise Suppressed by Input Filter     tSP        0                50      ns
+ Capacitive load on bus                             Cb             -                400    pF
+Reset Timing
+     PDN Pulse Width         (Note 24)            tPD       150                         ns
+Note 20. When the 1152fs, 512fs or 768fs /256fs or 384fs /128fs or 192fs are switched, the AK4490 should be
+          reset by the PDN pin or RSTN bit.
+Note 21. BICK rising edge must not occur at the same time as LRCK edge.
+Note 22. DSD data transmitting device must meet this time.
+Note 23. Data must be held for sufficient time to bridge the 300 ns transition time of SCL.
+Note 24. The AK4490 can be reset by bringing the PDN pin to “L”.
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 21 -
+PAGE 22
+                                                                             [AK4490]
+
+
+■ Timing Diagram
+
+                                 1/fCLK
+
+                                                                             VIH
+  MCLK
+                                                                                      VIL
+
+                    tCLKH            tCLKL
+                                                      dCLK=tCLKH x fCLK, tCLKL x fCLK
+
+
+                                              1/fs
+
+                                                                             VIH
+  LRCK
+                                                                                     VIL
+
+
+                               tBCK
+
+                                                                            VIH
+   BICK
+                                                                                     VIL
+
+                     tBCKH            tBCKL
+
+
+                           tWCK
+
+                                                                             VIH
+  WCK
+                                                                                     VIL
+
+                  tWCKH          tWCKL
+
+
+                                       tB
+
+                                                                            VIH
+   BCK
+                                                                                     VIL
+
+                        tBH                tBL
+
+
+
+                                        Clock Timing
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 22 -
+PAGE 23
+                                                                             [AK4490]
+
+
+
+                                                                            VIH
+   LRCK
+                                                                                     VIL
+
+                     tBLR         tLRB
+
+
+                                                                            VIH
+    BICK
+                                                                                     VIL
+
+                                 tSDS        tSDH
+
+
+                                                                            VIH
+   SDATA
+                                                                                     VIL
+
+                             Audio Interface Timing (PCM Mode)
+
+
+
+
+                                          tDCK
+
+                                     tDCKL       tDCKH
+
+                                                                                 VIH
+       DCLK
+                                                                                          VIL
+
+
+                           tDDD
+
+       DSDL                                                                   VIH
+       DSDR                                                                                          VIL
+
+
+                        tDDD
+
+       DSDL                                                                   VIH
+       DSDR                                                                                          VIL
+
+
+
+                Audio Serial Interface Timing (DSD Normal Mode, DCKB bit = “0”)
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 23 -
+PAGE 24
+                                                                             [AK4490]
+
+
+                                          tDCK
+
+                                     tDCKL       tDCKH
+
+                                                                                 VIH
+       DCLK
+                                                                                          VIL
+
+
+                           tDDD        tDDD
+
+       DSDL                                                                   VIH
+       DSDR                                                                                          VIL
+
+
+                         tDDD       tDDD
+
+       DSDL                                                                   VIH
+       DSDR                                                                                          VIL
+
+
+
+            Audio Serial Interface Timing (DSD Phase Modulation Mode, DCKB bit = “0”)
+
+
+
+                                                                                VIH
+      CSN
+                                                                                         VIL
+
+
+                      tCSS        tCCKL tCCKH
+
+                                                                                VIH
+      CCLK
+                                                                                         VIL
+
+                                 tCDS  tCDH
+
+
+                                                                                VIH
+       CDTI             C1          C0         R/W         A4
+                                                                                         VIL
+
+
+                        WRITE Command Input Timing
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 24 -
+PAGE 25
+                                                                             [AK4490]
+
+
+
+                                                          tCSW
+
+                                                                                VIH
+      CSN
+                                                                                         VIL
+
+
+                                                                tCSH
+
+                                                                                VIH
+      CCLK
+                                                                                         VIL
+
+
+
+
+                                                                                VIH
+       CDTI       D3          D2         D1         D0
+                                                                                         VIL
+
+
+                          WRITE Data Input Timing
+
+
+
+
+
+                                                                                   VIH
+SDA
+                                                                                            VIL
+       tBUF     tLOW  tR      tHIGH    tF
+                                                                          tSP
+
+                                                                                   VIH
+SCL
+                                                                                            VIL
+
+           tHD:STA      tHD:DAT     tSU:DAT  tSU:STA                     tSU:STO
+
+     Stop   Start                                              Start                           Stop
+                                        I2C Bus Mode Timing
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 25 -
+PAGE 26
+                                                                             [AK4490]
+
+
+
+
+
+                               tPD
+
+      PDN
+                                                                                   VIL
+                               Power Down & Reset Timing
+
+
+
+
+
+                                                                        VIH
+WCK
+                                                                                 VIL
+
+               tBW        tWB
+
+
+                                                                        VIH
+BCK
+                                                                                 VIL
+
+                               tDS          tDH
+
+DINL                                                                    VIH
+DINR                                                                                 VIL
+
+
+
+                                     External Digital Filter I/F mode
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 26 -
+PAGE 27
+                                                                             [AK4490]
+
+
+                                 9. Functional Descriptions
+
+■ D/A Conversion Mode
+
+In serial mode, the AK4490 can perform D/A conversion for either PCM data or DSD data. The D/P bit
+controls PCM/DSD mode. When DSD mode, DSD data can be input from DCLK, DSDL and DSDR pins.
+When PCM mode, PCM data can be input from BICK, LRCK and SDATA pins. When PCM/DSD mode is
+changed by D/P bit, the AK4490 should be reset by RSTN bit. It takes about 2/fs to 3/fs to change the mode. In
+parallel mode, the AK4490 performs for only PCM data.
+
+                            DP bit     Interface
+                                     0     PCM
+                                     1      DSD
+                                 Table 1. PCM/DSD Mode Control
+
+When DP bit= “0”, an internal digital filter or external digital filter can be selected. When using an external
+digital filter (EX DF I/F mode), data is input to each MCLK, BCK, WCK, DINL and DINR pin. EXDF bit
+controls the modes. When switching internal and external digital filters, the AK4490 must be reset by RSTN
+bit. A Digital filter switching takes 2~3k/fs.
+
+                          EXDF bit     Interface
+                                     0      PCM
+                                     1     EX DF I/F
+                            Table 2. Digital Filter Control (DP bit = “0”)
+
+■ System Clock
+
+[1] PCM Mode
+
+The external clocks, which are required to operate the AK4490, are MCLK, BICK and LRCK. MCLK should
+be synchronized with LRCK but the phase is not critical. The MCLK is used to operate the digital interpolation
+filter and the delta-sigma modulator. There are two modes for MCLK frequency setting: Manual Setting Mode
+and Auto Setting Mode. In manual setting mode, MCLK frequency is set automatically (Table 4). In auto
+setting mode, sampling speed and MCLK frequency are detected automatically (Table 5) and then the initial
+master clock is set to the appropriate frequency (Table 6). When the reset is released (PDN pin = “”), the
+AK4490 is in auto setting mode.
+
+The AK4490 is automatically placed in reset state when MCLK and LRCK are stopped during a normal
+operation (PDN pin =“H”), and the analog output becomes Hi-z state. When MCLK and LRCK are input
+again, the AK4490 exits reset state and starts operation. After exiting system reset (PDN pin =“L”→“H”) at
+power-up and other situations, the AK4490 is in power-down mode until MCLK and LRCK are supplied.
+
+The MCLK frequency corresponding to each sampling speed should be provided externally (Table 3).
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 27 -
+PAGE 28
+                                                                             [AK4490]
+
+
+(1) Parallel Mode (PSN pin = “H”)
+
+1. Manual Setting Mode (ACKS pin = “L”)
+
+The MCLK frequency corresponding to each sampling speed should be provided externally (Table 3). DFS1-0
+bit is fixed to “00”. In this mode, quad speed and double speed modes are not available.
+
+ LRCK                     MCLK (MHz)                          BICK
+     fs        128fs      192fs      256fs      384fs      512fs      768fs     1152fs       64fs
+ 32.0kHz    N/A     N/A      8.1920    12.2880   16.3840   24.5760   36.8640  2.0480MHz
+ 44.1kHz    N/A     N/A     11.2896   16.9344   22.5792   33.8688    N/A    2.8224MHz
+ 48.0kHz    N/A     N/A     12.2880   18.4320   24.5760   36.8640    N/A    3.0720MHz
+      Table 3. System Clock Example (Manual Setting Mode @Parallel Mode) (N/A: Not available)
+
+In manual setting mode, the AK4490 supports sampling rate from 32kHz to 96kHz (Table 4). However, the
+DR and S/N performances of when MCLK=256fs/384fs will degrade approximately 3dB as compared to when
+MCLK=512fs/768fs if the sampling rate is 32kHz~48kHz.
+
+                 ACKS pin       MCLK           DR,S/N
+                      L        256fs/384fs/512fs/768fs     120dB
+                  H              256fs/384fs          117dB
+                  H              512fs/768fs          120dB
+           Table 4. Relationship of MCLK Frequency and DR, S/N Performance (fs = 44.1kHz)
+
+
+2. Auto Setting Mode (ACKS pin = “H”)
+
+In auto setting mode, MCLK frequency and sampling frequency are detected automatically (Table 5). MCLK
+of corresponded frequency to each sampling speed mode should be input externally. (Table 6)
+
+                     MCLK             Sampling Speed
+                                 1152fs           Normal (fs32kHz)
+                          512/256fs    768/384fs         Normal
+                            256fs        384fs           Double
+                            128fs        192fs           Quad
+                              64fs         96fs              Oct
+                              32fs         48fs            Hex
+                    Table 5. Sampling Speed (Auto Setting Mode @Parallel Mode)
+
+ LRCK                       MCLK (MHz)                                  Sampling
+    fs      32fs   48fs   64fs   96fs   128fs   192fs   256fs   384fs   512fs   768fs  1152fs   Speed
+ 32.0kHz   N/A    N/A    N/A    N/A    N/A     N/A     8.192    12.288   16.384   24.576    36.864
+ 44.1kHz   N/A    N/A    N/A    N/A    N/A     N/A    11.2896  16.9344  22.5792  33.8688   N/A    Normal
+ 48.0kHz   N/A    N/A    N/A    N/A    N/A     N/A     12.288   18.432   24.576   36.864    N/A
+ 88.2kHz   N/A    N/A    N/A    N/A    N/A     N/A    22.5792  33.8688   N/A     N/A     N/A
+                                                                                       Double
+ 96.0kHz   N/A    N/A    N/A    N/A    N/A     N/A     24.576   36.864    N/A     N/A     N/A
+176.4kHz   N/A    N/A    N/A    N/A   22.5792  33.8688   N/A     N/A     N/A     N/A     N/A    Quad
+192.0kHz   N/A    N/A    N/A    N/A    24.576   36.864    N/A     N/A     N/A     N/A     N/A    Quad
+ 384kHz    N/A    N/A    24.576  36.864   N/A     N/A     N/A     N/A     N/A     N/A     N/A      Oct
+ 768kHz   24.576  36.864   N/A    N/A    N/A     N/A     N/A     N/A     N/A     N/A     N/A     Hex
+        Table 6. System Clock Example (Auto Setting Mode @Parallel Mode) (N/A: Not available)
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 28 -
+PAGE 29
+                                                                             [AK4490]
+
+
+
+When MCLK= 256fs/384fs, auto setting mode supports sampling rate of 32kHz~96kHz (Table 7). However,
+the DR and S/N performances will degrade approximately 3dB as compared to when MCLK= 512fs/768fs
+when the sampling rate is 32kHz~48kHz.
+
+
+                 ACKS pin       MCLK           DR,S/N
+                      L        256fs/384fs/512fs/768fs     120dB
+                  H              256fs/384fs          117dB
+                  H              512fs/768fs          120dB
+           Table 7. Relationship of MCLK Frequency and DR, S/N Performance (fs = 44.1kHz)
+
+
+3. Digital filter
+
+The AK4490 has four kinds of digital filter selected by SD and SLOW pins. Different sound qualities on
+playback can be selected by these filters.
+
+          SD pin   SLOW pin              Mode
+            L        L                Sharp roll-off filter
+            L       H               Slow roll-off filter
+          H        L            Short delay Sharp roll-off filter        (default)
+          H       H            Short delay Slow roll-off filter
+                                   Table 8. Digital Filter Setting
+
+The AK4490 can be operated on a slower sampling frequency. This mode is available when the SSLOW pin =
+“H”.
+
+
+(2) Serial Mode (PSN pin = “L”)
+
+1. Manual Setting Mode (ACKS bit = “0”)
+
+MCLK frequency is detected automatically and the sampling speed is set by DFS2-0 bits (Table 9). The
+MCLK frequency corresponding to each sampling speed should be provided externally (Table 10). The
+AK4490 is set to Manual Setting Mode at power-up (PDN pin = “L” →“H”). When DFS2-0 bits are changed,
+the AK4490 should be reset by RSTN bit.
+
+          DFS2   DFS1   DFS0             Sampling Rate (fs)
+             0       0       0     Normal Speed Mode   30kHz  54kHz   (default)
+             0       0       1      Double Speed Mode   54kHz  108kHz
+                                                       120kHz              0       1       0      Quad Speed Mode
+                                                        216kHz
+             0       1       1           Reserved                     -
+             1       0       0       Oct Speed Mode        384kHz
+             1       0       1      Hex Speed Mode        768kHz
+             1       1       0           Reserved                     -
+             1       1       1           Reserved                     -
+                    Table 9. Sampling Speed (Manual Setting Mode @Serial Mode)
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 29 -
+PAGE 30
+                                                                                  [AK4490]
+
+
+
+ LRCK                         MCLK (MHz)                                     Sampling
+    fs       32fs    48fs    64fs    96fs    128fs   192fs   256fs    384fs    512fs    768fs   1152fs    Speed
+ 32.0kHz    N/A    N/A     N/A     N/A     N/A     N/A     8.1920    12.2880   16.3840   24.5760   36.8640
+ 44.1kHz    N/A    N/A     N/A     N/A     N/A     N/A    11.2896   16.9344   22.5792   33.8688    N/A    Normal
+ 48.0kHz    N/A    N/A     N/A     N/A     N/A     N/A    12.2880   18.4320   24.5760   36.8640    N/A
+ 88.2kHz    N/A    N/A     N/A     N/A     N/A     N/A    22.5792   33.8688    N/A     N/A     N/A
+                                                                                             Double
+ 96.0kHz    N/A    N/A     N/A     N/A     N/A     N/A    24.5760   36.8640    N/A     N/A     N/A
+176.4kHz    N/A    N/A     N/A     N/A   22.5792  33.8688   45.1584    N/A     N/A     N/A     N/A     Quad
+192.0kHz    N/A    N/A     N/A     N/A   24.5760  36.8640    49.152    N/A     N/A     N/A     N/A     Quad
+ 384kHz    12.288   18.432   24.576   36.864   49.152    N/A     N/A     N/A     N/A     N/A     N/A      Oct
+ 768kHz    24.576   36.864   49.152    N/A     N/A     N/A     N/A     N/A     N/A     N/A     N/A     Hex
+                      Table 10. System Clock Example (Manual Setting Mode @Serial Mode)
+
+
+       2. Auto Setting Mode (ACKS bit = “1”)
+
+    MCLK frequency and the sampling speed are detected automatically (Table 11) and DFS1-0 bits are ignored.
+     The MCLK frequency corresponding to each sampling speed should be provided externally (Table 12).
+
+                         MCLK             Sampling Speed
+                                       1152fs           Normal (fs32kHz)
+                                512/256fs    768/384fs         Normal
+                                  256fs        384fs           Double
+                                  128fs        192fs           Quad
+                          Table 11. Sampling Speed (Auto Setting Mode @Serial Mode)
+
+
+     LRCK                           MCLK(MHz)                                  Sampling
+            fs      32fs   48fs   64fs   96fs   128fs   192fs   256fs   384fs   512fs   768fs  1152fs   Speed
+      32.0kHz   N/A    N/A    N/A    N/A    N/A     N/A     8.192    12.288   16.384   24.576    36.864
+      44.1kHz   N/A    N/A    N/A    N/A    N/A     N/A    11.2896  16.9344  22.5792  33.8688   N/A    Normal
+      48.0kHz   N/A    N/A    N/A    N/A    N/A     N/A     12.288   18.432   24.576   36.864    N/A
+      88.2kHz   N/A    N/A    N/A    N/A    N/A     N/A    22.5792  33.8688   N/A     N/A     N/A
+                                                                                            Double
+      96.0kHz   N/A    N/A    N/A    N/A    N/A     N/A     24.576   36.864    N/A     N/A     N/A
+     176.4kHz   N/A    N/A    N/A    N/A   22.5792  33.8688   N/A     N/A     N/A     N/A     N/A    Quad
+     192.0kHz   N/A    N/A    N/A    N/A    24.576   36.864    N/A     N/A     N/A     N/A     N/A    Quad
+      384kHz    N/A    N/A    24.576  36.864   N/A     N/A     N/A     N/A     N/A     N/A     N/A      Oct
+      768kHz   24.576  36.864   N/A    N/A    N/A     N/A     N/A     N/A     N/A     N/A     N/A     Hex
+                       Table 12. System Clock Example (Auto Setting Mode @Serial Mode)
+
+    When MCLK= 256fs/384fs, auto setting mode supports sampling rate of 32kHz~96kHz (Table 13). However,
+      the DR and S/N performances will degrade approximately 3dB as compared to when MCLK= 512fs/768fs
+     when the sampling rate is 32kHz~48kHz.
+
+                     ACKS bit       MCLK           DR,S/N
+                                0         256fs/384fs/512fs/768fs     120dB
+                                1              256fs/384fs          117dB
+                                1              512fs/768fs          120dB
+                Table 13. Relationship of MCLK Frequency and DR, S/N Performance (fs = 44.1kHz)
+
+
+
+
+     MS1648-E-03                                                                          2014/11
+                                                                      - 30 -
+PAGE 31
+                                                                             [AK4490]
+
+
+3. Digital filter
+
+The AK4490 has four kinds of digital filter selected by SD and SLOW bits. Different sound qualities on
+playback can be selected by these filters.
+
+          SD bit   SLOW bit              Mode
+               0          0                Sharp roll-off filter
+               0          1               Slow roll-off filter
+               1          0            Short delay Sharp roll-off filter        (default)
+               1          1            Short delay Slow roll-off filter
+                                  Table 14. Digital Filter Setting
+
+The AK4490 can be operated on a slower sampling frequency. This mode is available when the SSLOW bit =
+“H” (05H D0).
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 31 -
+PAGE 32
+                                                                             [AK4490]
+
+
+[2] DSD Mode
+
+The AK4490 has a DSD playback function. The external clocks, which are required in DSD mode, are MCLK
+and DCLK. MCLK should be synchronized with DCLK but the phase is not critical. The frequency of MCLK
+is set by DCKS bit.
+
+The AK4490 is automatically placed in reset state when MCLK is stopped during a normal operation (PDN pin
+=“H”), and the analog output becomes Hi-z state. However, the external clock (DCLK) should not be stopped.
+When DCLK is not supplied, the AK4490 may not be able to operate properly because of an over current since
+it has a dynamic logic circuit internally. The PDN pin should be set to “L” when stopping the DCLK. When the
+reset is released (PDN pin = “L” → “H”), the AK4490 is in power-down state until MCLK and DCLK are
+input.
+
+             DCKS bit  MCLK Frequency  DCLK Frequency
+                    0             512fs           64fs/128fs/256fs     (default)
+                    1             768fs           64fs/128fs/256fs
+                               Table 15. System Clock (DSD Mode)
+
+The AK4490 supports DSD data stream of 2.8224MHz (64fs), 5.6448MHz (128fs) and 11.2896MHz (256fs).
+The data sampling speed is selected by DSDSEL1-0 bits.
+
+                 DSDSEL1  DSDSEL0  DSD data stream
+                         0          0        2.8224MHz      (default)
+                         0          1        5.6448MHz
+                         1          0        11.2896MHz
+                         1          1          Reserved
+                              Table 16. DSD Sampling Speed Control
+
+The AK4490 has a Volume bypass function for play backing DSD signal. Two modes are selectable by DSDD
+bit. When setting DSDD bit = “1”, the output volume control function is not available.
+
+                     DSDD       Mode
+                              0        Normal Path      (default)
+                              1      Volume Bypass
+                              Table 17. DSD Play Back Mode Control
+
+When DSDD bit = “1”, filter characteristic can be switched between 50kHz and 100kHz by DSDF bit.
+
+             DSDD bit  DSDF bit         Cut Off Filter
+                      0         0             50kHz              (default)
+                      0         1              Reserved
+                      1         0             50kHz
+                      1         1             150kHz
+                                    Table 18. DSD Filter Select
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 32 -
+PAGE 33
+                                                                             [AK4490]
+
+
+Full Scale (FS) DSD Signal Detection Function
+
+The AK4490 has a full scale (FS) detection function at each channel in DSD Mode. When DSDL or DSDR
+input data is continuously “0” (-FS) or “1” (+FS) for 2048 cycles, the AK4490 detects full scale and enters full
+scale detection status and DML or DMR bit becomes “1”. The output will be muted by full scale detection if
+DDM bit = “1”. When DSDD bit is “0”, the output is attenuated in soft transition. When DSDD bit is “1”, the
+soft transition is disabled.
+
+Recovery method to normal operation mode from full scale detection status is controlled by DMC bit when
+DDM bit = “1”. When DMC bit = “0”, the AK4490 returns to normal operation automatically by a normal
+signal input. When DMC bit = “1”, the AK4490 returns normal operation by writing DMRE bit = “1”.
+
+
+        DSDD            Mode                 Status After Detection
+            0              Normal Path            DSD Mute            (default)
+            1            Volume Bypass              PD
+                Table 19. DSD Mode and the Device Status after Detection (DDM bit= “0”)
+
+
+
+
+      DSD Error                  2048fs
+       (DDR or DDLbit)
+
+
+      DSD Data     DSD Data          DSD Data(FS or -FS )        DSD Data
+
+
+      AOUT
+
+
+
+               Figure 9. Analog Output Waveform on DSD FS Detection (DSDD bit= “1”)
+
+
+
+
+      DSD Error                  2048fs
+       (DDR or DDLbit)
+
+
+      DSD Data     DSD Data          DSD Data(FS or -FS )        DSD Data
+
+
+      AOUT
+
+
+
+
+               Figure 10. Analog Output Waveform on DSD FS Detection (DSDD bit= “0”)
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 33 -
+PAGE 34
+                                                                             [AK4490]
+
+
+■ Audio Interface Format
+
+[1] PCM Mode
+
+Data is shifted in via the SDATA pin using BICK and LRCK inputs. Eight data formats are supported and
+selected by the DIF2-0 pins (Parallel control mode) or DIF2-0 bits (Serial control mode) as shown in Table 20.
+In all formats the serial data is MSB-first, 2's compliment format and is latched on the rising edge of BICK.
+Mode 2 can be used for 20-bit and 16-bit MSB justified formats by zeroing the unused LSBs.
+
+     Mode   DIF2   DIF1   DIF0        Input Format      BICK      Figure
+        0      0       0       0       16-bit LSB justified    32fs    Figure 11
+        1      0       0       1       20-bit LSB justified    48fs    Figure 12
+        2      0       1       0      24-bit MSB justified    48fs    Figure 13   (default)
+        3      0       1       1      24-bit I2S compatible    48fs    Figure 14
+        4      1       0       0       24-bit LSB justified    48fs    Figure 12
+        5      1       0       1       32-bit LSB justified    64fs    Figure 15
+        6      1       1       0      32-bit MSB justified    64fs    Figure 16
+        7      1       1       1      32-bit I2S compatible    64fs    Figure 17
+                                 Table 20. Audio Interface Format
+
+
+
+     LRCK
+
+                            0    1               10   11   12   13    14   15    0    1              10   11   12   13   14   15    0    1
+      BICK
+        (32fs)
+
+     SDATA                      15  14      6   5   4   3   2   1   0   15  14      6   5   4   3   2   1   0  15  14
+      Mode 0
+
+                           0    1               14   15   16   17         31    0    1              14   15   16   17         31     0    1
+      BICK
+        (64fs)
+
+     SDATA                         Don’t care                15  14       0   Don’t care                15  14       0
+      Mode 0
+                      15:MSB, 0:LSB
+                              Lch Data                        Rch Data
+                                      Figure 11. Mode 0 Timing
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 34 -
+PAGE 35
+                                                                             [AK4490]
+
+
+
+
+
+   LRCK
+
+                        0    1         8     9    10   11   12         31    0    1         8     9    10   11   12         31     0    1
+    BICK
+     (64fs)
+
+   SDATA                      Don’t care                    19       0   Don’t care                    19       0
+    Mode 1
+                   19:MSB, 0:LSB
+
+   SDATA                      Don’t care    23  22  21  20  19       0   Don’t care    23  22  21  20  19       0
+    Mode 4
+                   23:MSB, 0:LSB
+                            Lch Data                        Rch Data
+
+                                     Figure 12. Mode 1/4 Timing
+
+
+
+
+  LRCK
+
+
+                     0    1     2        22   23    24         30    31    0    1     2        22   23    24         30   31     0    1
+  BICK
+   (64fs)
+
+  SDATA      23  22           1   0   Don’t care        23  22           1   0   Don’t care        23  22
+
+                23:MSB, 0:LSB
+
+                          Lch Data                        Rch Data
+
+                                      Figure 13. Mode 2 Timing
+
+
+
+  LRCK
+
+
+                      0    1    2    3        23    24    25        31     0    1    2    3        23    24    25        31     0    1
+  BICK
+   (64fs)
+
+  SDATA          23  22          1   0   Don’t care        23  22           1   0   Don’t care        23
+
+                     23:MSB, 0:LSB
+
+                             Lch Data                        Rch Data
+                                      Figure 14. Mode 3 Timing
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 35 -
+PAGE 36
+                                                                             [AK4490]
+
+
+
+ LRCK
+
+                      0    1    2        20   21   22        32   33        63   0    1    2        20   21   22        32   33        63   0    1
+  BICK(128fs)
+
+ SDATA                                     31      1   0                              31      1   0
+
+
+                      0   1    2        12   13   14       23   24        31    0   1    2        12   13   14        23   24       31    0   1
+  BICK(64fs)
+
+ SDATA         31  30     20  19 18      9  8      1   0  31  30     20  19 18      9  8      1   0  31
+
+
+                               Lch Data                             Rch Data
+
+                   31: MSB, 0:LSB
+
+
+                                      Figure 15. Mode 5 Timing
+ LRCK
+
+                      0    1    2        20   21   22        32   33        63   0    1    2        20   21   22        32   33        63   0    1
+  BICK(128fs)
+
+ SDATA         31  30     12  11 10      0                31  30     12  11 10      0                31
+
+
+                      0   1    2        12   13   14       23   24        31    0   1    2        12   13   14        23   24       31    0   1
+  BICK(64fs)
+
+ SDATA         31  30     20  19 18      9  8      1   0  31  30     20  19 18      9  8      1   0  31
+
+
+                               Lch Data                             Rch Data
+
+                   31: MSB, 0:LSB
+
+                                      Figure 16. Mode 6 Timing
+
+
+
+ LRCK
+
+                      0    1    2        20   21   22        33   34        63   0    1    2        20   21   22        33   34        63   0    1
+  BICK(128fs)
+
+ SDATA            31     13  12 11      0                    31     13  12 11      0
+
+
+                      0    1   2        12   13   14        24   25        31    0    1   2        12   13   14        24   25        31    0    1
+  BICK(64fs)
+
+ SDATA         0  31     21  20 19      9  8      2   1  0  31     21  20 19      9  8      2   1  0
+
+                                  Lch Data                             Rch Data
+
+                       31: MSB, 0:LSB
+
+                                      Figure 17. Mode 7 Timing
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 36 -
+PAGE 37
+                                                                             [AK4490]
+
+
+ [2] DSD Mode
+
+In case of DSD mode, DIF2-0 pins and DIF2-0 bits are ignored. The frequency of DCLK is selected between
+64fs, 128fs and 256fs. DCKB bit can invert the polarity of DCLK. Phase modulation function is not available
+in 256fs mode.
+
+       DCLK (64fs)
+         DCKB=1
+
+       DCLK (64fs)
+         DCKB=0
+
+       DSDL,DSDR                            D0              D1                  D2              D3
+           Normal
+
+       DSDL,DSDR
+           Phase Modulation   D0        D1         D1         D2         D2         D3
+
+                                    Figure 18. DSD Mode Timing
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 37 -
+PAGE 38
+                                                                             [AK4490]
+
+
+[3] External Digital Filter Mode (EX DF I/F Mode)
+
+DW indicates the number of BCK in one WCK cycle. The audio data is input by MCLK, BCK and WCK from
+the DINL and DINR pins. Three formats are available (Table 22) by DIF2-0 bits setting. The data is latched on
+the rising edge of BCK. The BCK and MCLK clocks must be the same frequency and must not burst. BCK and
+MCLK frequencies for each sampling speed are shown in Table 21.
+
+  Sampling              MCLK&BCK [MHz]               WCK
+                                                             ECS
+ Speed[kHz]                128fs    192fs    256fs     384fs      512fs     768fs
+             N/A    N/A    N/A     N/A       22.5792     33.8688    16fs
+ 44.1(30~48)                                                                 0     (default)
+             N/A    N/A    N/A     N/A       32       48   DW
+             N/A    N/A   11.2896    16.9344     N/A      33.8688     8fs
+ 44.1(30~48)                                                                 1
+             N/A    N/A     32       48      N/A       96   DW
+             N/A    N/A      24.576      36.864     N/A     N/A      8fs
+  96(54~96)                                                                 0
+             N/A    N/A     32       48      N/A     N/A   DW
+               12.288   18.432    N/A       36.864     N/A     N/A      4fs
+  96(54~96)                                                                 1
+                32      48     N/A       96      N/A     N/A   DW
+                    24.576    36.864    N/A     N/A      N/A     N/A      4fs
+192(108~192)                                                                0
+                32      48     N/A     N/A      N/A     N/A   DW
+             N/A     36.864    N/A     N/A      N/A     N/A      2fs
+192(108~192)                                                                1
+             N/A     96     N/A     N/A      N/A     N/A   DW
+                Table 21. System Clock Example (EX DF I/F mode) (N/A: Not available)
+
+           Mode    DIF2   DIF1   DIF0       Input Format
+               0        0      0      0      16-bit LSB justified
+               1        0      0      1          N/A
+               2        0      1      0          N/A
+               3        0      1      1          N/A
+               4        1      0      0      24-bit LSB justified
+               5        1      0      1      32-bit LSB justified    (default)
+               6        1      1      0          N/A
+               7        1      1      1          N/A
+               Table 22. Audio Interface Format (EX DF I/F mode) (N/A: Not available)
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 38 -
+PAGE 39
+                                                                             [AK4490]
+
+
+
+                                     1/16fs or 1/8fs or 1/4fs or 1/2fs
+
+
+WCK
+
+                  0    1               8    9    10   11              16   17              26   27   28   29   30   31    0    1
+BCK
+
+DINL or              31  30      24  23  22  21  20  17  16  15  14      6   5   4   3   2   1   0
+DINR
+
+                 0    1               5    6    7    8         47   48   49               65         92   93   94   95     0    1
+BCK
+
+DINL or
+DINR          Don’t care           Don’t care            Don’t care         31          3   2   1   0  Don’t care
+
+
+                 0    1               5    6    7    8         23   24   25               17         44   45   46   47     0    1
+BCK
+
+DINL or
+DINR          Don’t care           Don’t care            Don’t care         31          3   2   1   0   Don’t care
+
+                                  Figure 19. EX DF I/F Mode Timing
+
+■ D/A Conversion Mode Switching Timing
+
+
+
+     RSTN bit
+                                                            4/fs
+
+      D/A Mode           PCM Mode                          DSD Mode
+
+                                                                0
+      D/A Data     PCM Data                          DSD Data
+
+                        Figure 20. D/A Mode Switching Timing (PCM to DSD)
+
+
+
+     RSTN bit
+
+
+      D/A Mode                DSD Mode                     PCM Mode
+
+                                                 4/fs
+      D/A Data              DSD Data                           PCM Data
+
+                        Figure 21. D/A Mode Switching Timing (DSD to PCM)
+
+Note. The signal range is identified as 25% ~ 75% duty ratios in DSD mode. DSD signal must not go beyond
+      this duty range at the SACD format book (Scarlet Book).
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 39 -
+PAGE 40
+                                                                             [AK4490]
+
+
+■ De-emphasis Filter
+
+A digital de-emphasis filter is available for 32kHz, 44.1kHz or 48kHz sampling rates (tc = 50/15µs) and is
+enabled or disabled with DEM1-0 pins or DEM1-0 bits. In case of 256fs/384fs and 128fs/192fs, the digital
+de-emphasis filter is always off. When DSD mode, DEM1-0 bits are ignored. The setting value is held even if
+PCM mode and DSD mode are switched.
+
+                    DEM1   DEM0    Mode
+                             0         0      44.1kHz
+                             0         1      OFF      (default)
+                             1         0      48kHz
+                             1         1      32kHz
+                                  Table 23. De-emphasis Control
+
+
+■ Output Volume (PCM, DSD)
+
+The AK4490 includes channel independent digital output volumes (ATT) with 256 levels at 0.5dB step
+including MUTE. This volume control is in front of the DAC and it can attenuate the input data from 0dB to
+–127dB or mute. When changing output levels, it is executed in soft transition thus no switching noise occurs
+during these transitions. It takes 7424/fs from FFH (0dB) to 00H (MUTE). The attenuation level is initialized
+to FFH by initial reset. Register setting values will be kept even switching the PCM and DSD modes.
+
+
+                                                           Transition Time
+                         Sampling Speed
+                                            0dB to MUTE
+                           fs=44.1kHz                 168.3ms
+                           fs=96kHz                   77.3ms
+                          fs=192kHz                  38.6ms
+                                  Table 24. ATT Transition Time
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 40 -
+PAGE 41
+                                                                             [AK4490]
+
+
+■ Zero Detection (PCM, DSD)
+
+The AK4490 has a channel-independent zeros detect function. When the input data at each channel is
+continuously zeros for 8192 LRCK cycles, the DZF pin of each channel goes to “H”. The DZF pin of each
+channel immediately returns to “L” if the input data of each channel is not zero after going to “H”. If the RSTN
+bit is “0”, the DZF pins of both L and R channels go to “H”. The DZF pin of each channel returns to “L” in 4 ~
+5/fs after the input data of each channel becomes “1” when RSTN bit is set to “1”. If DZFM bit is set to “1”, the
+DZF pins of both L and R channels go to “H” only when the input data for both channels are continuously
+zeros for 8192 LRCK cycles. The zero detect function can be disabled by setting the DZFE bit. In this case,
+DZF pins of both channels are always “L”. The DZFB bit can invert the polarity of the DZF pin.
+
+                  DZFE   DZFB          Data         DZF-pin
+                                 0                   -           L
+                        0
+                                 1                   -         H
+                                                    not zero         L
+                                 0
+                                              Zero detect      H
+                        1
+                                                    not zero       H
+                                 1
+                                              Zero detect        L
+                         Table 25. Zero Detect Function and DZF Pin Output
+
+
+■ Mono Output (PCM, DSD, EX DF I/F)
+
+The AK4490 can select input/output for both output channels by setting the MONO bit and SELLR bit. This
+function is available for any audio format.
+
+         MONO bit       SELLR bit         Lch Out          Rch Out
+                  0                0             Lch In           Rch In
+                  0                1             Rch In           Lch In
+                  1                0             Lch In           Lch In
+                  1                1             Rch In           Rch In
+                               Table 26 MONO Mode Output Select
+
+
+■ Sound Quality Control (PCM, DSD, Ex DF I/F)
+
+Sound quality of the AK4490 can be selected by SC1-0 bits.
+
+                   SC1     SC0           Mode
+                      0         0         Sound Setting 1        (default)
+                      0         1         Sound Setting 2
+                      1         0         Sound Setting 3
+                      1         1             Reserved
+                                   Table 27. SC1-0 bits Control
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 41 -
+PAGE 42
+                                                                             [AK4490]
+
+
+■ Characteristics (DSD)
+
+(Ta=25C; AVDD=DVDD=3.3V; AVSS=DVSS=VSSL/R=0V; VREFHL/R=VDDL/R=5V, VREFLL/R=
+VSSL/R=0V; Input data = 24bit; RL  1k; Signal Frequency = 1kHz; Sampling Frequency = 44.1kHz;
+Measurement bandwidth = 20Hz ~ 20kHz; External Circuit: Figure 41; unless otherwise specified.)
+Dynamic Characteristics
+        DSD data stream 2.8224MHz  0dBFS                      -110              dB
+THD+N
+        DSD data stream 5.6448MHz  0dBFS                      -110              dB
+        DSD data stream
+                                 0dBFS                      -110              dB
+           11.2896MHz
+S/N (A-weighted, Normal path)               Digital “0”                 120              dB
+DC Accuracy
+Output Voltage (Normal path )                                         2.8              Vpp
+Output Voltage (Volume pass )                                        1.87             Vpp
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 42 -
+PAGE 43
+                                                                             [AK4490]
+
+
+■ Soft Mute Operation (PCM, DSD)
+
+The soft mute operation is performed at digital domain. When the SMUTE pin goes to “H” or the SMUTE bit
+set to “1”, the output signal is attenuated by  during ATT_DATA  ATT transition time from the current
+ATT level. When the SMUTE pin is returned to “L” or the SMUTE bit is returned to “0”, the mute is cancelled
+and the output attenuation gradually changes to the ATT level during ATT_DATA  ATT transition time. If
+the soft mute is cancelled before attenuating  after starting the operation, the attenuation is discontinued and
+returned to ATT level by the same cycle. The soft mute is effective for changing the signal source without
+stopping the signal transmission.
+
+
+
+
+     SMUTE pin or
+     SMUTE bit
+                                          (1)                                (1)
+
+            ATT_Level
+                                                                                                        (3)
+       Attenuation
+
+             -
+                                GD           GD
+                                                           (2)                     (2)
+
+     AOUT
+
+
+                                                       (4)
+                                             8192/fs
+     DZF pin
+
+Notes:
+   (1) ATT_DATA  ATT transition time. For example, this time is 7424LRCK cycles (1020/fs) at
+    ATT_DATA=255 in Normal Speed Mode.
+   (2) The analog output corresponding to the digital input has group delay (GD).
+   (3) If the soft mute is cancelled before attenuating  after starting the operation, the attenuation is
+      discontinued and returned to ATT level by the same cycle.
+   (4) When the input data for each channel is continuously zeros for 8192 LRCK cycles, the DZF pin for each
+     channel goes to “H”. The DZF pin immediately returns to “L” if input data are not zero.
+
+                                    Figure 22. Soft Mute Function
+
+
+■ System Reset
+
+The AK4490 should be reset once by bringing the PDN pin = “L” upon power-up. It initializes register settings
+of the device. The analog block of the AK4490 exits power-down mode by MCLK input, and the digital block
+exits power-down mode after the internal counter counts MCLK for 4/fs.
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 43 -
+PAGE 44
+                                                                             [AK4490]
+
+
+■ Power ON/OFF timing
+
+The AK4490 is placed in the power-down mode by bringing the PDN pin “L” and the registers are initialized.
+The analog outputs are floating (Hi-Z). As some click noise occurs at the edge of the PDN pin signal, the
+analog output should be muted externally if the click noise influences system application.
+
+The DAC can be reset by setting RSTN bit to “0”. In this case, registers are not initialized and the
+corresponding analog outputs go to VCML/R. As some click noise occurs at the edge of RSTN signal, the
+analog output should be muted externally if click noise aversely affect system performance.
+
+
+
+  Power
+
+
+ PDN pin          (1)
+
+
+
+ Internal
+ State                                                Normal Operation                             Reset
+
+
+
+ DAC In                                                        “0”data                                      “0”data
+   (Digital)
+                                                                                         (2)
+                                             GD                GD
+
+ DAC Out            (3)       (4)                                                                                       (4)             (3)
+  (Analog)
+
+                                                                                                                              (5)
+ Clock In           Don’t care                                                                                   Don’t care MCLK,LRCK,BICK
+
+
+ DZFL/DZFR                                                                                                            (7)
+
+
+
+  External
+                                (6)         Mute ON                                                    Mute ON  Mute
+
+
+
+Notes:
+     (1) Digital and analog power supply should be powered up at the same time otherwise power up the 3.3V
+       base power supplies (DVDD, AVDD) first and 5V base power supplies next (VDDL/R, VREFHL/R).
+        After AVDD and DVDD are powered-up, the PDN pin should be “L” for 150ns.
+     (2) The analog output corresponding to digital input has group delay (GD).
+     (3) Analog outputs are floating (Hi-Z) in power-down mode.
+     (4) Click noise occurs at the edge of PDN signal. This noise is output even if “0” data is input.
+     (5) MCLK, BICK and LRCK clocks can be stopped in power-down mode (PDN pin= “L”).
+     (6) Mute the analog output externally if click noise (3) adversely affect system performance
+      The timing example is shown in this figure.
+     (7) DZFL/R pins are “L” in the power-down mode (PDN pin = “L”).
+
+                             Figure 23. Power-down/up Sequence Example
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 44 -
+PAGE 45
+                                                                             [AK4490]
+
+
+■ Reset Function
+
+(1) RESET by RSTN bit = “0”
+
+When the RSTN bit = “0”, the AK4490’s digital block is powered down, but the internal register values are not
+initialized. In this time, the analog outputs go to VCML/R voltage and DZFL/DZFR pins are “H”. Figure 24
+shows an example of reset by RSTN bit.
+
+
+
+     RSTN bit
+
+                                                                           3~4/fs (5)                 2~3/fs (5)
+        Internal
+     RSTN bit
+
+        Internal            Normal Operation                        Digital Block              Normal Operation
+         State                                          P    d
+
+      D/A In                                                                            “0” data
+          (Digital)
+                                (1)      GD                                GD (1)
+                                                       (3)     (2)          (3)      D/A Out
+        (Analog)
+
+                                                                                                                     2/fs(4)
+     DZF                                                (6)
+
+
+
+
+Notes:
+     (1) The analog output corresponding to digital input has group delay (GD).
+     (2) Analog outputs settle to VCOM voltage.
+     (3) Small pop noise occurs at the edges(“ ”) of the internal timing of RSTN bit. This noise is output
+       even if “0” data is input.
+     (4) The DZF pins change to “H” when the RSTN bit becomes “0”, and return to “L” at 2/fs after RSTN bit
+       becomes “1”.
+     (5) There is a delay, 3~4/fs from RSTN bit “0” to the internal RSTN bit “0”, and 2~3/fs from RSTN bit “1”
+        to the internal RSTN bit “1”.
+     (6) Mute the analog output externally if click noise (3) and Hi-Z (2) adversely affect system performance
+
+                                 Figure 24. Reset Sequence Example 1
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 45 -
+PAGE 46
+                                                                             [AK4490]
+
+
+(2) RESET by MCLK or LRCK/WCK Stop
+
+The AK4490 is automatically placed in reset state when MCLK or LRCK is stopped during PDM mode (PDN
+pin = “H”), and the analog outputs are floating (Hi-Z). When MCLK and LRCK are input again, the AK4490
+exits reset state and starts the operation. Zero detect function is disable when MCLK or LRCK is stopped. In
+DSD mode the AK4490 is in reset state when MCLK is stopped, and it is in reset state when MCLK and WCK
+are stopped in external digital filter mode.
+
+
+
+AVDD pin
+DVDD pin
+
+PDN pin            (1)
+
+
+Internal
+                 Power-down        Normal Operation         Digital Circuit Power-down      Normal Operation
+  State
+
+D/A In                 Power-down                                         (3) (Digital)
+                            GD  (2)                               GD (2)
+
+D/A Out               Hi-Z                                   (4)          (5)         (4)
+ (Analog)                                (4)
+                                                             (5)
+Clock In                                             MCLK, BICK, LRCK Stop
+MCLK, BICK, LRCK
+
+External
+                                (6)                        (6)                        (6)MUTE
+
+
+Notes:
+   (1) After AVDD and DVDD are powered-up, the PDN pin should be “L” for 150ns.
+   (2) The analog output corresponding to digital input has group delay (GD).
+   (3) The digital data can be stopped. Click noise after MCLK and LRCK are input again can be reduced by
+       inputting “0” data during this period.
+   (4) Click noise occurs within 3 ~ 4LRCK cycles from the riding edge (“↑”) of the PDN pin or MCLK
+       inputs. This noise occurs even when “0” data is input.
+   (5) Clocks (MCLK, BICK, LRCK/WCK) can be stopped in the reset state (MCLK or LRCK/WCK is
+      stopped).
+   (6) Mute the analog output externally if click noise (4) influences system applications. The timing example
+        is shown in this figure.
+
+                                 Figure 25. Reset Sequence Example 2
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 46 -
+PAGE 47
+                                                                             [AK4490]
+
+
+■ Synchronize Function
+
+The AK4490 has a function that resets the internal counter to synchronize with the external clock edge in a
+range of 3/256fs. Clock synchronize function becomes valid if SYNCE bit is set to “1” during operation in
+PCM mode or EXDF mode and input data of both L and R channels are “0” for 8129 times continuously or
+RSTN bit is “1”. In PCM mode, the internal counter is synchronized with a falling edged of LRCK (rising edge
+of LRCK in I2C mode), and it is synchronized with a falling edge of WCK in EXDF mode. In this case, the
+analog output has the same voltage as VCML/R. Figure 26 shows a synchronizing sequence when the input
+data is “0” for 8192 times continuously. Figure 27 shows a synchronizing sequence by RSTN bit.
+
+(1) Synchronization by continuous “0” data input for 8192 times
+
+If the input data is “0” for 8192 times continuously, or if the data becomes “0” for 8192 times continuously by
+attenuation, the DZFL/DZFR pin goes to “H” and the synchronize function becomes valid. The synchronize
+function is enabled only when both L and R channels data are “0” for 8192 times continuously. Figure 26
+shows a synchronizing sequence when the input data is “0” for 8192 times continuously.
+
+
+
+           D/A In
+                 (Digital)
+
+
+
+        SMUTE
+
+
+                                                                                    (1)                             (1)
+                     ATT_Level
+
+             Attenuation                           -
+
+
+                   GD                   GD             GD
+
+                                                         (4)
+         AOUT
+
+
+                                                 (2)                                   (2)
+                                        8192/fs                          8192/fs
+          DZF pin
+                                SYNC                   SYNC
+                                              Operation (2)                    Operation (2)
+
+               Internal Counter
+            Reset                                                                           (5)
+
+
+               Internal                                                          4~5/fs (3)
+            Data Reset
+
+
+Note:
+   (1) ATT_DATA  ATT transition time. For example,  this time  is 7424LRCK cycles (1020/fs)  at
+    ATT_DATA=255 in Normal Speed Mode.
+   (2) When both L and R channels data are “0” for 8192 times continuously, DZFL/R pins become “H” and
+      the synchronize function is valid.
+   (3) Internal data is fixed to “0” forcibly for 4 to 5/fs when internal counter is reset.
+   (4) A click noise may occur when the internal counter is reset. This noise is output even if a “0” data is input.
+     Mute the analog output externally if this click noise affects the system performance.
+   (5) When the internal clock and external clock are in synchronization, the internal counter is not reset even if
+     the synchronize function is valid.
+            Figure 26. Synchronizing Sequence by Continuous “0” Data Input for 8192 Times
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 47 -
+PAGE 48
+                                                                             [AK4490]
+
+
+(2) Synchronization by RSTN bit
+
+If RSTN bit is set to “0”, the output signal of the DZFL/DZFR pin becomes “H”. Then, the DAC is reset 3 to
+4/fs after the DZFL/DZFR pin = “H” and the analog output becomes the same voltage as VCML/R. The
+synchronize function becomes valid when both of the DZFL and DZFR pins output “H”. Figure 27 shows a
+synchronizing sequence by RSTN bit.
+
+
+   RSTN bit
+
+                                                                       3~4/fs (4)                 2~3/fs (4)
+     Internal
+   RSTN bit
+
+     Internal            Normal Operation                  Digital Block Power-down        Normal Operation
+       State
+
+    D/A In
+                                                                 force”0” (2)
+       (Digital)
+                                            (3)      GD                                GD (3)
+                                                                             (5)                           (5)
+    D/A Out
+      (Analog)
+
+                                                                                                                 2/fs(4)
+    DZF
+
+                                              SYNC Operation (1)
+     Internal Counter
+    Reset
+
+      Internal
+    Data Reset                                                4~5/fs (2)
+
+
+Note:
+    (1) DZFL/R pin becomes “H” by a rising edge of RSTN bit, and becomes “L” 2/fs after a falling edge of
+       internal signal of RSTN bit. The synchronize function is valid During the DZFL/R pin = “H”.
+    (2) Internal data is fixed to “0” forcibly for 4 to 5/fs when the internal counter is reset.
+    (3) Since the analog output corresponding to digital input has group delay (GD), it is recommended to have
+      a no-input period longer than the group delay before writing “0” to RSTN bit.
+    (4) It takes 3 to 4/fs when falling to change the internal RSTN signal of the LSI after writing to RSTN bit.
+         It also takes 3 to 4/fs when rising to change the internal RSTN signal of the LSI. The synchronize
+       function becomes valid immediately when “0” is written to RSTN bit. Therefore, there is a case that the
+       internal counter is reset before internal RSTN signal of the LSI is changed.
+    (5) A click noise occurs on the rising or falling edge of the internal RSTN signal and when the internal
+      counter is reset. This noise is output even if a “0” data is input. Mute the analog output externally if this
+       click noise affects the system performance.
+
+                            Figure 27. Synchronizing Sequence by RSTN bit
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 48 -
+PAGE 49
+                                                                             [AK4490]
+
+
+■ Register Control Interface
+
+(1) 3-wire Serial Control Mode (I2C pin = “L”)
+Pins (parallel control mode) or registers (serial control mode) can control the functions of the AK4490. In
+parallel control mode, the register setting is ignored, and in serial control mode the pin settings are ignored.
+When the state of the PSN pin is changed, the AK4490 should be reset by the PDN pin. The serial control
+interface is enabled by the PSN pin = “L”. Internal registers may be written to through3-wire µP interface pins:
+CSN, CCLK and CDTI. The data on this interface consists of Chip address (2-bits, C1/0), Read/Write (1-bit;
+fixed to “1”), Register address (MSB first, 5-bits) and Control data (MSB first, 8-bits). The data is output on a
+falling edge of CCLK and the data is received on a rising edge of CCLK. The writing of data is valid when
+CSN “”. The clock speed of CCLK is 5MHz (max).
+
+                                                   Parallel Control        Serial Control
+                   Function
+                                    Mode            Mode
+                Audio Format           Y            Y
+                Auto Setting Mode         Y            Y
+                 De-emphasis            Y            Y
+            SMUTE              Y            Y
+            DSD Mode                            -            Y
+            EX DF I/F                             -            Y
+                  Zero Detection                        -            Y
+                  Sharp Roll off filter        Y            Y
+                Slow Roll off filter         Y            Y
+              Minimum delay Filter       Y            Y
+                     Digital Attenuator                    -            Y
+                       Table 28. Function List1 (Y: Available, -: Not available)
+
+Setting the PDN pin to “L” resets the registers to their default values. In serial control mode, the internal timing
+circuit is reset by the RSTN bit, but the registers are not initialized.
+
+
+         CSN
+
+                              0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15
+          CCLK
+
+
+           CDTI        C1  C0 R/W A4  A3  A2  A1  A0 D7  D6  D5  D4 D3  D2  D1  D0
+
+                              C1-C0: Chip Address (C1 bit =CAD1 pin, C0 bit =CAD0 pin)
+                           R/W:  READ/WRITE (Fixed to “1”, Write only)
+                             A4-A0: Register Address
+                             D7-D0: Control Data
+                                    Figure 28. Control I/F Timing
+
+* The AK4490 does not support read commands in 3-wire serial control mode.
+* When the AK4490 is in power down mode (PDN pin = “L”), writing into control registers is prohibited.
+* The control data cannot be written when the CCLK rising edge is 15 times or less or 17 times or more during
+ CSN is “L”.
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 49 -
+PAGE 50
+                                                                             [AK4490]
+
+
+(2) I2C-bus Control Mode (I2C pin = “H”)
+
+The AK4490 supports the fast-mode I2C-bus (max: 400kHz, Ver 1.0).
+
+(2)-1. WRITE Operations
+
+Figure 29 shows the data transfer sequence for the I2C-bus mode. All commands are preceded by a START
+condition. A HIGH to LOW transition on the SDA line while SCL is HIGH indicates a START condition
+(Figure 35). After the START condition, a slave address is sent. This address is 7 bits long followed by the
+eighth bit that is a data direction bit (R/W). The most significant five bits of the slave address are fixed as
+“00100”. The next bits are CAD1 and CAD0 (device address bits). This bit identifies the specific device on the
+bus. The hard-wired input pin (CAD1pins, CAD0 pin) sets these device address bits (Figure 30). If the slave
+address matches that of the AK4490, the AK4490 generates an acknowledge and the operation is executed.
+The master must generate the acknowledge-related clock pulse and release the SDA line (HIGH) during the
+acknowledge clock pulse (Figure 36). A R/W bit value of “1” indicates that the read operation is to be
+executed, and “0” indicates that the write operation is to be executed.
+
+The second byte consists of the control register address of the AK4490 and the format is MSB first. (Figure
+31). The data after the second byte contains control data. The format is MSB first, 8bits (Figure 32). The
+AK4490 generates an acknowledge after each byte is received. Data transfer is always terminated by a STOP
+condition generated by the master. A LOW to HIGH transition on the SDA line while SCL is HIGH defines a
+STOP condition (Figure 35).
+
+The AK4490 can perform more than one byte write operation per sequence. After receipt of the third byte the
+AK4490 generates an acknowledge and awaits the next data. The master can transmit more than one byte
+instead of terminating the write cycle after the first data byte is transferred. After receiving each data packet the
+internal address counter is incremented by one, and the next data is automatically taken into the next address. If
+the address exceeds “09H” prior to generating a stop condition, the address counter will “roll over” to “00H”
+and the previous data will be overwritten.
+
+The data on the SDA line must remain stable during the HIGH period of the clock. HIGH or LOW state of the
+data line can only be changed when the clock signal on the SCL line is LOW (Figure 37) except for the START
+and STOP conditions.
+
+
+                       S
+                          T                                                                  S
+                       A         R/W= “0”                                                        T
+                      R                                                         O
+                          T                                                                  P
+        SDA       S  SlaveAddress       SubAddress(n)        Data(n)       Data(n+1)                 Data(n+x)    P
+                                   A           A           A           A       A           A
+                                C          C          C          C      C          C
+                                   K           K           K           K       K           K
+                          Figure 29. Data Transfer Sequence at I2C Bus Mode
+
+
+                  0      0      1      0      0   CAD1  CAD0  R/W
+
+                                              (CAD0 is set by the pin)
+                                       Figure 30. The First Byte
+
+
+                  0      0      0     A4    A3    A2    A1    A0
+
+                                     Figure 31. The Second Byte
+
+
+              D7    D6    D5    D4    D3    D2    D1    D0
+
+                          Figure 32. The Third Byte and After The Third Byte
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 50 -
+PAGE 51
+                                                                             [AK4490]
+
+
+(2)-2. READ Operations
+
+Set the R/W bit = “1” for the READ operation of the AK4490. After transmission of data, the master can read
+the next address’s data by generating an acknowledge instead of terminating the write cycle after the receipt of
+the first data word. After receiving each data packet the internal address counter is incremented by one, and the
+next data is automatically taken into the next address. If the address exceeds “09H” prior to generating stop
+condition, the address counter will “roll over” to “00H” and the data of “00H” will be read out.
+
+The AK4490 supports two basic read operations: Current Address Read and Random Address Read.
+
+(2)-2-1. Current Address Read
+
+The AK4490 has an internal address counter that maintains the address of the last accessed word incremented
+by one. Therefore, if the last access (either a read or write) were to address “n”, the next CURRENT READ
+operation would access data from the address “n+1”. After receipt of the slave address with R/W bit “1”, the
+AK4490 generates an acknowledge, transmits 1-byte of data to the address set by the internal address counter
+and increments the internal address counter by 1. If the master does not generate an acknowledge but generates
+a stop condition instead, the AK4490 ceases the transmission.
+
+
+                       S
+                          T                                                                  S
+                       A         R/W= “1”                                                        T
+                      R                                                         O
+                          T                                                                  P
+        SDA       S  SlaveAddress           Data(n)         Data(n+1)     Data(n+2)                 Data(n+x)    P
+                                   A           A           A           A       A           A
+                                C          C          C          C      C          C
+                                   K           K           K           K       K           K
+
+                                   Figure 33. Current Address Read
+
+(2)-2-2. Random Address Read
+
+The random read operation allows the master to access any memory location at random. Prior to issuing the
+slave address with the R/W bit “1”, the master must first perform a “dummy” write operation. The master
+issues a start request, a slave address (R/W bit = “0”) and then the register address to read. After the register
+address is acknowledged, the master immediately reissues the start request and the slave address with the R/W
+bit “1”. The AK4490 then generates an acknowledge, 1 byte of data and increments the internal address
+counter by 1. If the master does not generate an acknowledge but generates a stop condition instead, the
+AK4490 ceases the transmission.
+
+
+                 S                       S
+                   T                          T                                                       S
+                 A         R/W= “0”         A         R/W= “1”                                           T
+                R                      R                                               O
+                   T                          T                                                       P
+    SDA       S  SlaveAddress       SubAddress(n)   S  SlaveAddress           Data(n)       Data(n+1)                 Data(n+x)    P
+                             A           A            A           A           A       A           A
+                          C          C           C          C          C      C          C
+                             K           K            K           K           K       K           K
+
+                                   Figure 34. Random Address Read
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 51 -
+PAGE 52
+                                                                             [AK4490]
+
+
+
+
+
+                 SDA
+
+
+
+
+
+                  SCL
+
+                            S                                          P
+
+                                         start condition                                                stop condition
+
+                             Figure 35. Start Condition and Stop Condition
+
+
+
+ DATA
+ OUTPUT BY
+ TRANSMITTER
+
+
+                                                                                                     not acknowledge
+
+ DATA
+ OUTPUT BY
+ RECEIVER
+
+                                                                                           acknowledge
+
+
+ SCL FROM
+ MASTER                            1                  2                            8                  9
+
+               S
+
+                                                                                                                          clock pulse for
+                                                                                                      acknowledgement
+             START
+            CONDITION
+                                   Figure 36. Acknowledge (I2C Bus)
+
+
+
+
+                  SDA
+
+
+
+
+
+                   SCL
+
+
+
+                                                   data line       change
+                                                            stable;          of data
+                                                   data valid       allowed
+
+                                   Figure 37. Bit Transfer (I2C Bus)
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 52 -
+PAGE 53
+                                                                             [AK4490]
+
+
+Function List
+
+Function                          Default              Address   Bit     PCM  DSD  EX DF I/F
+Attenuation Level             0dB             03H    ATT7-0
+                                              Y    Y            -
+                                         04H
+External Digital Filter I/F Mode    Disable          00H    EXDF    Y        -     Y
+EX DF I/F mode clock setting      16fs(fs=44.1kHz)   00H    ESC            -         -     Y
+Audio Data Interface Modes        24bit MSB justified  00H     DIF2-0    Y        -     Y
+Data Zero Detect Enable           Disable          01H    DZFE    Y    Y            -
+Data Zero Detect Mode            Separated         01H   DZFM    Y    Y            -
+Minimum delay Filter Enable      Sharp roll-off filter  01H    SD      Y        -            -
+De-emphasis Response         OFF            01H    DEM1-0   Y        -            -
+Soft Mute Enable               Normal Operation   01H   SMUTE   Y    Y            -
+DSD/PCM Mode Select       PCM mode        02H    DP      Y    Y            -
+Master Clock Frequency Select at   512fs            02H    DCKS
+                                                                                                     -    Y            -
+DSD mode
+MONO mode Stereo mode select   Stereo           02H   MONO    Y    Y     Y
+Inverting Enable of DZF         “H” active        02H    DZFB    Y    Y            -
+The data selection of L channel   R channel         02H    SELLR
+                                              Y    Y     Y
+and R channel
+                        Table 29. Function List (Y: Available, -: Not available)
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                              - 53 -
+PAGE 54
+                                                                              [AK4490]
+
+
+■ Register Map
+
+    Addr    Register Name     D7       D6      D5      D4      D3      D2      D1       D0
+   00H    Control 1       ACKS    EXDF     ECS        0       DIF2     DIF1     DIF0     RSTN
+   01H    Control 2       DZFE    DZFM     SD     DFS1     DFS0    DEM1   DEM0   SMUTE
+   02H    Control 3        DP         0     DCKS   DCKB   MONO   DZFB    SELLR   SLOW
+   03H   Lch ATT       ATT7     ATT6    ATT5    ATT4    ATT3    ATT2    ATT1     ATT0
+   04H   Rch ATT       ATT7     ATT6    ATT5    ATT4    ATT3    ATT2    ATT1     ATT0
+   05H    Control4        INVL     INVR       0         0         0         0      DFS2    SSLOW
+   06H    Control5      DDM    DML    DMR    DMC   DMRE       0     DSDD   DSDSEL0
+   07H    Control6           0          0         0         0         0         0         0     SYNCE
+   08H    Control7           0          0         0         0         0         0       SC1      SC0
+   09H    Control8           0          0         0         0         0         0     DSDF   DSDSEL1
+ Notes:
+   In 3-wire serial control mode, the AK4490 does not support read commands.
+   The AK4490 supports read command in I2C-bus control mode.
+   Data must not be written into addresses from 0AH to 1FH.
+  When the PDN pin goes to “L”, the registers are initialized to their default values.
+  When RSTN bit is set to “0”, only the internal timing is reset, and the registers are not initialized to their
+    default values.
+  When the state of the PSN pin is changed, the AK4490 should be reset by the PDN pin.
+
+
+■ Register Definitions
+
+Addr  Register Name              D7      D6      D5      D4      D3      D2      D1      D0
+00H  Control 1               ACKS    EXDF     ECS        0       DIF2     DIF1     DIF0    RSTN
+           R(I2C)/W            R/W     R/W     R/W      R      R/W     R/W     R/W     R/W
+              Default                 0         0         0         0         0         1         0         0
+
+ RSTN: Internal Timing Reset
+           0: Reset. All registers are not initialized. (default)
+           1: Normal Operation
+            Writing “0” to this bit resets the internal timing circuit but register values are not initialized.
+         When the PSN pin = “H”, the AK4490 operates regardless of this register setting.
+
+ DIF2-0:  Audio Data Interface Modes (Table 20)
+                Initial value is “010” (Mode 2: 24-bit MSB justified).
+
+ ECS: EX DF I/F mode clock setting (Table 21)
+           0: WCK=768kHz mode (default)
+           1: WCK=384kHz mode
+
+ EXDF: External Digital Filter I/F Mode (Serial mode only)
+           0: Disable: Internal Digital Filter mode (default)
+           1: Enable: External Digital Filter mode
+
+ ACKS: Master Clock Frequency Auto Setting Mode Enable (PCM only)
+           0: Disable: Manual Setting Mode (default)
+           1: Enable: Auto Setting Mode
+         When ACKS bit = “1”, MCLK frequency and the sampling frequency are detected automatically.
+
+
+
+
+
+ MS1648-E-03                                                                          2014/11
+                                                               - 54 -
+PAGE 55
+                                                                              [AK4490]
+
+
+
+Addr  Register Name              D7      D6      D5      D4      D3      D2      D1      D0
+01H  Control 2                DZFE   DZFM     SD     DFS1     DFS0    DEM1   DEM0   SMUTE
+           R(I2C)/W            R/W     R/W     R/W     R/W     R/W     R/W     R/W     R/W
+              Default                 0         0         1         0         0         0         1         0
+
+ SMUTE: Soft Mute Enable
+           0: Normal Operation (default)
+           1: DAC outputs soft-muted.
+
+ DEM1-0: De-emphasis Response
+                Initial value is “01” (OFF).
+
+ DFS1-0: Sampling Speed Control (Table 9)
+                Initial value is “000” (Normal Speed). Click noise occurs when DFS2-0 bits are changed.
+            (05H, D1: DFS2 bit )
+
+        DFS2    DFS1    DFS0              Sampling Rate (fs)
+           0        0        0       Normal Speed Mode    30kHz  54kHz   (default)
+           0        0        1       Double Speed Mode   54kHz  108kHz
+                                                         120kHz            0        1        0       Quad Speed Mode
+                                                          216kHz
+           0        1        1            Reserved                      -
+           1        0        0         Oct Speed Mode        384kHz
+           1        0        1       Hex Speed Mode        768kHz
+           1        1        0            Reserved                      -
+           1        1        1            Reserved                      -
+                          Table 9. Sampling Speed (Manual Setting Mode @Serial Mode)
+
+
+ SD:    Minimum delay Filter Enable
+           0: Traditional filter
+           1: Short delay filter (default)
+
+              SD    SLOW            Mode
+                   0         0            Sharp roll-off filter
+                   0         1           Slow roll-off filter
+                   1         0        Short delay sharp roll off filter     (default)
+                   1         1        Short delay slow roll off filter
+                                   Table 14. Digital Filter Setting
+
+ DZFM:  Data Zero Detect Mode
+           0: Channel Separated Mode (default)
+           1: Channel ANDed Mode
+                    If the DZFM bit is set to “1”, the DZF pins of both L and R channels go to “H” only when the
+                input data at both channels are continuously zeros for 8192 LRCK cycles.
+
+ DZFE:   Data Zero Detect Enable
+           0: Disable (default)
+           1: Enable
+            Zero detect function can be disabled by DZFE bit “0”. In this case, the DZF pins of both channels
+             are always “L”.
+
+
+
+
+ MS1648-E-03                                                                          2014/11
+                                                               - 55 -
+PAGE 56
+                                                                              [AK4490]
+
+
+
+Addr  Register Name              D7      D6      D5      D4      D3      D2      D1      D0
+02H  Control 3                 DP        0     DCKS   DCKB   MONO   DZFB    SELLR   SLOW
+           R(I2C)/W            R/W      R      R/W     R/W     R/W     R/W     R/W     R/W
+              Default                 0         0         0         0         0         0         0         0
+
+ SLOW:    Slow Roll-off Filter Enable
+           0: Sharp roll-off filter (default)
+           1: Slow roll-off filter
+
+               SD    SLOW            Mode
+                    0         0            Sharp roll-off filter
+                    0         1           Slow roll-off filter
+                    1         0       Short delay sharp roll off filter    (default)
+                    1         1        Short delay slow roll off filter
+                                   Table 14. Digital Filter Setting
+
+ SELLR: The data selection of L channel and R channel, when MONO mode
+           0: All channel output R channel data, when MONO mode. (default)
+           1: All channel output L channel data, when MONO mode.
+                   It is enabled when MONO bit is “1”, and outputs Rch data to both channels when “0”, outputs Lch
+             data to both channels when “1”.
+
+ DZFB: Inverting Enable of DZF
+           0: DZF pin goes “H” at Zero Detection (default)
+           1: DZF pin goes “L” at Zero Detection
+
+                  DZFE   DZFB          Data         DZF-pin
+                                  0                   -           L
+                         0
+                                  1                   -         H
+                                                     not zero         L
+                                  0
+                                              Zero detect      H
+                         1
+                                                     not zero       H
+                                  1
+                                              Zero detect        L
+                          Table 25. Zero Detect Function and DZF Pin Output
+
+ MONO: MONO mode Stereo mode select
+           0: Stereo mode (default)
+           1: MONO mode
+         When MONO bit is “1”, MONO mode is enabled.
+
+ DCKB: Polarity of DCLK (DSD Only)
+           0: DSD data is output from DCLK falling edge. (default)
+           1: DSD data is output from DCLK rising edge.
+
+ DCKS: Master Clock Frequency Select at DSD mode (DSD only)
+           0: 512fs (default)
+           1: 768fs
+
+ DP:  DSD/PCM Mode Select
+           0: PCM Mode (default)
+           1: DSD Mode
+         When D/P bit is changed, the AK4490 should be reset by RSTN bit.
+
+
+ MS1648-E-03                                                                          2014/11
+                                                               - 56 -
+PAGE 57
+                                                                              [AK4490]
+
+
+
+
+Addr  Register Name              D7      D6      D5      D4      D3      D2      D1      D0
+03H  Lch ATT                ATT7    ATT6    ATT5    ATT4    ATT3    ATT2    ATT1    ATT0
+04H  Rch ATT                ATT7    ATT6    ATT5    ATT4    ATT3    ATT2    ATT1    ATT0
+           R(I2C)/W            R/W     R/W     R/W     R/W     R/W     R/W     R/W     R/W
+              Default                 1         1         1         1         1         1         1         1
+
+ ATT7-0: Attenuation Level
+           256 levels, 0.5dB step
+
+            Data   Attenuation
+         FFH      0dB
+         FEH     -0.5dB
+        FDH     -1.0dB
+                      :               :
+                      :               :
+          02H     -126.5dB
+          01H     -127.0dB
+          00H   MUTE (-)
+
+       The  transition  between  set  values   is  soft  transition  of  7425  levels.   It  takes  7424/fs
+       (168ms@fs=44.1kHz) from FFH (0dB) to 00H (MUTE). If the PDN pin goes to “L”, the ATTs are
+         initialized to FFH. The ATTs are FFH when RSTN bit= “0”. When RSTN return to “1”, the ATTs fade
+         to their current value. This digital attenuator is independent of soft mute function.
+
+
+
+Addr  Register Name              D7      D6      D5      D4      D3      D2      D1      D0
+05H  Control 4                 INVL    INVR       0         0         0         0      DFS2   SSLOW
+           R(I2C)/W            R/W     R/W      R      R      R       R      R/W     R/W
+              Default                 0         0         0         0         0         0         0         0
+
+ SSLOW: Super Slow Roll-off Filter Enable
+           0: Disable (default)
+           1: Enable
+
+ DFS2: Sampling Speed Control (Table 9)
+                Initial value is “000” (Normal Speed). Click noise occurs when DFS2-0 bits are changed.
+            (01H, D4, D3: DFS1-0 bits)
+
+       DFS2    DFS1    DFS0               Sampling Rate (fs)
+          0        0        0       Normal Speed Mode     30kHz  54kHz     (default)
+          0        0        1       Double Speed Mode     54kHz  108kHz
+          0        1        0       Quad Speed Mode     120kHz  216kHz
+          0        1        1            Reserved                        -
+          1        0        0         Oct Speed Mode          384kHz
+          1        0        1       Hex Speed Mode          768kHz
+          1        1        0            Reserved                        -
+          1        1        1            Reserved                        -
+                    Table 9. Sampling Speed (Manual Setting Mode @Serial Mode)
+
+
+
+
+
+ MS1648-E-03                                                                          2014/11
+                                                               - 57 -
+PAGE 58
+                                                                              [AK4490]
+
+
+ INVR:  AOUTR Output Phase Inverting
+           0: Disable (default)
+           1: Enable
+
+ INVL:  AOUTL Output Phase Inverting
+           0: Disable (default)
+           1: Enable
+
+
+
+Addr  Register Name              D7      D6      D5      D4      D3     D2     D1       D0
+06H  Control 5             DDM    DML    DMR    DMC   DMRE      0    DSDD   DSDSEL0
+           R(I2C)/W            R/W     R/W     R/W     R/W     R/W      R      R/W     R/W
+              Default                 0         0         0         0         0        0        0          0
+
+ DSDSEL1-0: DSD Sampling Speed Control (See also Control 7 register.)
+
+               DSDSEL1 bit   DSDSEL0 bit   DSD data stream
+                        0              0          2.8224MHz      (default)
+                        0              1          5.6448MHz
+                        1              0         11.2896MHz
+                        1              1            Reserved
+                               Table 16. DSD Sampling Speed Control
+
+ DSDD: DSD Play Back Path Control
+
+                     DSDD       Mode
+                               0        Normal Path      (default)
+                               1      Volume Bypass
+                               Table 17. DSD Play Back Mode Control
+
+ DMRE: DSD Mute Release
+           0: Hold (default)
+           1: Release Mute
+              This register is only valid when DDM bit = “1” and DMC bit = “1”. When the AK4490 mutes
+          DSD data by DDM and DMC bits settings, the mute is released by setting DMRE bit to “1”.
+
+ DMC: DSD Mute Control
+           0: Auto Return (default)
+           1: Mute Hold (manual return)
+            This register is only valid when DDM bit = “1”. It selects the mute releasing mode of when the
+        DSD data level becomes under full-scale after the AK4490 mutes DSD data by DDM bit setting.
+
+ DMR/DML
+            This register outputs detection flag when a full scale signal is detected at DSDR/L channel.
+
+ DDM: DSD Data Mute
+           0: Disable (default)
+           1: Enable
+           The AK4490 has an internal mute function that mutes the output when DSD audio data becomes
+                all “1” or all “0” for 2048 Samples (1/fs). DDM bit controls this function.
+
+
+
+
+
+ MS1648-E-03                                                                          2014/11
+                                                               - 58 -
+PAGE 59
+                                                                             [AK4490]
+
+
+
+Addr  Register Name              D7      D6      D5      D4      D3      D2      D1      D0
+07H  Control 6                      0         0         0         0         0         0         0    SYNCE
+           R(I2C)/W            R      R      R      R      R       R      R      R/W
+              Default                 0         0         0         0         0         0         0         0
+
+SYNCE: Synchronization control
+           0: Disable (default)
+           1: Enable
+            This register enables the function that synchronizes multiple AK4490s when using more than one
+          AK4490s in a system.
+
+
+
+Addr  Register Name              D7      D6      D5      D4      D3      D2      D1      D0
+08H  Control 7                      0         0         0         0         0         0       SC1     SC0
+           R(I2C)/W            R      R      R      R      R       R      R/W     R/W
+              Default                 0         0         0         0         0         0         0         0
+
+SC1-0: Sound control bit
+
+                 SC1     SC0         Sound Mode
+                     0         0         Sound Setting 1        (default)
+                     0         1         Sound Setting 2
+                     1         0         Sound Setting 3
+                     1         1             Reserved
+                                    Table 27. SC1-0 bits Control
+
+
+
+
+Addr  Register Name              D7      D6      D5      D4      D3      D2      D1      D0
+09H  Control 8                      0         0         0         0         0         0     DSDF   DSDSEL1
+           R(I2C)/W            R      R      R      R      R       R      R/W     R/W
+              Default                 0         0         0         0         0         0         0         0
+
+DSDSEL1-0: DSD Sampling Speed Control (See also Control 4 register.)
+
+                  DSDSEL1  DSDSEL0  DSD data stream
+                          0          0        2.8224MHz      (default)
+                          0          1        5.6448MHz
+                          1          0        11.2896MHz
+                          1          1          Reserved
+                               Table 16. DSD Sampling Speed Control
+
+When DSDD bit= “1”, the filter characteristics can be switched between 50kHz and 150kHz by DSDF bit.
+              DSDD bit  DSDF bit         Cut Off Filter
+                      0         0             50kHz              (default)
+                      0         1              Reserved
+                      1         0             50kHz
+                      1         1             150kHz
+                                     Table 18. DSD Filter Select
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 59 -
+PAGE 60
+                                                                             [AK4490]
+
+
+                         10. Recommended External Circuits
+Figure 38 shows the system connection diagram. Figure 40, Figure 41 and Figure 42 show the analog output
+circuit examples. The evaluation board (AKD4490) demonstrates the optimum layout, power supply
+arrangements and measurement results.
+
+
+                                                                 Analog 5.0V                               Digital 3.3V   Analog 3.3V
+
+
+
+                                     +         10u          220u   10u
+                                   10u
+                                                       0.1u            0.1u    0.1u                                       0.1u
+                                      48 47 46 45 44 43 42 41 40 39 38 37
+                                                                           NC
+                            1                                                                      AOUTLP                                                                                 36   DSP                                                                                                        Lch                                                                                                                Lch      Lch Out                        NC       DVDD   DVSS   MCLK   AVSS   AVDD NC    VREFHL    VREFHL    VREFLL    VREFLL   VCML                                                                                                             Mute                         PDN                            2                                                                                 35                         LPF                                                                     AOUTLN
+                            3  BICK                                VDDL 34                                                                                                0.1u 10u
+                            4  SDATA                               VDDL 33     +
+                            5  LRCK                                 VSSL 32
+                            6 WCK                                  VSSL 31
+                            7  SMUTE/CSN                           VSSR 30                                                                                            AK4490                              0.1u 10u
+                            8  SD/CCLK/SCL                          VSSR 29
+   Micro-                  9   SLOW/CDTI/SDA                         VDDR 28     +
+  Controller                10  DIF0/DZFL                            VDDR 27
+                            11  DIF1/DZFR                              AOUTRN 26                          Rch    Rch     Rch Out
+                            12  DIF2/CAD0                               AOUTRP 25                         LPF    Mute
+                                                        PSN  I2C   DEM0   DEM1     ACKS/CAD1 NC   VREFHR    VREFHR     VREFLR     VREFLR   VCMR NC
+                                     13 14 15 16 17 18 19 20  21 22  23 24
+
+                                                                       0.1u    0.1u
+                                                              220u   10u
+
+
+
+
+                                                     Digital          Analog
+                                      Ground         Ground
+                                                                              +
+                                                                                                           Electrolytic Capacitor
+
+                                                                                 Ceramic Capacitor
+
+
+
+Notes:
+   - Chip Address = “00”. BICK = 64fs, LRCK = fs
+   - Power lines of AVDD and DVDD should be distributed separately from the point with low impedance of
+    regulator etc.
+   - AVSS, DVSS, VSSL, VSSR, VREFLL and VREFLR must be connected to the same analog ground plane.
+   - When AOUT drives a capacitive load, some resistance should be connected in series between AOUT and
+    the capacitive load.
+   - All input pins except pull-down/pull-up pins should not be allowed to float.
+
+  Figure 38. Typical Connection Diagram (AVDD=3.3V, VDDL/R=5V, DVDD=3.3V, Serial control mode)
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 60 -
+PAGE 61
+                                                                             [AK4490]
+
+
+
+                Digital Ground                                 Analog Ground
+
+
+
+                                                                                                   36 35  34 33  32  31  30 29  28  27  26  25
+
+
+
+                                                                                              37                                                                           NC                                                                                                                                                                                                                                                                                                            AOUTLP    AOUTLN  VDDL   VDDL   VSSL   VSSL   VSSR   VSSR   VDDR   VDDR     AOUTRN     AOUTRP NC 24                                                                                              38                                                                              VCML
+                        System                                          39 VREFLL                           VCMR 23
+                                                                                              40 VREFLL                            VREFLR  22
+                             Controller                                        41 VREFHL                            VREFLR  21
+                                                                                              42 VREFHL      AK4490         VREFHR 20
+                                                                                              43 NC                               VREFHR 19
+
+                                                                                              44 AVDD                               NC  18
+                                                                                              45 AVSS                             ACKS/CAD1 17
+                                                                                              46 MCLK                              DEM1 16
+                                                                                              47 DVSS                              DEM0 15
+                                                                                              48 DVDD                                           I2C 14
+                                                                                                                                   PSN 13                                                                                                   NC  PDN   BICK    SDATA   LRCK  WCK      SMUTE/CSN        SD/CCLK/SCL         SLOW/CDTI/SDA      DIF0/DZFL      DIF1/DZFR       DIF2/CAD0
+
+                                                 1 2 3 4 5 6 7 8 9 10 11 12
+
+
+                                       Figure 39. Ground Layout
+
+1. Grounding and Power Supply Decoupling
+
+To minimize coupling by digital noise, decoupling capacitors should be connected to AVDD and DVDD
+respectively. VREFHL/R and VDDL/R are supplied from analog supply in system, and AVDD and DVDD are
+supplied from digital supply in system. Power lines of VREFHL/R and VDDL/R should be distributed
+separately from the point with low impedance of regulator etc. AVSS, DVSS, VSSL and VSSR must be
+connected to the same analog ground plane. Decoupling capacitors for high frequency should be
+placed as near as possible to the supply pin.
+
+2. Voltage Reference
+
+The differential voltage between VREFHL/R and VREFLL/R sets the analog output range. The VREFHL/R pin
+is normally connected to AVDD, and the VREFLL/R pin is normally connected to VSS1/2/3. VREFHL/R and
+VREFLL/R should be connected with a 0.1µF ceramic capacitor as near as possible to the pin to eliminate the
+effects of high frequency noise. No load current may be drawn from VCML/R pin. All signals, especially
+clocks, should be kept away from the VREFHL/R and VREFLL/R pins in order to avoid unwanted noise
+coupling into the AK4490.
+
+3. Analog Outputs
+
+The analog outputs are full differential outputs and 2.8Vpp (typ, VREFHL/R  VREFLL/R = 5V) centered
+around VDDR/2 and VDDL/2 voltages. The differential outputs are summed externally, VAOUT = (AOUT+) 
+(AOUT) between AOUT+ and AOUT. If the summing gain is 1, the output range is 5.6Vpp (typ, VREFHL/R
+ VREFLL/R = 5V). The bias voltage of the external summing circuit is supplied externally. The input data
+format is 2's complement. The output voltage (VAOUT) is a positive full scale for 7FFFFFH (@24bit) and a
+negative full scale for 800000H (@24bit). The ideal VAOUT is 0V for 000000H(@24bit).
+
+The internal switched-capacitor filters attenuate the noise generated by the delta-sigma modulator beyond the
+audio passband. Figure 40 shows an example of external LPF circuit summing the differential outputs by an
+op-amp.
+Figure 41 shows an example of differential outputs and LPF circuit example by three op-amps.
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 61 -
+PAGE 62
+                                                                             [AK4490]
+
+
+
+                AK4490
+
+                                                    1.5k              1.5k
+                       AOUT-
+                                                       390      1n
+
+                                                                    +Vop
+                                                      2.2n
+                                                    1.5k        390                      Analog
+                     AOUT+                                                   Out
+
+                                                        1.5k       1n    -Vop
+
+
+               Figure 40. External LPF Circuit Example 1 for PCM (fc = 99.2kHz, Q=0.704)
+
+
+
+                               Frequency Response      Gain
+                                 20kHz         0.011dB
+                                 40kHz         0.127dB
+                                 80kHz         1.571dB
+               Table 30. Frequency Response of External LPF Circuit Example 1 for PCM
+
+
+                             3.3n                                                                                            +15
+                                                     +                                                                                        -15
+                                           10u
+            100u                       180                                            0.1u                                          7                                      3      AOUTL- +                                               6                                      +                                      2                                                                   -                330   3.9n                                          4
+                               NJM5534D                                           10u                                      560        0.1u     +10u                                                     +                 10k
+                                            0.1u
+                              680                                                                 1.0n
+                                                   1.2k                                                                                                   100
+                                                                             620               2  -  4  6                                                                                                                        +             Lch
+                                                                             620               3    7
+                            3.3n                                                                                  560      1.0n NJM5534D
+                                                     +
+                                           10u
+           100u       180                                            0.1u                                          7                                     3      AOUTL+ +                                      +                                              6                                     2                                                                   -               330   3.9n        4                                                               0.1u      + 10u
+                10k                NJM5534D      +  10u
+                                           0.1u
+                              680
+                                                  1.2k
+
+
+                           Figure 41. External LPF Circuit Example 2 for PCM
+
+                                                               1st Stage      2nd Stage       Total
+                      Cut-off Frequency      182kHz     284kHz            -
+             Q                      0.637             -                 -
+                   Gain                 +3.9dB     -0.88dB     +3.02dB
+                            20kHz     -0.025       -0.021      -0.046dB
+                   Frequency
+                            40kHz     -0.106       -0.085      -0.191dB
+                   Response
+                            80kHz     -0.517       -0.331      -0.848dB
+               Table 31. Frequency Response of External LPF Circuit Example 2 for PCM
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 62 -
+PAGE 63
+                                                                             [AK4490]
+
+
+
+It is recommended for SACD format book (Scarlet Book) that the filter response at SACD playback is an analog
+low pass filter with a cut-off frequency of maximum 50kHz and a slope of minimum 30dB/Oct. The AK4490
+can achieve this filter response by combination of the internal filter (Table 32) and an external filter (Figure 42).
+
+                                    Frequency       Gain
+                                 20kHz       0.4dB
+                                 50kHz       2.8dB
+                                 100kHz      15.5dB
+                           Table 32. Internal Filter Response at DSD Mode
+
+
+                                            2.0k               1.8k                    4.3k
+          AOUT-
+
+                                                                                1.0k       270p
+                        2.8Vpp
+                                           2200p                          +Vop
+                                                           3300p
+                                                                                                              -
+                                            2.0k               1.8k            1.0k              Analog
+         AOUT+                                                            +          Out     6.34Vpp
+
+                                                                     4.3k        270p   -Vop
+                         2.8Vpp
+
+                       Figure 42. External 3rd Order LPF Circuit Example for DSD
+
+                                    Frequency       Gain
+                                 20kHz       0.05dB
+                                 50kHz       0.51dB
+                                 100kHz      16.8dB
+                           DC gain = 1.07dB
+                            Table 33. 3rd Order LPF (Figure 42) Response
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 63 -
+PAGE 64
+                                                                             [AK4490]
+
+
+                                      11. Package
+■ Outline Dimensions
+
+48-pin LQFP (Unit mm)
+
+
+
+
+
+■ Material & Lead finish
+
+         Package molding compound:    Epoxy, Halogen (bromine and chlorine) free
+        Lead frame material:         Cu
+        Lead frame surface treatment:   Solder (Pb free) plate
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 64 -
+PAGE 65
+                                                                             [AK4490]
+
+■ Marking
+
+
+
+         AKM
+           AK4490EQ
+          XXXXXXX
+
+
+        48
+           1
+
+
+                                        1) AKM Logo
+                                        2) Pin #1 indication
+                                        3) Date Code: XXXXXXX(7 digits)
+                                        4) Marking Code: AK4490EQ
+
+
+                                   12. Revision History
+
+Date (Y/M/D)  Revision   Reason      Page   Contents
+14/04/30      00          First Edition
+14/07/14      01        Spec change  1       2. Features
+                                     VDD1/2=4.75～5.25V→VDD1/2=4.75～7.2V
+                           Error        7       5. Pin Configurations and Functions
+                            correction           ■Pin Functions
+                                         23 VCMR
+                                              Normally connected to VREFLL with a 10uF
+                                                          electrolytic cap.
+                                            →Normally connected to VREFLR with a 10uF
+                                                               electrolytic cap.
+                                         38 VCML
+                                              Normally connected to VREFLR with a 10uF
+                                                          electrolytic cap.
+                                            →Normally connected to VREFLL with a 10uF
+                                                               electrolytic cap.
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 65 -
+PAGE 66
+                                                                             [AK4490]
+
+
+                                  12. Revision History
+
+Date (Y/M/D)  Revision   Reason       Page   Contents
+14/07/14     01         Error         4       4. Block Diagram
+                         Correction             “Volume bypass” line is added.
+                           Specification   9       6. Absolute Maximum Ratings
+                     Change               Power Supply, ADDL/R: 7.5 → 7.2V (max.)
+                                             Note 3. Connect at least 0.1uF or more decoupling
+                                                      capacitors between VDDL/VDDR and VSSL/VSSR to
+                                                   suppress affections by a static electricity noise or an over
+                                                    voltage (includes over shooting) that exceeds absolute
+                                      maximum ratings.
+                                                       7. Recommended Operating Conditions
+                                                Analog, ADDL/R: 5.25 → 7.2V (max.)
+                          Error          11     Note14. “to input register” was removed.
+                         Correction
+                                      15     Note15. “to input register” was removed.
+                                      27      9. Functional Descriptions ■ System Clock
+                                   “VDDR/2 and DVDDL/2 voltages (typ)”→“ Hi-z state”
+                                      32      9. Functional Descriptions [2] DSD mode
+                                     “VDDR/2 and DVDDL/2 voltages (typ)”→“ Hi-z state”
+                                                  Description is removed after Table18 of page 32.
+                                      41     Table 27. Mode
+                                     1→Sound Setting 1
+                                     2→Sound Setting 2
+                                     3→Sound Setting 3
+                                         4→Reserved
+                          Description    42     “■ Characteristics (DSD)
+                        Addition
+                          Error          49     ■Register Control Interface
+                         Correction              “or the MCLK is not provided” is removed.
+                          Description    54     ■Register Map
+                        Addition                  “In 3-wire serial control mode, the AK4490 does not
+                                                    support read commands.”
+                                            “The AK4490 supports read commands in I2C-bus
+                                                       control mode.”
+                                         54-58  ■Register Definitions
+                                                “R(I2C)/W“ is added each address.
+14/08/07     02         Error          1       2. Features
+                          Correction               “Filter bypass mode” is removed.
+                           Specification   9       6. Absolute Maximum Ratings
+                      Change               Power Supply, ADDL/R: 7.2 → 7.5V (max.)
+                          Error          28      9. Functional Descriptions ■ System Clock 1. Manual Setting
+                          Correction         Mode (ACKS pin = “L”)
+                                   DFS1 bit is fixed to “0”. →DFS1-0 bit is fixed to “00”.
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 66 -
+PAGE 67
+                                                                             [AK4490]
+
+
+                                  12. Revision History
+
+Date (Y/M/D)  Revision   Reason       Page   Contents
+14/08/07     02         Error         28      9. Functional Descriptions ■ System Clock 1. Manual Setting
+                         Correction         Mode (ACKS pin = “L”) Table 3
+                                             88.2kHz and 96kHz descriptions are removed.
+                                   30      9. Functional Descriptions ■ System Clock 2.Auto Setting
+                                       Mode (ACKS bit = “1)
+                                          DFS1-0 bits are ignored. → DFS2-0 bits are ignored.
+                                      54    ECS:  Ex DF I/F Mode Clock Setting
+                                                       0: Disable: Internal Digital Filter Mode (default)
+                                     →0: WCK=768kHz mode (default)
+                                                       1: Enable: External Digital Filter Mode
+                                    →1: WCK=384kHz mode
+14/11/14     03         Error          20    Master Clock Timing
+                         Correction            “Minimum Pulse Width” is added
+                                            External Digital Filter Mode
+                              “WCK Period” is added
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 67 -
+PAGE 68
+                                                                             [AK4490]
+
+
+
+
+
+                      IMPORTANT NOTICE
+
+   0.  Asahi Kasei Microdevices Corporation (“AKM”) reserves the  right to make changes  to the
+      information contained in this document without notice. When you consider any use or application of
+   AKM product stipulated in this document (“Product”), please make inquiries the sales office of AKM
+       or authorized distributors as to current status of the Products.
+   1.  All information included in this document are provided only to illustrate the operation and application
+      examples of AKM Products. AKM neither makes warranties or representations with respect to the
+      accuracy or completeness of the information contained in this document nor grants any license to any
+       intellectual property rights or any other rights of AKM or any third party with respect to the
+      information in this document. You are fully responsible for use of such information contained in this
+      document in your product design or applications. AKM ASSUMES NO LIABILITY FOR ANY
+     LOSSES INCURRED BY YOU OR THIRD PARTIES ARISING FROM THE USE OF SUCH
+    INFORMATION IN YOUR PRODUCT DESIGN OR APPLICATIONS.
+   2. The Product  is neither intended nor warranted for use in equipment or systems that require
+       extraordinarily high levels of quality and/or reliability and/or a malfunction or failure of which may
+      cause loss of human life, bodily injury, serious property damage or serious public impact, including
+      but not limited to, equipment used in nuclear facilities, equipment used in the aerospace industry,
+      medical equipment, equipment used for automobiles, trains, ships and other transportation, traffic
+       signaling equipment, equipment used to control combustions or explosions, safety devices, elevators
+      and escalators, devices related to electric power, and equipment used in finance-related fields. Do not
+      use Product for the above use unless specifically agreed by AKM in writing.
+   3. Though AKM works continually to improve the Product’s quality and reliability, you are responsible
+       for complying with safety standards and for providing adequate designs and safeguards for your
+      hardware, software and systems which minimize risk and avoid situations in which a malfunction or
+       failure of the Product could cause loss of human life, bodily injury or damage to property, including
+      data loss or corruption.
+   4. Do not use or otherwise make available the Product or related technology or any information
+      contained in this document for any military purposes, including without limitation, for the design,
+      development, use, stockpiling or manufacturing of nuclear, chemical, or biological weapons or
+       missile technology products (mass destruction weapons). When exporting the Products or related
+      technology or any information contained in this document, you should comply with the applicable
+      export control laws and regulations and follow the procedures required by such laws and regulations.
+     The Products and related technology may not be used for or incorporated into any products or systems
+     whose manufacture, use, or sale is prohibited under any applicable domestic or foreign laws or
+       regulations.
+   5.  Please contact AKM sales representative for details as to environmental matters such as the RoHS
+       compatibility of the Product. Please use the Product in compliance with all applicable laws and
+       regulations that regulate the inclusion or use of controlled substances, including without limitation,
+       the EU RoHS Directive. AKM assumes no liability for damages or losses occurring as a result of
+      noncompliance with applicable laws and regulations.
+   6.  Resale of the Product with provisions different from the statement and/or technical features set forth
+       in this document shall immediately void any warranty granted by AKM for the Product and shall not
+       create or extend in any manner whatsoever, any liability of AKM.
+   7.  This document may not be reproduced or duplicated, in any form, in whole or in part, without prior
+       written consent of AKM.
+
+
+
+
+
+MS1648-E-03                                                                          2014/11
+                                                               - 68 -
