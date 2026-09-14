@@ -1559,4 +1559,2230 @@
         (number "8" (effects (font (size 1.016 1.016)))))
     )
   )
+
+  (symbol "PWR_+3V3A_4490"
+  			(power)
+  			(pin_numbers
+  				(hide yes)
+  			)
+  			(pin_names
+  				(offset 0)
+  				(hide yes)
+  			)
+  			(exclude_from_sim no)
+  			(in_bom yes)
+  			(on_board yes)
+  			(property "Reference" "#PWR"
+  				(at 0 -3.81 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "Value" "+3V3A_4490"
+  				(at 0 3.556 0)
+  				(effects
+  					(font
+  						(size 0.90 0.90)
+  					)
+  				)
+  			)
+  			(property "Footprint" ""
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "Datasheet" ""
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "Description" "AK4490 3.3V analog supply rail (AVDD) power symbol (custom net name, cloned from generic power:+3V3)"
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "ki_keywords" "global power"
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(symbol "PWR_+3V3A_4490_0_1"
+  				(polyline
+  					(pts
+  						(xy -0.762 1.27) (xy 0 2.54)
+  					)
+  					(stroke
+  						(width 0)
+  						(type default)
+  					)
+  					(fill
+  						(type none)
+  					)
+  				)
+  				(polyline
+  					(pts
+  						(xy 0 2.54) (xy 0.762 1.27)
+  					)
+  					(stroke
+  						(width 0)
+  						(type default)
+  					)
+  					(fill
+  						(type none)
+  					)
+  				)
+  				(polyline
+  					(pts
+  						(xy 0 0) (xy 0 2.54)
+  					)
+  					(stroke
+  						(width 0)
+  						(type default)
+  					)
+  					(fill
+  						(type none)
+  					)
+  				)
+  			)
+  			(symbol "PWR_+3V3A_4490_1_1"
+  				(pin power_in line
+  					(at 0 0 90)
+  					(length 0)
+  					(name "~"
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  						)
+  					)
+  					(number "1"
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  						)
+  					)
+  				)
+  			)
+  		)
+
+  (symbol "PWR_+3V3_4490"
+  			(power)
+  			(pin_numbers
+  				(hide yes)
+  			)
+  			(pin_names
+  				(offset 0)
+  				(hide yes)
+  			)
+  			(exclude_from_sim no)
+  			(in_bom yes)
+  			(on_board yes)
+  			(property "Reference" "#PWR"
+  				(at 0 -3.81 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "Value" "+3V3_4490"
+  				(at 0 3.556 0)
+  				(effects
+  					(font
+  						(size 0.90 0.90)
+  					)
+  				)
+  			)
+  			(property "Footprint" ""
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "Datasheet" ""
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "Description" "AK4490 3.3V digital supply rail power symbol (custom net name, cloned from generic power:+3V3)"
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "ki_keywords" "global power"
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(symbol "PWR_+3V3_4490_0_1"
+  				(polyline
+  					(pts
+  						(xy -0.762 1.27) (xy 0 2.54)
+  					)
+  					(stroke
+  						(width 0)
+  						(type default)
+  					)
+  					(fill
+  						(type none)
+  					)
+  				)
+  				(polyline
+  					(pts
+  						(xy 0 2.54) (xy 0.762 1.27)
+  					)
+  					(stroke
+  						(width 0)
+  						(type default)
+  					)
+  					(fill
+  						(type none)
+  					)
+  				)
+  				(polyline
+  					(pts
+  						(xy 0 0) (xy 0 2.54)
+  					)
+  					(stroke
+  						(width 0)
+  						(type default)
+  					)
+  					(fill
+  						(type none)
+  					)
+  				)
+  			)
+  			(symbol "PWR_+3V3_4490_1_1"
+  				(pin power_in line
+  					(at 0 0 90)
+  					(length 0)
+  					(name "~"
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  						)
+  					)
+  					(number "1"
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  						)
+  					)
+  				)
+  			)
+  		)
+
+  (symbol "PWR_+VIN_RAW"
+  			(power)
+  			(pin_numbers
+  				(hide yes)
+  			)
+  			(pin_names
+  				(offset 0)
+  				(hide yes)
+  			)
+  			(exclude_from_sim no)
+  			(in_bom yes)
+  			(on_board yes)
+  			(property "Reference" "#PWR"
+  				(at 0 -3.81 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "Value" "+VIN_RAW"
+  				(at 0 3.556 0)
+  				(effects
+  					(font
+  						(size 0.90 0.90)
+  					)
+  				)
+  			)
+  			(property "Footprint" ""
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "Datasheet" ""
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "Description" "Main unregulated DC input rail power symbol (custom net name, cloned from generic power:+3V3)"
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "ki_keywords" "global power"
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(symbol "PWR_+VIN_RAW_0_1"
+  				(polyline
+  					(pts
+  						(xy -0.762 1.27) (xy 0 2.54)
+  					)
+  					(stroke
+  						(width 0)
+  						(type default)
+  					)
+  					(fill
+  						(type none)
+  					)
+  				)
+  				(polyline
+  					(pts
+  						(xy 0 2.54) (xy 0.762 1.27)
+  					)
+  					(stroke
+  						(width 0)
+  						(type default)
+  					)
+  					(fill
+  						(type none)
+  					)
+  				)
+  				(polyline
+  					(pts
+  						(xy 0 0) (xy 0 2.54)
+  					)
+  					(stroke
+  						(width 0)
+  						(type default)
+  					)
+  					(fill
+  						(type none)
+  					)
+  				)
+  			)
+  			(symbol "PWR_+VIN_RAW_1_1"
+  				(pin power_in line
+  					(at 0 0 90)
+  					(length 0)
+  					(name "~"
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  						)
+  					)
+  					(number "1"
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  						)
+  					)
+  				)
+  			)
+  		)
+
+  (symbol "PWR_0V9"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "+0V9"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_0V9_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_0V9_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
+
+  (symbol "PWR_1V8_ISO_USB_A"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "+1V8_ISO_USB_A"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_1V8_ISO_USB_A_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_1V8_ISO_USB_A_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
+
+  (symbol "PWR_1V8_ISO_USB_B"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "+1V8_ISO_USB_B"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_1V8_ISO_USB_B_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_1V8_ISO_USB_B_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
+
+  (symbol "PWR_1V8_XMOS"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "+1V8_XMOS"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_1V8_XMOS_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_1V8_XMOS_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
+
+  (symbol "PWR_3V3_DAC_ANA"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "+3V3_DAC_ANA"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_3V3_DAC_ANA_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_3V3_DAC_ANA_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
+
+  (symbol "PWR_3V3_DAC_DIG"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "+3V3_DAC_DIG"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_3V3_DAC_DIG_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_3V3_DAC_DIG_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
+
+  (symbol "PWR_3V3_ISO_USB"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "+3V3_ISO_USB"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_3V3_ISO_USB_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_3V3_ISO_USB_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
+
+  (symbol "PWR_3V3_XMOS"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "+3V3_XMOS"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_3V3_XMOS_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_3V3_XMOS_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
+
+  (symbol "PWR_5V5"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "+5V5"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_5V5_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_5V5_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
+
+  (symbol "PWR_5V_DAC_ANA_L"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "+5V_DAC_ANA_L"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_5V_DAC_ANA_L_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_5V_DAC_ANA_L_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
+
+  (symbol "PWR_5V_DAC_ANA_R"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "+5V_DAC_ANA_R"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_5V_DAC_ANA_R_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_5V_DAC_ANA_R_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
+
+  (symbol "PWR_DAC_VREF_L"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "DAC_VREF_L"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_DAC_VREF_L_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_DAC_VREF_L_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
+
+  (symbol "PWR_DAC_VREF_R"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "DAC_VREF_R"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_DAC_VREF_R_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_DAC_VREF_R_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
+
+  (symbol "PWR_GND_USB"
+  			(power)
+  			(pin_numbers
+  				(hide yes)
+  			)
+  			(pin_names
+  				(offset 0)
+  				(hide yes)
+  			)
+  			(exclude_from_sim no)
+  			(in_bom yes)
+  			(on_board yes)
+  			(property "Reference" "#PWR"
+  				(at 0 -6.35 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "Value" "GND_USB"
+  				(at 0 -3.81 0)
+  				(effects
+  					(font
+  						(size 0.90 0.90)
+  					)
+  				)
+  			)
+  			(property "Footprint" ""
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "Datasheet" ""
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "Description" "PCM2704C/USB-side ground domain, intended to be galvanically isolated from main GND (see project notes on grounding) - custom net name cloned from generic power:GND"
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(property "ki_keywords" "global power"
+  				(at 0 0 0)
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  					(hide yes)
+  				)
+  			)
+  			(symbol "PWR_GND_USB_0_1"
+  				(polyline
+  					(pts
+  						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+  					)
+  					(stroke
+  						(width 0)
+  						(type default)
+  					)
+  					(fill
+  						(type none)
+  					)
+  				)
+  			)
+  			(symbol "PWR_GND_USB_1_1"
+  				(pin power_in line
+  					(at 0 0 270)
+  					(length 0)
+  					(name "~"
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  						)
+  					)
+  					(number "1"
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  						)
+  					)
+  				)
+  			)
+  		)
+
+  (symbol "PWR_VIN_RAW"
+  					(power)
+  					(pin_numbers
+  						(hide yes)
+  					)
+  					(pin_names
+  						(offset 0)
+  						(hide yes)
+  					)
+  					(exclude_from_sim no)
+  					(in_bom yes)
+  					(on_board yes)
+  					(property "Reference" "#PWR"
+  						(at 0 -3.81 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Value" "+VIN_RAW"
+  						(at 0 3.556 0)
+  						(effects
+  							(font
+  								(size 0.90 0.90)
+  							)
+  						)
+  					)
+  					(property "Footprint" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Datasheet" ""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "Description" "Power symbol creates a global label with name \"+15V\""
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(property "ki_keywords" "global power"
+  						(at 0 0 0)
+  						(effects
+  							(font
+  								(size 1.27 1.27)
+  							)
+  							(hide yes)
+  						)
+  					)
+  					(symbol "PWR_VIN_RAW_0_1"
+  						(polyline
+  							(pts
+  								(xy -0.762 1.27) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 2.54) (xy 0.762 1.27)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  						(polyline
+  							(pts
+  								(xy 0 0) (xy 0 2.54)
+  							)
+  							(stroke
+  								(width 0)
+  								(type default)
+  							)
+  							(fill
+  								(type none)
+  							)
+  						)
+  					)
+  					(symbol "PWR_VIN_RAW_1_1"
+  						(pin power_in line
+  							(at 0 0 90)
+  							(length 0)
+  							(name "~"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  							(number "1"
+  								(effects
+  									(font
+  										(size 1.27 1.27)
+  									)
+  								)
+  							)
+  						)
+  					)
+  				)
 )
